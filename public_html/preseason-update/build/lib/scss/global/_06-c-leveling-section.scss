@@ -1,0 +1,26 @@
+/* ------------------------------------ *\
+    #LEVELING SECTION
+\* ------------------------------------ */
+
+
+.c-leveling-section {
+    overflow: hidden;
+    background:
+        linear-gradient(0deg, transparent 0%, #040e18 50%, transparent 100%) center (5700px - 250px) no-repeat,
+        #040e18 url('../img/global/level-bg-top.jpg') top center no-repeat;
+    background-size:
+        100% 500px,
+        auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    @include media('sm') {
+        padding-top: vw(80px);
+        padding-bottom: vw(80px);
+    }
+
+    @include media('xxl') {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}

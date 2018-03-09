@@ -1,0 +1,30 @@
+{>"html/base" /}
+
+{<meta}
+    <meta property="og:title" content="{i18n preseason2018.shared.headline}" />
+    <meta name="description" content="{i18n preseason2018.site.description}">
+    <meta property="og:description" content="{i18n preseason2018.shared.body}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://{region}.leagueoflegends.com/{language}/featured/preseason-2018" />
+    <meta property="og:image" content="{versionedAssetPath}/img/meta/share_1024x1024.jpg" />
+{/meta}
+
+{<body}
+
+    <a id="skip-to-content" href="#content" class="u-sr-only">Skip to main content</a>
+
+    <div class="o-wrap">
+
+        <h2 class="c-available">
+            <span class="c-available__title">{i18n preseason2018.hero.available.title}</span>
+            <span class="c-available__date">{i18n preseason2018.hero.available.date}</span>
+        </h2>
+
+        {>"views/hero"/}
+        {>"views/runes"/}
+        {>"views/leveling"/}
+        {>"views/conclusion"/}
+        {>"views/footer"/}
+    </div>
+
+{/body}

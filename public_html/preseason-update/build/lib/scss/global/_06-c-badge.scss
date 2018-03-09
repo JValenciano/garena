@@ -1,0 +1,46 @@
+/* ------------------------------------ *\
+    #BADGE
+\* ------------------------------------ */
+
+
+.c-badge {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 20px;
+    width: 80px;
+    max-width: 100%;
+    padding: 2px;
+    background: linear-gradient(90deg, #72542a 0%, #bd9e5e 100%);
+    border-radius: 50%;
+
+    @include media('sm') {
+        width: 200px;
+        padding: 3px;
+    }
+}
+
+.c-badge__inner {
+    border-radius: inherit;
+    position: relative;
+    background: #000;
+
+    &::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+        width: 100%;
+    }
+}
+
+.c-badge__img {
+    user-select: none;
+    pointer-events: none;
+    margin: 0;
+    width: ((400 / 196) * 100%);
+    height: ((400 / 196) * 100%);
+    border-radius: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

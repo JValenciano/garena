@@ -1,0 +1,149 @@
+/* ------------------------------------ *\
+    #CUSTOMIZE
+\* ------------------------------------ */
+
+
+.c-customize {
+    border: solid #211a14;
+    border-width: 2px 0 0;
+    background: rgba(#000, 0.4);
+    box-shadow: 0 0 80px #000;
+    padding: 8px;
+    position: relative;
+    z-index: 1;
+
+    @include media('sm') {
+        padding: vw(18px);
+    }
+
+    @include media('xxl') {
+        padding: 18px;
+    }
+}
+
+.c-customize__runes {
+    display: flex;
+    margin: 0 -5px;
+    height: 700px;
+}
+
+.c-customize__runes-item {
+    flex: 0 0 auto;
+    width: (100% / 5);
+    height: 100%;
+    padding: 0 5px;
+    position: relative;
+}
+
+.c-customize__rune {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #31271e;
+    color: #b5b4b2;
+    font-size: rem(18px);
+    line-height: (28px / 18px);
+    text-align: center;
+    transition: timer('normal');
+
+    &::after {
+        content: '';
+        opacity: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #070d10;
+        transition: timer('normal');
+
+        .c-customize:hover & {
+            opacity: 0.5;
+        }
+    }
+
+    &:hover {
+        width: percentage(360px / 280px);
+        height: 780px;
+        transform: translateX(percentage(-(360px - 280px) / 280px / 2)) translateY(-40px);
+        z-index: 2;
+        box-shadow: 0 0 120px #000;
+
+        .c-customize:hover &::after {
+            opacity: 0;
+        }
+    }
+}
+
+.c-customize__spash-wrap {
+    overflow: hidden;
+    height: 700px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0 0 110px rgba(#000, 0.8);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.c-customize__spash {
+    width: 360px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.c-customize__rune-header {
+    padding: 0 20px 20px;
+    background: #111318;
+    margin-left: -180px;
+    width: 360px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateY(-80px);
+    transition: timer('normal');
+
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, #433712 0%, #c5b88a 50%, #433712 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .c-customize__rune:hover & {
+        transform: translateY(-100%);
+    }
+}
+
+.c-customize__rune-title {
+    margin: 0;
+    color: #d8cfbd;
+    font-size: em(20px, 18px);
+    line-height: 80px;
+}
+
+.c-customize__rune-body {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: timer('normal') timer('fast');
+
+    .c-customize__rune:hover & {
+        opacity: 1;
+        transform: none;
+    }
+}

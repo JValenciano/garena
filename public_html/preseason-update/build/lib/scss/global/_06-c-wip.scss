@@ -1,0 +1,28 @@
+/* ------------------------------------ *\
+    #WIP
+\* ------------------------------------ */
+
+
+.c-wip {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #7e7b70;
+    font-size: rem(10px);
+    line-height: (17px / 12px);
+
+    @include media('sm') {
+        font-size: rem(12px);
+        text-align: right;
+    }
+}
+
+.c-wip__copy {
+    flex-grow: 1;
+    margin-right: 10px;
+
+    @include media('sm') {
+        margin-right: 20px;
+    }
+}

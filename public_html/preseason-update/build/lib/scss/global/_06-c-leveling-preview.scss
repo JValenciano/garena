@@ -1,0 +1,24 @@
+/* ------------------------------------ *\
+    #LEVELING PREVIEW
+\* ------------------------------------ */
+
+
+.c-leveling-preview {
+    max-width: 1166px;
+    margin: -10px auto;
+
+    @include media('sm') {
+        margin-top: percentage(-70px / 1166px);
+        // margin-bottom: percentage(-150px / 1166px);
+    }
+}
+
+
+.c-leveling-preview--loot {
+    max-width: 1062px;
+
+    @include media('sm') {
+        margin-top: percentage(-50px / 1062px);
+        // margin-bottom: percentage(-100px / 1166px);
+    }
+}

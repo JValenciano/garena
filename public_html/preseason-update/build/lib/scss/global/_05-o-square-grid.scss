@@ -1,0 +1,51 @@
+/* ------------------------------------ *\
+    #SQUARE GRID
+\* ------------------------------------ */
+
+
+.o-square-grid {
+    width: 100%;
+    margin: 0 auto;
+    max-width: vw(260px, 320px);
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: 100%;
+    }
+}
+
+
+.o-square-grid__item {
+    width: percentage(117px / 256px);
+    height: percentage(117px / 256px);
+    position: absolute;
+
+    @include media('xl') {
+        width: percentage(340px / 826px);
+        height: percentage(340px / 826px);
+    }
+}
+
+
+.o-square-grid__item--1 {
+    top: 0;
+    left: 0;
+}
+
+.o-square-grid__item--2 {
+    top: 0;
+    right: 0;
+}
+
+.o-square-grid__item--3 {
+    bottom: 0;
+    left: 0;
+}
+
+.o-square-grid__item--4 {
+    right: 0;
+    bottom: 0;
+}

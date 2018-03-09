@@ -1,0 +1,36 @@
+/* ------------------------------------ *\
+    #RINGS
+\* ------------------------------------ */
+
+
+.c-rings {
+    position: relative;
+}
+
+.c-rings__ring {
+    display: none;
+    margin: 0;
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+
+    @include media('sm') {
+        display: block;
+    }
+}
+
+.c-rings__ring--1 {
+    bottom: -10px;
+    right: -250px;
+}
+
+.c-rings__ring--2 {
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+}
+
+.c-rings__ring--3 {
+    top: 200px;
+    right: -175px;
+}

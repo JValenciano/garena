@@ -1,0 +1,15 @@
+/* ------------------------------------ *\
+    #DECORATOR
+\* ------------------------------------ */
+
+
+.c-divider {
+    display: block;
+    margin: 15px auto;
+    width: vw(186px, 320px);
+    height: auto;
+
+    @include media('sm') {
+        width: 434px;
+    }
+}

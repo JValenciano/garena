@@ -1,0 +1,99 @@
+/* ------------------------------------ *\
+    #BUTTONS
+\* ------------------------------------ */
+
+
+.c-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: calc(#{em(10px, 16px)} + 1px) calc(#{em(20px, 16px)} + 1px);
+    height: em(60px, 16px);
+    max-width: 100%;
+    border: 0;
+    color: #c7b184;
+    fill: currentColor;
+    box-shadow: 0 0 28px #000;
+    font-family: $font-beaufort;
+    font-size: rem(11px);
+    line-height: 1;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    z-index: 1;
+    transition: timer('fast');
+
+    @include media('sm') {
+        font-size: vw(16px);
+    }
+
+    @include media('xxl') {
+        font-size: rem(16px);
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    &::before {
+        background: linear-gradient(0deg, #72542a 0%, #bd9e5e 100%);
+    }
+
+    &::after {
+        margin: 1px;
+        background: #16181d;
+        transition: timer('fast');
+
+        @include media('md') {
+            margin: 2px;
+        }
+    }
+
+    @include link-states() {
+        color: #fff;
+        text-decoration: none;
+        box-shadow:
+            0 0 28px #000,
+            0 0 28px rgba(#000, 0.6);
+
+        &::after {
+            background: #1a1d21;
+        }
+    }
+}
+
+
+.c-btn--200 {
+    min-width: 200px;
+}
+
+
+.c-btn--360 {
+    width: 160px;
+
+    @include media('sm') {
+        width: 360px;
+    }
+}
+
+
+.c-btn--small {
+    height: em(40px, 16px);
+}
+
+
+.c-btn__icon {
+    margin-left: 10px;
+    fill: currentColor;
+}

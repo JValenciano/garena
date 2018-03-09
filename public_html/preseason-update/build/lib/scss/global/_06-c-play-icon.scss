@@ -1,0 +1,41 @@
+/* ------------------------------------ *\
+    #PLAY ICON
+\* ------------------------------------ */
+
+
+.c-play-icon {
+    width: 32px;
+    height: 32px;
+    transform-origin: center;
+    transition: timer('fast');
+
+    @include media('sm') {
+        width: 76px;
+        height: 76px;
+    }
+
+    a:hover &,
+    &:hover {
+        transform: scale((84 / 76), (84 / 76));
+    }
+}
+
+.c-play-icon__arrow {
+    transform-origin: center;
+    transition: timer('fast');
+
+    a:hover &,
+    .c-play-icon:hover & {
+        transform: scale((76 / 84), (76 / 84));
+    }
+}
+
+.c-play-icon__inner-ring {
+    transform-origin: center;
+    transition: timer('fast');
+
+    a:hover &,
+    .c-play-icon:hover & {
+        transform: scale((76 / 84), (76 / 84));
+    }
+}

@@ -1,0 +1,74 @@
+<section id="runes" class="c-decorator c-decorator--large c-runes-section js-lazy-background js-scroll-marker" style="background: #000;">
+    <div class="o-container">
+
+        <header class="u-text-center">
+            <h2 class="c-heading-65 c-section-title u-text-gradient u-spacing-none">{i18n preseason2018.runes.title}</h2>
+        </header>
+
+        <div class="o-inset o-inset--medium u-text-center u-spacing-20 u-spacing-80@sm">
+            <img src="{versionedAssetPath}/img/global/divider.png" alt="" class="c-divider">
+
+            <div class="o-inset o-inset--wide">
+                <p>{i18n preseason2018.runes.intro.p01}</p>
+                <p>{i18n preseason2018.runes.intro.p02}</p>
+            </div>
+        </div>
+
+        <div id="customizer-app" class="u-spacing-40 u-spacing-80@sm"></div>
+
+        <div class="u-spacing-30 u-spacing-60@sm u-text-center">
+
+            <h3 class="c-heading-45 c-title-wings c-title-wings--spread js-active-in-view">
+                <span class="c-title-wings__wing c-title-wings__wing--left"></span>
+                <span class="c-title-wings__title u-text-gradient">{i18n preseason2018.runes.section.preview.title}</span>
+                <span class="c-title-wings__wing"></span>
+            </h3>
+
+            <div class="o-inset o-inset--medium">
+                <p>{i18n preseason2018.runes.section.preview.p01}</p>
+            </div>
+
+        </div>
+
+        <div class="o-inset o-inset--runebuilder">
+            <div class="c-frame u-spacing-60 u-spacing-100@sm">
+                <div class="c-frame__content">
+                    <div class="o-aspect o-aspect--16x9 u-spacing-none">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/O_kUfMIgd3c?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="builder" class="c-anchor js-scroll-marker"></div>
+
+        <div class="u-spacing-30 u-spacing-80@sm">
+
+            <h3 class="c-heading-45 c-title-wings c-title-wings--spread js-active-in-view">
+                <span class="c-title-wings__wing c-title-wings__wing--left"></span>
+                <span class="c-title-wings__title u-text-gradient">{i18n preseason2018.runes.section.builder.title}</span>
+                <span class="c-title-wings__wing"></span>
+            </h3>
+
+            <div class="o-inset u-text-center">
+                <p>{i18n preseason2018.runes.section.builder.p01}</p>
+            </div>
+
+        </div>
+
+        <div class="o-inset o-inset--runebuilder">
+
+            {! Preact App !}
+            <div id="app" class="u-spacing-20"></div>
+
+            <div class="c-wip">
+                <div class="c-wip__copy">
+                    <p>{i18n preseason2018.runebuilder.disclaimer}</p>
+                </div>
+                <img src="{versionedAssetPath}/img/content/logo-wip.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</section>

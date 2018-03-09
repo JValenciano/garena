@@ -1,0 +1,24 @@
+/* ------------------------------------ *\
+    #FRAME
+\* ------------------------------------ */
+
+
+.c-frame {
+    padding: 1px;
+    background: linear-gradient(0deg, #6c5021 0%, #ab8f57 100%);
+    position: relative;
+    box-shadow: 0 0 80px #000;
+
+    @include media('sm') {
+        padding: 2px;
+    }
+}
+
+
+.c-frame--black {
+    background: #342a1f;
+}
+
+.c-frame__content {
+    background: #000;
+}

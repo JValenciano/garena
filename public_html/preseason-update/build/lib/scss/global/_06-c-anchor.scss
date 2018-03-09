@@ -1,0 +1,17 @@
+/* ------------------------------------ *\
+    #ANCHOR
+\* ------------------------------------ */
+
+
+.c-anchor {
+    position: relative;
+    top: -40px;
+
+    @include media('sm') {
+        top: -10vw;
+    }
+
+    @include media('lg') {
+        top: -160px;
+    }
+}

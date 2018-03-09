@@ -1,0 +1,15 @@
+/* ------------------------------------ *\
+    #COMMENTS SECTION
+\* ------------------------------------ */
+
+
+.c-comments-section {
+    background: #030e14 url('../img/global/comments-bg-bot.jpg') bottom center no-repeat;
+    padding-top: vw(120px);
+    padding-bottom: vw(120px);
+
+    @include media('xxl') {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}

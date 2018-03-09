@@ -1,0 +1,12 @@
+/* ------------------------------------ *\
+    #SECTION TITLE
+\* ------------------------------------ */
+
+
+.c-section-title {
+    margin-bottom: 0;
+
+    @include media('sm') {
+        margin-bottom: 40px;
+    }
+}

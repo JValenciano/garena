@@ -1,0 +1,70 @@
+////
+/// VARIABLES
+////
+
+
+///
+// Base global defaults
+///
+$font-beaufort: "Beaufort for LOL", serif;
+$font-spiegel: "Spiegel", sans-serif;
+
+
+$base-background:   #000;
+$base-color:        #b5b4b2;
+$base-font-family:  $font-spiegel;
+$base-font-size:    19px;
+$base-line-height:  (28 / 19);
+
+
+/// Generic spacing unit
+$spacing-unit:      20px;
+
+
+$riotbar-height: 52px;
+
+
+///
+// Colors
+///
+$color-config: (
+    'pearl':        #f0e6d2,
+    'fiord':        #485b62,
+    'dawn':         #a09b8c,
+    'storm-dust':   #5b5a56,
+    'cashmere':     #cdbe91,
+    'fallow':       #c0a76e,
+    'curry':        #785a28,
+    'metal':        #726243,
+    'chocolate':    #463711,
+    'putty':        #c8aa6e,
+    'hot-toddy':    #a98130,
+    'cafe-royal':   #6b5028,
+    'light-cyan':   #cbfafa,
+    'robins-egg':   #00c8b9,
+    'bondi':        #0096ab,
+    'lagoon':       #005983,
+    'elf-green':    #1e825a,
+    'amber':        #fabe0a,
+    'mako':         #565a5a,
+    'grey':         #3c3c41,
+    'cinder':       #1e2328,
+);
+
+
+///
+// Timer Map for @function timer();
+///
+$timer-config: (
+    'normal':   0.4s,
+    'slow':    0.75s,
+    'fast':    0.15s,
+);
+
+
+///
+// Z-index Map for @function z();
+///
+$z-index-config: (
+    'sticky-nav':   1000,
+);

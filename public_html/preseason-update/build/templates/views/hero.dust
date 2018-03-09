@@ -1,0 +1,48 @@
+<section id="hero" class="c-hero">
+
+    <div class="c-hero__backdrop-wrap">
+        <img src="{versionedAssetPath}/img/content/hero-splash-1920.jpg" alt="" width="1920" height="1080" class="c-hero__backdrop">
+    </div>
+
+    <header class="c-hero__header">
+        <div class="o-container">
+            <h1 class="c-hero__subtitle c-title-wings">
+                <span class="c-title-wings__wing c-title-wings__wing--left"></span>
+                <span class="c-title-wings__title">{i18n preseason2018.hero.title}</span>
+                <span class="c-title-wings__wing"></span>
+            </h1>
+            <h2 class="c-hero__title u-text-gradient">{i18n preseason2018.hero.subtitle}</h2>
+        </div>
+        <nav class="c-hero__nav js-sticky-nav">
+            <div class="c-hero__nav-inner js-sticky-nav__content">
+                <div class="o-container">
+                    <ul class="o-list-unstyled c-hero__links">
+                        <li class="c-hero__links-item">
+                            <a href="#runes" class="c-btn c-btn--360 js-scroll-to js-push-click" data-event-label="runes">
+                                {i18n preseason2018.hero.link01.text}
+                            </a>
+                        </li>
+                        <li class="c-hero__links-item">
+                            <a href="#builder" class="c-btn c-btn--360 js-scroll-to js-push-click" data-event-label="builder">
+                                {i18n preseason2018.hero.link02.text}
+                            </a>
+                        </li>
+                        <li class="c-hero__links-item">
+                            <a href="#leveling" class="c-btn c-btn--360 js-scroll-to js-push-click" data-event-label="leveling">
+                                {i18n preseason2018.hero.link03.text}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <svg class="c-hero__arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="32" viewBox="0 0 59 160.4">
+      <linearGradient id="arrow-fill" gradientUnits="userSpaceOnUse" x1="29.5" y1="-1.4" x2="29.5" y2="159" gradientTransform="matrix(1 0 0 -1 0 159)">
+        <stop offset="0" stop-color="#937830"/>
+        <stop offset="1" stop-color="#473815"/>
+      </linearGradient>
+      <path fill="url(#arrow-fill)" d="M59 131.2l-29.8 29.2L0 131.2h15.2l14.3 14.3 14.3-14.3H59zM33.7 127V0h-8.4v127l4.2 4.2 4.2-4.2z"/>
+    </svg>
+</section>

@@ -1,0 +1,25 @@
+/* ------------------------------------ *\
+    #LINKS
+\* ------------------------------------ */
+
+
+.c-links {
+    justify-content: center;
+    margin-right: -6px;
+    margin-left: -6px;
+
+    @include media('sm') {
+        margin-right: -17px;
+        margin-left: -17px;
+    }
+}
+
+.c-links__item {
+    padding-right: 6px;
+    padding-left: 6px;
+
+    @include media('sm') {
+        padding-right: 17px;
+        padding-left: 17px;
+    }
+}

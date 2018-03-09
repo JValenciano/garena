@@ -1,0 +1,142 @@
+/* ------------------------------------ *\
+    #SHARDS
+\* ------------------------------------ */
+
+
+@keyframes revolve5 {
+    from {
+        transform: rotate(0deg) translateY(5px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateY(5px) rotate(-360deg);
+    }
+}
+
+@keyframes revolve8 {
+    from {
+        transform: rotate(0deg) translateY(8px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateY(8px) rotate(-360deg);
+    }
+}
+
+@keyframes wobble {
+    from {
+        transform: rotate(-2.5deg);
+    }
+
+    to {
+        transform: rotate(2.5deg);
+    }
+}
+
+
+.c-shards {
+    position: relative;
+}
+
+
+.c-shards__group {
+    opacity: 0.4;
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    width: 125px;
+    height: 250px;
+    z-index: -1;
+
+    @include media('sm') {
+        opacity: 1;
+        width: 250px;
+        height: 500px;
+        animation: wobble 15s infinite alternate;
+    }
+
+    &.c-shards--top {
+        top: -75px;
+
+        @include media('sm') {
+            top: vw(-150px);
+        }
+
+        @include media('lg') {
+            top: -175px;
+        }
+    }
+
+    &.c-shards--right {
+        right: -50px;
+
+        @include media('sm') {
+            right: vw(-100px);
+        }
+
+        @include media('lg') {
+            right: -100px;
+        }
+    }
+
+    &.c-shards--bottom {
+        bottom: -100px;
+
+        @include media('sm') {
+            bottom: vw(-200px);
+        }
+
+        @include media('lg') {
+            bottom: -200px;
+        }
+    }
+
+    &.c-shards--left {
+        left: -50px;
+
+        @include media('sm') {
+            left: vw(-200px);
+        }
+
+        @include media('lg') {
+            left: -200px;
+        }
+    }
+}
+
+.c-shards__shard {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include media('sm') {
+        animation: revolve8 8s infinite linear;
+    }
+}
+
+
+.c-shards__shard--2 {
+    @include media('sm') {
+        animation: revolve5 6s 0.75s infinite linear;
+    }
+}
+
+.c-shards__shard--3 {
+    @include media('sm') {
+        animation: revolve5 7s 1.5s infinite linear;
+    }
+}
+
+.c-shards__shard--4 {
+    @include media('sm') {
+        animation: revolve8 7.5s 2.5s infinite linear;
+    }
+}
+
+.c-shards__shard--5 {
+    @include media('sm') {
+        animation: revolve5 5.5s 4s infinite linear;
+    }
+}

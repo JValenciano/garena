@@ -1,0 +1,83 @@
+/* ------------------------------------ *\
+    #BLUE ESSENCE
+\* ------------------------------------ */
+
+
+@keyframes revolve5 {
+    from {
+        transform: rotate(0deg) translateY(1%) rotate(0deg);
+        filter: brightness(160%);
+    }
+
+    50% {
+        filter: brightness(80%);
+    }
+
+    to {
+        transform: rotate(360deg) translateY(1%) rotate(-360deg);
+        filter: brightness(160%);
+    }
+}
+
+@keyframes revolve8 {
+    from {
+        transform: rotate(0deg) translateY(2%) rotate(0deg);
+        filter: brightness(160%);
+    }
+
+    50% {
+        filter: brightness(80%);
+    }
+
+    to {
+        transform: rotate(360deg) translateY(2%) rotate(-360deg);
+        filter: brightness(160%);
+    }
+}
+
+
+@keyframes wobble {
+    from {
+        transform: rotate(-2.5deg);
+    }
+
+    to {
+        transform: rotate(2.5deg);
+    }
+}
+
+
+.c-blue-essence {
+    position: relative;
+    width: 100%;
+    max-width: 1166px;
+    margin: auto;
+    transform: translateZ(0.01px);
+
+    @include media('sm') {
+        width: 100%;
+        margin: -50px auto 0;
+    }
+}
+
+.c-blue-essence__layer {
+    pointer-events: none;
+    user-select: none;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.c-blue-essence__layer--1 {
+    animation: revolve8 8s infinite linear;
+}
+
+.c-blue-essence__layer--2 {
+    animation: revolve5 6s 0.75s infinite linear;
+}
+
+.c-blue-essence__layer--3 {
+    animation: revolve5 7s 1.5s infinite linear;
+}

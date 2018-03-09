@@ -1,0 +1,29 @@
+/* ------------------------------------ *\
+    #FANCY FRAME
+\* ------------------------------------ */
+
+
+.c-fancy-frame {
+    padding: 1px;
+    background: linear-gradient(0deg, #443813 0%, #bfb285 50%, #443813 100%);
+    position: relative;
+    box-shadow: 0 0 rem(80px) #000;
+
+    @include media('sm') {
+        padding: 3px;
+    }
+}
+
+.c-fancy-frame__outer {
+    padding: 3px;
+    background: #000;
+
+    @include media('sm') {
+        padding: 8px;
+    }
+}
+
+.c-fancy-frame__inner {
+    border: 1px solid #342a1f;
+    background: #000;
+}

@@ -1,0 +1,19 @@
+<div class="o-wrap">
+
+    <div class="o-container">
+
+        <div class="u-spacing-40 u-spacing-60@sm u-spacing-100@xl"></div>
+
+        <div id="app" class="u-spacing-30"></div>
+
+        <ul class="o-list-inline c-links u-spacing-none">
+            <li class="c-links__item">
+                <a href="../preseason-update#builder" class="c-btn c-btn--small c-btn--350">{i18n preseason2018.sharedRunebuilder.buildYourOwn}</a>
+            </li>
+            <li class="c-links__item">
+                <a href="../preseason-update" class="c-btn c-btn--small c-btn--350">{i18n preseason2018.sharedRunebuilder.preseasonUpdate}</a>
+            </li>
+        </ul>
+    </div>
+
+</div>

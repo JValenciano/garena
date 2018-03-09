@@ -1,0 +1,49 @@
+/* ------------------------------------ *\
+    #VETERAN EMOTEs
+\* ------------------------------------ */
+
+
+.c-verteran-emotes {
+    @include media('sm') {
+        position: relative;
+    }
+
+    &::before {
+        @include media('sm') {
+            content: '';
+            display: block;
+            padding-top: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.c-verteran-emotes__img {
+    margin: auto;
+    width: 70%;
+
+    @include media('sm') {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .c-verteran-emotes--defender & {
+        @include media('sm') {
+            bottom: 14%;
+        }
+    }
+
+    // .c-verteran-emotes--champion & {
+    //     @include media('sm') {
+    //
+    //     }
+    // }
+
+    .c-verteran-emotes--conqueror & {
+        @include media('sm') {
+            bottom: 7%;
+        }
+    }
+}

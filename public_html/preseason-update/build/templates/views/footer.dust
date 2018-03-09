@@ -1,0 +1,116 @@
+<footer class="c-decorator c-footer">
+    <div class="o-container">
+
+        <ul class="o-list-inline c-footer__links">
+            {@ne key="{i18n preseason2018.footer.links.item01.link}" value="unset"}
+                <li class="c-footer__links-item">
+                    <a href="{i18n preseason2018.footer.links.item01.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.links.item01.text}</a>
+                </li>
+                <li class="c-footer__links-item">|</li>
+            {/ne}
+            {@ne key="{i18n preseason2018.footer.links.item02.link}" value="unset"}
+                <li class="c-footer__links-item">
+                    <a href="{i18n preseason2018.footer.links.item02.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.links.item02.text}</a>
+                </li>
+                <li class="c-footer__links-item">|</li>
+            {/ne}
+            {@ne key="{i18n preseason2018.footer.links.item03.link}" value="unset"}
+                <li class="c-footer__links-item">
+                    <a href="{i18n preseason2018.footer.links.item03.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.links.item03.text}</a>
+                </li>
+                <li class="c-footer__links-item">|</li>
+            {/ne}
+            {@ne key="{i18n preseason2018.footer.links.item04.link}" value="unset"}
+                <li class="c-footer__links-item">
+                    <a href="{i18n preseason2018.footer.links.item04.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.links.item04.text}</a>
+                </li>
+                <li class="c-footer__links-item">|</li>
+            {/ne}
+            {@ne key="{i18n preseason2018.footer.links.item05.link}" value="unset"}
+                <li class="c-footer__links-item">
+                    <a href="{i18n preseason2018.footer.links.item05.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.links.item05.text}</a>
+                </li>
+                <li class="c-footer__links-item">|</li>
+            {/ne}
+            {@ne key="{i18n preseason2018.footer.links.item06.link}" value="unset"}
+                <li class="c-footer__links-item">
+                    <a href="{i18n preseason2018.footer.links.item06.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.links.item06.text}</a>
+                </li>
+                <li class="c-footer__links-item">|</li>
+            {/ne}
+            {@ne key="{i18n preseason2018.footer.links.item07.link}" value="unset"}
+                <li class="c-footer__links-item">
+                    <a href="{i18n preseason2018.footer.links.item07.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.links.item07.text}</a>
+                </li>
+            {/ne}
+        </ul>
+
+        <div class="o-grid">
+            <div class="o-grid__column o-grid__column--3@md">
+                <a href="{i18n preseason2018.site.riot.link}" target="_blank">
+                    <img data-src="{versionedAssetPath}/img/global/footer/logo-riot.png" alt="" width="97" height="74" class="js-lazy-image">
+                </a>
+            </div>
+
+            <div class="o-grid__column o-grid__column--6@md">
+
+                <p class="u-hidden@less-than-md">
+                    <a href="{i18n preseason2018.footer.playNow.link}" target="_blank" class="c-btn c-btn--200">{i18n preseason2018.footer.playNow.text}</a>
+                </p>
+
+                <p>{i18n preseason2018.footer.legal.p01}</p>
+
+                <ul class="o-list-inline c-footer__links c-footer__links--small">
+                    {@ne key="{i18n preseason2018.footer.terms.item02.link}" value="unset"}
+                        <li class="c-footer__links-item">
+                            <a href="{i18n preseason2018.footer.terms.item02.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.terms.item02.text}</a>
+                        </li>
+                    {/ne}
+                    {@ne key="{i18n preseason2018.footer.terms.item03.link}" value="unset"}
+                        <li class="c-footer__links-item">|</li>
+                        <li class="c-footer__links-item">
+                            <a href="{i18n preseason2018.footer.terms.item03.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.terms.item03.text}</a>
+                        </li>
+                    {/ne}
+                    {@ne key="{i18n preseason2018.footer.terms.item04.link}" value="unset"}
+                        <li class="c-footer__links-item">|</li>
+                        <li class="c-footer__links-item">
+                            <a href="{i18n preseason2018.footer.terms.item04.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.terms.item04.text}</a>
+                        </li>
+                    {/ne}
+                </ul>
+
+                <ul class="o-list-inline c-footer__links u-spacing-20">
+                    <li>
+                        {@ne key=locale value="ja_JP"}
+                            {@ne key=locale value="tr_TR"}
+                                <img data-src="{versionedAssetPath}/img/global/footer/ratings/rating_{locale}.jpg" alt="" class="u-img-respond js-lazy-image">
+                            {/ne}
+                        {/ne}
+                    </li>
+                        {@eq key=locale value="de_DE"}
+                            {~s}
+                            <li>
+                                <img data-src="{versionedAssetPath}/img/global/footer/ratings/rating2_de_DE.png" alt="" class="u-img-respond js-lazy-image">
+                            </li>
+                        {/eq}
+                </ul>
+            </div>
+
+            <div class="o-grid__column o-grid__column--3@md">
+                <img data-src="{versionedAssetPath}/img/global/footer/logo-pvp-net.png" alt="" width="169" height="26" class="js-lazy-image">
+
+                <ul class="o-list-inline c-footer__links c-footer__links--small">
+                    <li class="c-footer__links-item">
+                        <a href="{i18n preseason2018.footer.signUp.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.signUp.text}</a>
+                    </li>
+                    <li class="c-footer__links-item">|</li>
+                    <li class="c-footer__links-item">
+                        <a href="{i18n preseason2018.footer.support.link}" target="_blank" class="c-footer__links-link">{i18n preseason2018.footer.support.text}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</footer>

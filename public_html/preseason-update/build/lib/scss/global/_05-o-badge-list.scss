@@ -1,0 +1,25 @@
+/* ------------------------------------ *\
+    #BADGE LIST
+\* ------------------------------------ */
+
+
+.o-badge-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.o-badge-list__item {
+    flex: 1 1 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    max-width: 176px;
+
+    @include media('sm') {
+        width: auto;
+        max-width: 236px;
+    }
+}

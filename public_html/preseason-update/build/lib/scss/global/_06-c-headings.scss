@@ -1,0 +1,47 @@
+/* ------------------------------------ *\
+    #HEADINGS
+\* ------------------------------------ */
+
+.c-heading-page {
+    font-size: vw(36px);
+    line-height: 1;
+
+    @include media('xxl') {
+        font-size: rem(36px);
+    }
+}
+
+.c-heading-65 {
+    font-size: rem(20px);
+    line-height: 1;
+
+    @include media('sm') {
+        font-size: vw(65px);
+    }
+
+    @include media('xxl') {
+        font-size: rem(65px);
+    }
+}
+
+.c-heading-45 {
+    font-size: rem(17px);
+    line-height: 1;
+
+    @include media('sm') {
+        font-size: vw(45px);
+    }
+
+    @include media('xxl') {
+        font-size: rem(45px);
+    }
+}
+
+
+.c-heading-16 {
+    font-size: rem(14px);
+
+    @include media('lg') {
+        font-size: rem(16px);
+    }
+}

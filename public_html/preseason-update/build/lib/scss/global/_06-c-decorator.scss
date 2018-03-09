@@ -1,0 +1,49 @@
+/* ------------------------------------ *\
+    #DECORATOR
+\* ------------------------------------ */
+
+
+.c-decorator {
+    border-top: 1px solid #463714;
+    position: relative;
+
+    @include media('sm') {
+        border-top-width: 2px;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        margin: 0 -145px;
+        width: 290px;
+        height: 18px;
+        background: url('../img/global/decorator.png') no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -1px;
+        left: 50%;
+
+        @include media('sm') {
+            margin: 0 -290px;
+            width: 580px;
+            top: -2px;
+        }
+    }
+}
+
+
+.c-decorator--large {
+    @include media('sm') {
+        border-top: none;
+    }
+
+    &::before {
+        @include media('sm') {
+            margin: 0 -960px;
+            width: 1920px;
+            height: 35px;
+            background-image: url('../img/global/decorator-large.png');
+            top: 0;
+        }
+    }
+}

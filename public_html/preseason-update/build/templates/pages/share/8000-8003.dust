@@ -1,0 +1,17 @@
+{>"html/base" /}
+
+{<meta}
+    <meta property="og:title" content="{i18n preseason2018.sharedRunebuilder.headline}" />
+    <meta name="description" content="{i18n preseason2018.sharedRunebuilder.body}">
+    <meta property="og:description" content="{i18n preseason2018.sharedRunebuilder.body}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://{region}.leagueoflegends.com/{language}/featured/preseason-update/8000-8003" />
+    <meta property="og:image" content="{versionedAssetPath}/img/runeBuilder/share/8000-8003.jpg" />
+{/meta}
+
+
+{<body}
+
+    {>"views/sharedRunebuilder"/}
+
+{/body}

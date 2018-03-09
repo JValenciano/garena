@@ -1,0 +1,50 @@
+/* ------------------------------------ *\
+    #MEDIA
+\* ------------------------------------ */
+
+//
+// A generic layout with an item floated to the side and content block that
+// doesn't wrap underneath it.
+//
+.o-media {
+    @include media('sm') {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+
+.o-media--flip {
+    @include media('sm') {
+        flex-direction: row-reverse;
+    }
+}
+
+
+.o-media__graphic {
+    width: 100%;
+    height: auto;
+
+    @include media('sm') {
+        width: auto;
+    }
+}
+
+
+//
+// Content Block
+//
+.o-media__content {
+    @include media('sm') {
+        flex-grow: 1;
+        margin-left: 20px;
+    }
+
+    .o-media--flip & {
+        @include media('sm') {
+            margin-left: 0;
+            margin-right: 20px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+/* ------------------------------------ *\
+    #RUNES SECTION
+\* ------------------------------------ */
+
+
+$runes-section-bleed: 150px;
+
+.c-runes-section {
+    background:
+        linear-gradient(0deg, #030405 0%, rgba(#030405, 0.25) 100%) center top no-repeat,
+        linear-gradient(0deg, rgba(#030405, 0) 0%, #030405 50%, rgba(#030405, 0) 100%) center (2138px - 150px + $runes-section-bleed) no-repeat,
+        url('../img/global/runes-bg-top.jpg') center $runes-section-bleed no-repeat,
+        url('../img/global/runes-bg-bot.jpg') bottom center no-repeat;
+    background-size:
+        100% $runes-section-bleed,
+        100% 300px,
+        auto,
+        auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include media('sm') {
+        padding-top: vw(80px);
+        padding-bottom: vw(80px);
+    }
+
+    @include media('xxl') {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}

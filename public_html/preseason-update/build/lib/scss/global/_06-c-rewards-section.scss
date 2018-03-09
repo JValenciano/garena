@@ -1,0 +1,21 @@
+/* ------------------------------------ *\
+    #REWARDS SECTION
+\* ------------------------------------ */
+
+
+.c-rewards-section {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background: radial-gradient(ellipse farthest-side at center top, rgba(#3583a6, 0.25) 0%, transparent 100%) center top no-repeat;
+    background-size: 800px 400px;
+
+    @include media('sm') {
+        padding-top: vw(200px);
+        padding-bottom: vw(160px);
+    }
+
+    @include media('xxl') {
+        padding-top: 200px;
+        padding-bottom: 160px;
+    }
+}

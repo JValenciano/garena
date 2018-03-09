@@ -1,0 +1,294 @@
+<section id="leveling" class="c-decorator c-leveling-section js-lazy-background js-scroll-marker" style="background: #000;">
+    <div class="o-container">
+
+        <div class="o-layer u-spacing-60@sm">
+            <header class="u-text-center">
+                <h2 class="c-heading-65 c-section-title u-text-gradient u-spacing-20">{i18n preseason2018.leveling.title}</h2>
+            </header>
+
+            <div class="o-inset o-inset--tiny u-text-center">
+                <img src="{versionedAssetPath}/img/global/divider.png" alt="" class="c-divider">
+
+                <p>{i18n preseason2018.leveling.intro.p01}</p>
+            </div>
+        </div>
+
+        <div class="c-leveling-preview">
+            <div class="o-aspect o-aspect--level-preview u-spacing-none">
+                <img data-src="{versionedAssetPath}/img/content/leveling/leveling-preview.png" alt="" class="js-lazy-image">
+            </div>
+        </div>
+
+
+        <div class="o-layer u-spacing-30 u-spacing-80@sm">
+            <h3 class="c-heading-45 c-title-wings c-title-wings--spread js-active-in-view">
+                <span class="c-title-wings__wing c-title-wings__wing--left"></span>
+                <span class="c-title-wings__title u-text-gradient">{i18n preseason2018.leveling.section01.title}</span>
+                <span class="c-title-wings__wing"></span>
+            </h3>
+
+            <div class="o-inset o-inset--small u-text-center">
+                <p>{i18n preseason2018.leveling.section01.p01}</p>
+            </div>
+        </div>
+
+        <div class="c-leveling-preview c-leveling-preview--loot">
+            <div class="o-aspect o-aspect--level-loot u-spacing-40">
+                <img data-src="{versionedAssetPath}/img/content/leveling/levelup-get-loot.png" alt="{i18n preseason2018.leveling.section01.title}" class="js-lazy-image">
+            </div>
+        </div>
+
+
+        <div class="o-layer">
+            <h3 class="c-heading-45 c-title-wings c-title-wings--spread js-active-in-view">
+                <span class="c-title-wings__wing c-title-wings__wing--left"></span>
+                <span class="c-title-wings__title u-text-gradient">{i18n preseason2018.leveling.section02.title}</span>
+                <span class="c-title-wings__wing"></span>
+            </h3>
+
+            <div class="o-inset o-inset--small u-text-center">
+                <p>{i18n preseason2018.leveling.section02.p01}</p>
+            </div>
+        </div>
+
+        <div class="c-blue-essence">
+            <img data-src="{versionedAssetPath}/img/content/leveling/blue-essence-base.png" alt="" class="u-img-full js-lazy-image">
+            <img data-src="{versionedAssetPath}/img/content/leveling/blue-essence-1.png" alt="" class="c-blue-essence__layer c-blue-essence__layer--1 js-lazy-image">
+            <img data-src="{versionedAssetPath}/img/content/leveling/blue-essence-2.png" alt="" class="c-blue-essence__layer c-blue-essence__layer--2 js-lazy-image">
+            <img data-src="{versionedAssetPath}/img/content/leveling/blue-essence-3.png" alt="" class="c-blue-essence__layer c-blue-essence__layer--3 js-lazy-image">
+        </div>
+
+
+
+        <h3 class="c-heading-45 c-title-wings c-title-wings--spread js-active-in-view">
+            <span class="c-title-wings__wing c-title-wings__wing--left"></span>
+            <span class="c-title-wings__title u-text-gradient">{i18n preseason2018.rewards.title}</span>
+            <span class="c-title-wings__wing"></span>
+        </h3>
+
+        <div class="o-inset o-inset--small u-text-center u-spacing-60@sm">
+            <p>{i18n preseason2018.rewards.emote.p01}</p>
+        </div>
+
+
+        <div class="o-inset o-inset--wide u-text-center u-spacing-60@sm">
+            <div class="o-grid">
+                <div class="o-grid__column o-grid__column--4@sm">
+                    <div class="c-verteran-emotes c-verteran-emotes--defender">
+                        <img data-src="{versionedAssetPath}/img/content/rewards/veteran-emotes-defender.png" alt="{i18n preseason2018.rewards.veterans.emotes.defender}" class="c-verteran-emotes__img js-lazy-image u-img-respond">
+                    </div>
+                    <p class="c-heading-16">{i18n preseason2018.rewards.veterans.emotes.defender}</p>
+                </div>
+                <div class="o-grid__column o-grid__column--4@sm">
+                    <div class="c-verteran-emotes c-verteran-emotes--champion">
+                        <img data-src="{versionedAssetPath}/img/content/rewards/veteran-emotes-champion.png" alt="{i18n preseason2018.rewards.veterans.emotes.champion}" class="c-verteran-emotes__img js-lazy-image u-img-respond">
+                    </div>
+                    <p class="c-heading-16">{i18n preseason2018.rewards.veterans.emotes.champion}</p>
+                </div>
+                <div class="o-grid__column o-grid__column--4@sm">
+                    <div class="c-verteran-emotes c-verteran-emotes--conqueror">
+                        <img data-src="{versionedAssetPath}/img/content/rewards/veteran-emotes-conqueror.png" alt="{i18n preseason2018.rewards.veterans.emotes.conquerer}" class="c-verteran-emotes__img js-lazy-image u-img-respond">
+                    </div>
+                    <p class="c-heading-16">{i18n preseason2018.rewards.veterans.emotes.conquerer}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="o-inset u-text-center">
+
+            <div class="c-veterans">
+                <header class="c-veterans__header">
+                    <div class="o-inset o-inset--medium">
+                        <p>{i18n preseason2018.rewards.intro.p01}</p>
+                    </div>
+                </header>
+                <div class="c-veterans__reward">
+                    <div class="c-veterans__reward-block">
+                        <div class="c-veterans__item c-veterans__item--before">
+                            <div class="c-veterans__icon-wrap">
+                                <img data-src="{versionedAssetPath}/img/content/rewards/marks-seals-glyphs.png" alt="{i18n preseason2018.rewards.veterans.item01.before}" class="c-veterans__icon js-lazy-image">
+                            </div>
+                            <div class="c-veterans__item-label">
+                                {i18n preseason2018.rewards.veterans.item01.before}
+                            </div>
+                        </div>
+
+                        <div class="c-veterans__divider"></div>
+
+                        <div class="c-veterans__item c-veterans__item--after">
+                            <div class="c-veterans__icon-wrap">
+                                <img data-src="{versionedAssetPath}/img/content/rewards/blue-essence.png" alt="{i18n preseason2018.rewards.veterans.item01.after}" class="c-veterans__icon js-lazy-image">
+                            </div>
+                            <div class="c-veterans__item-label">
+                                {i18n preseason2018.rewards.veterans.item01.after}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-veterans__reward">
+                    <div class="c-veterans__reward-block">
+                        <div class="c-veterans__item c-veterans__item--before">
+                            <div class="c-veterans__icon-wrap">
+                                <img data-src="{versionedAssetPath}/img/content/rewards/quints.png" alt="{i18n preseason2018.rewards.veterans.item02.before}" class="c-veterans__icon js-lazy-image">
+                            </div>
+                            <div class="c-veterans__item-label">
+                                {i18n preseason2018.rewards.veterans.item02.before}
+                            </div>
+                        </div>
+
+                        <div class="c-veterans__divider"></div>
+
+                        <div class="c-veterans__item c-veterans__item--after">
+                            <div class="c-veterans__icon-wrap">
+                                <img data-src="{versionedAssetPath}/img/content/rewards/blue-essence.png" alt="{i18n preseason2018.rewards.veterans.item02.after}" class="c-veterans__icon js-lazy-image">
+                            </div>
+                            <div class="c-veterans__item-label">
+                                {i18n preseason2018.rewards.veterans.item02.after}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-veterans__reward">
+                    <div class="c-veterans__reward-block">
+                        <div class="c-veterans__item c-veterans__item--before">
+                            <div class="c-veterans__icon-wrap">
+                                <img data-src="{versionedAssetPath}/img/content/rewards/runepages.png" alt="{i18n preseason2018.rewards.veterans.item03.before}" class="c-veterans__icon c-veterans__icon--glow js-lazy-image">
+                                <div class="c-veterans__icon-label">
+                                    <img data-src="{versionedAssetPath}/img/content/rewards/ip.png" alt="" class="c-veterans__icon-label-img js-lazy-image">
+                                </div>
+                            </div>
+                            <div class="c-veterans__item-label">
+                                {i18n preseason2018.rewards.veterans.item03.before}
+                            </div>
+                        </div>
+
+                        <div class="c-veterans__divider"></div>
+
+                        <div class="c-veterans__item c-veterans__item--after">
+                            <div class="c-veterans__icon-wrap">
+                                <img data-src="{versionedAssetPath}/img/content/rewards/blue-essence.png" alt="{i18n preseason2018.rewards.veterans.item03.after}" class="c-veterans__icon js-lazy-image">
+                            </div>
+                            <div class="c-veterans__item-label">
+                                {i18n preseason2018.rewards.veterans.item03.after}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-veterans__reward">
+                    <div class="c-veterans__reward-block">
+                        <div class="c-veterans__item c-veterans__item--before">
+                            <div class="c-veterans__icon-wrap">
+                                <img data-src="{versionedAssetPath}/img/content/rewards/runepages.png" alt="{i18n preseason2018.rewards.veterans.item04.before}" class="c-veterans__icon c-veterans__icon--glow js-lazy-image">
+                                <img data-src="{versionedAssetPath}/img/content/rewards/x4.png" alt="" class="c-veterans__icon-multiple js-lazy-image">
+                                <div class="c-veterans__icon-label">
+                                    <img data-src="{versionedAssetPath}/img/content/rewards/rp.png" alt="" class="c-veterans__icon-label-img js-lazy-image">
+                                </div>
+                            </div>
+                            <div class="c-veterans__item-label">
+                                {i18n preseason2018.rewards.veterans.item04.before}
+                            </div>
+                        </div>
+
+                        <div class="c-veterans__divider"></div>
+
+                        <div class="c-veterans__item c-veterans__item--after">
+                            <div class="c-veterans__icon-wrap">
+                                <img data-src="{versionedAssetPath}/img/content/rewards/omega-squard-veigar.png" alt="{i18n preseason2018.rewards.veterans.item04.after}" class="c-veterans__icon js-lazy-image">
+                            </div>
+                            <div class="c-veterans__item-label">
+                                {i18n preseason2018.rewards.veterans.item04.after}
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="c-veterans__footer">
+                        {i18n preseason2018.rewards.veterans.disclaimer}
+                    </footer>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 class="c-heading-45 c-title-wings c-title-wings--spread js-active-in-view">
+            <span class="c-title-wings__wing c-title-wings__wing--left"></span>
+            <span class="c-title-wings__title u-text-gradient">{i18n preseason2018.rewards.extras.title}</span>
+            <span class="c-title-wings__wing"></span>
+        </h3>
+
+        <div class="o-inset o-inset--wide">
+
+            <div class="o-inset o-inset--small u-text-center">
+                <p class="u-spacing-60">{i18n preseason2018.rewards.footer.p01}</p>
+            </div>
+
+
+            <ul class="o-list-unstyled o-badge-list u-text-center">
+                <li class="o-badge-list__item">
+                    <div class="c-badge">
+                        <div class="c-badge__inner">
+                            <img data-src="{versionedAssetPath}/img/content/rewards/extras/minis.png" alt="{i18n preseason2018.rewards.extras.item01}" class="c-badge__img js-lazy-image">
+                        </div>
+                    </div>
+                    <p class="c-heading-16 u-spacing-20 u-spacing-40@sm">{i18n preseason2018.rewards.extras.item01}</p>
+                </li>
+                <li class="o-badge-list__item">
+                    <div class="c-badge">
+                        <div class="c-badge__inner">
+                            <img data-src="{versionedAssetPath}/img/content/rewards/extras/rare-gemstone.png" alt="{i18n preseason2018.rewards.extras.item02}" class="c-badge__img js-lazy-image">
+                        </div>
+                    </div>
+                    <p class="c-heading-16 u-spacing-20 u-spacing-40@sm">{i18n preseason2018.rewards.extras.item02}</p>
+                </li>
+                <li class="o-badge-list__item">
+                    <div class="c-badge">
+                        <div class="c-badge__inner">
+                            <img data-src="{versionedAssetPath}/img/content/rewards/extras/chromas.png" alt="{i18n preseason2018.rewards.extras.item03}" class="c-badge__img js-lazy-image">
+                        </div>
+                    </div>
+                    <p class="c-heading-16 u-spacing-20 u-spacing-40@sm">{i18n preseason2018.rewards.extras.item03}</p>
+                </li>
+                <li class="o-badge-list__item">
+                    <div class="c-badge">
+                        <div class="c-badge__inner">
+                            <img data-src="{versionedAssetPath}/img/content/rewards/extras/mystery-champ-2.png" alt="{i18n preseason2018.rewards.extras.item04}" class="c-badge__img js-lazy-image">
+                        </div>
+                    </div>
+                    <p class="c-heading-16 u-spacing-20 u-spacing-40@sm">{i18n preseason2018.rewards.extras.item04}</p>
+                </li>
+                <li class="o-badge-list__item">
+                    <div class="c-badge">
+                        <div class="c-badge__inner">
+                            <img data-src="{versionedAssetPath}/img/content/rewards/extras/warwick.png" alt="{i18n preseason2018.rewards.extras.item05}" class="c-badge__img js-lazy-image">
+                        </div>
+                    </div>
+                    <p class="c-heading-16 u-spacing-20 u-spacing-40@sm">{i18n preseason2018.rewards.extras.item05}</p>
+                </li>
+                <li class="o-badge-list__item">
+                    <div class="c-badge">
+                        <div class="c-badge__inner">
+                            <img data-src="{versionedAssetPath}/img/content/rewards/extras/mystery-box.png" alt="{i18n preseason2018.rewards.extras.item06}" class="c-badge__img js-lazy-image">
+                        </div>
+                    </div>
+                    <p class="c-heading-16 u-spacing-20 u-spacing-40@sm">{i18n preseason2018.rewards.extras.item06}</p>
+                </li>
+                <li class="o-badge-list__item">
+                    <div class="c-badge">
+                        <div class="c-badge__inner">
+                            <img data-src="{versionedAssetPath}/img/content/rewards/extras/mysteryWardSkins.png" alt="{i18n preseason2018.rewards.extras.item07}" class="c-badge__img js-lazy-image">
+                        </div>
+                    </div>
+                    <p class="c-heading-16 u-spacing-20 u-spacing-40@sm">{i18n preseason2018.rewards.extras.item07}</p>
+                </li>
+                <li class="o-badge-list__item">
+                    <div class="c-badge">
+                        <div class="c-badge__inner">
+                            <img data-src="{versionedAssetPath}/img/content/rewards/extras/more.png" alt="{i18n preseason2018.rewards.extras.more}" class="c-badge__img js-lazy-image">
+                        </div>
+                    </div>
+                    <p class="c-heading-16 u-spacing-20 u-spacing-40@sm">{i18n preseason2018.rewards.extras.more}</p>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>

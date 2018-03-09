@@ -1,0 +1,35 @@
+/* ------------------------------------ *\
+    #ICON OVERLAY
+\* ------------------------------------ */
+
+
+.o-inset {
+    margin: auto;
+    width: 100%;
+    max-width: 824px;
+}
+
+
+.o-inset--small {
+    max-width: 660px;
+}
+
+.o-inset--tiny {
+    max-width: 550px;
+}
+
+.o-inset--medium {
+    max-width: 710px;
+}
+
+
+.o-inset--wide {
+    max-width: 940px;
+}
+
+
+// Specifically the width of the rune builder wrapped in a frame. The design
+// calls for other content to line up with this.
+.o-inset--runebuilder {
+    max-width: (1057px + 4px);
+}

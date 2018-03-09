@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="{language}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>{i18n preseason2018.site.title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="http://cdn.leagueoflegends.com/lolkit/1.1.5/resources/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <meta property="fb:app_id" content="215504765651201" />
+    {+meta /}
+    <meta name="keywords" content="{i18n preseason2018.site.tags}">
+
+    {! LoL Fonts CDN !}
+    <link rel="stylesheet" href="https://lolstatic-a.akamaihd.net/awesomefonts/1.0.0/lol-fonts.css">
+
+    {@eq key=environment value="prod"}
+
+        {! Produciton CSS !}
+        <link rel="stylesheet" href="{versionedAssetPath}/css/production.min.css">
+
+    {:else}
+
+        {! Dev CSS !}
+        <link rel="stylesheet" href="{versionedAssetPath}/vendor/normalize/normalize.css">
+        <link rel="stylesheet" href="{versionedAssetPath}/css/global.css">
+
+    {/eq}
+
+    <script>
+        var base = document.createElement('a');
+        base.href = location.href.replace(/\#.*$/, '');
+    </script>
+
+</head>
+<body class="i18n-{locale}">
+
+    <script>
+        window.dataLayer = [];
+    </script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N98J"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N98J');</script>
+<!-- End Google Tag Manager -->
+
+    {+body /}
+
+    <script>
+
+        {! extract build data for use within JavaScript !}
+        var locale = '{locale}';
+        var language = '{language}';
+        var region = '{region}';
+        var environment = '{environment}';
+        var versionedAssetPath = '{versionedAssetPath}';
+        var templateVersion = '{templateVersion}';
+        var pagesBasePath = '{pagesBasePath}';
+        var assetMagickPath = '{assetMagickPath}';
+
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
+
+        var runeBuilderConfig = getUrlParameter('build') || undefined;
+
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '215504765651201',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.10'
+          });
+          FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+
+        {@eq key=environment value="prod"}
+            var siteUrl = 'http://{region}.leagueoflegends.com/{language}/featured/preseason-update';
+        {:else}
+            var siteUrl = 'http://staging.{region}.leagueoflegends.com/{language}/featured/preseason-update';
+        {/eq}
+
+        var i18n = {
+            runebuilder: {
+                reset: "{i18n preseason2018.runebuilder.reset}",
+                toggle: "{i18n preseason2018.runebuilder.toggle}",
+                secondary: {
+                    selectSecondary: "{i18n preseason2018.runebuilder.secondary.selectSecondary}",
+                },
+                selectRune: "{i18n preseason2018.runebuilder.selectRune}",
+                selectGreater: "{i18n preseason2018.runebuilder.selectGreater}",
+                selectKeystone: "{i18n preseason2018.runebuilder.selectKeystone}",
+                splash: {
+                    title: "{i18n preseason2018.runebuilder.splash.title}",
+                    body: "{i18n preseason2018.runebuilder.splash.body}",
+                },
+                showDetailedDescriptions: "{i18n preseason2018.runebuilder.showDetailedDescriptions}",
+                share: {
+                    title: "{i18n preseason2018.runebuilder.share}",
+                    facebook: "{i18n preseason2018.runebuilder.share.facebook}",
+                    twitter: "{i18n preseason2018.runebuilder.share.twitter}",
+                    vk: "{i18n preseason2018.runebuilder.share.vk}",
+                    link: "{i18n preseason2018.runebuilder.share.link}",
+                    prefilledStatus: "{i18n preseason2018.sharedRunebuilder.prefilledStatus}",
+                    headline: "{i18n preseason2018.sharedRunebuilder.headline}",
+                    body: "{i18n preseason2018.sharedRunebuilder.body}"
+                },
+            },
+        };
+    </script>
+
+    <script defer src="{versionedAssetPath}/js/vendor.js"></script>
+
+    <script defer src="{versionedAssetPath}/js/main.js"></script>
+    <script defer src="{versionedAssetPath}/js/runeBuilder.js"></script>
+    <script defer src="{versionedAssetPath}/js/customizer.js"></script>
+
+    {+scripts /}
+
+    {! riotBar needs to be initialized, it can be done with an empty object !}
+    <script>
+        window.riotBarConfig = {};
+    </script>
+
+    {! Riotbar script !}
+    <script async src="https://lolstatic-a.akamaihd.net/riotbar/prod/latest/{locale}.js"></script>
+
+
+</body>
+</html>

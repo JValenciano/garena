@@ -1,0 +1,30 @@
+/* ------------------------------------ *\
+    #PAGE
+\* ------------------------------------ */
+
+//
+// Body
+//
+html {
+    background: $base-background;
+    color: $base-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 12px;
+    line-height: (17 / 12);
+
+    @include media('sm') {
+        font-size: 18px;
+    }
+
+    @include media('xxl') {
+        font-size: inherit;
+        line-height: inherit;
+    }
+}

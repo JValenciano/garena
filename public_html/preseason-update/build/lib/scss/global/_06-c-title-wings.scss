@@ -1,0 +1,62 @@
+/* ------------------------------------ *\
+    #TITLE WINGS
+\* ------------------------------------ */
+
+
+.c-title-wings {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.c-title-wings__wing {
+    flex-grow: 1;
+    display: none;
+    width: 11px;
+    height: 11px;
+    position: relative;
+    will-change: transform;
+
+    @include media('sm') {
+        display: block;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        margin: -4px 10px;
+        width: 9px;
+        height: 9px;
+        border: 1px solid #74562c;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        right: 20px;
+        background: linear-gradient(90deg, #74562c 0%, rgba(#74562c, 0));
+    }
+
+    .c-title-wings--spread & {
+        margin: 0 40px;
+    }
+}
+
+.c-title-wings__wing--left {
+    transform: scale(-1, 1);
+}
+
+
+.c-title-wings__title {
+    display: block;
+}

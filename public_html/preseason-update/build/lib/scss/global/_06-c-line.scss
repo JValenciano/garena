@@ -1,0 +1,52 @@
+/* ------------------------------------ *\
+    #LINE
+\* ------------------------------------ */
+
+
+.c-line {
+    display: block;
+    margin: 15px 0;
+    height: 7px;
+    width: 360px;
+    position: relative;
+
+    @include media('sm') {
+        margin: 30px -50px;
+        height: 11px;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        margin: -2px 0;
+        width: 5px;
+        height: 5px;
+        border: 1px solid #74562c;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: rotate(45deg);
+
+        @include media('sm') {
+            margin: -4px 10px;
+            width: 9px;
+            height: 9px;
+        }
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 4px;
+        right: 14px;
+        background: linear-gradient(90deg, #74562c 0%, rgba(#74562c, 0));
+
+        @include media('sm') {
+            left: 20px;
+            right: 20px;
+        }
+    }
+}

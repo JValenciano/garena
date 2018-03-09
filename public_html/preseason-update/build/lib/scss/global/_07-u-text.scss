@@ -1,0 +1,18 @@
+/* ------------------------------------ *\
+    #TEXT UTILITIES
+\* ------------------------------------ */
+
+//
+// Text Alignment
+//
+.u-text-center {
+    text-align: center;
+}
+
+
+.u-text-gradient {
+    background: -webkit-linear-gradient(#d8cfbd, #d2c3a6);
+    background-size: 1em 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

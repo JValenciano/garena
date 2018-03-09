@@ -1,0 +1,72 @@
+# your app domain
+# (Optional) :region is a wildcard for region
+# (Optional) :env is replaced with the current build environment,
+#            or removed if it's production
+# NOTE: Due to a bug in hcli dev, which has a hardcoded domain, you have to change your app domain
+# to :env.frontpage.:region.leagueoflegends.com. This is only for using hcli dev.
+#
+":env.frontpage.:region.leagueoflegends.com":
+#":env.:region.leagueoflegends.com":
+  # locales your app supports
+  locales:
+    - en_US
+    - en_GB
+    - en_PL
+    - en_AU
+    - de_DE
+    - es_ES
+    - fr_FR
+    - it_IT
+    - ja_JP
+    - pl_PL
+    - ro_RO
+    - el_GR
+    - hu_HU
+    - cs_CZ
+    - pt_BR
+    - tr_TR
+    - es_MX
+    - es_AR
+    - ru_RU
+  # route to template mapping for your app
+  routes:
+    "/:locale/featured/preseason-update":
+      template: pages/index
+
+    # routes for sharing the runebuilder with custom meta data
+    "/:locale/featured/preseason-update/8000-8003":
+      template: pages/share/8000-8003
+    "/:locale/featured/preseason-update/8000-8008":
+      template: pages/share/8000-8008
+    "/:locale/featured/preseason-update/8000-8021":
+      template: pages/share/8000-8021
+    "/:locale/featured/preseason-update/8000-8101":
+      template: pages/share/8000-8101
+    "/:locale/featured/preseason-update/8100-8112":
+      template: pages/share/8100-8112
+    "/:locale/featured/preseason-update/8100-8124":
+      template: pages/share/8100-8124
+    "/:locale/featured/preseason-update/8100-8128":
+      template: pages/share/8100-8128
+    "/:locale/featured/preseason-update/8200-8214":
+      template: pages/share/8200-8214
+    "/:locale/featured/preseason-update/8200-8229":
+      template: pages/share/8200-8229
+    "/:locale/featured/preseason-update/8200-8230":
+      template: pages/share/8200-8230
+    "/:locale/featured/preseason-update/8300-8326":
+      template: pages/share/8300-8326
+    "/:locale/featured/preseason-update/8300-8351":
+      template: pages/share/8300-8351
+    "/:locale/featured/preseason-update/8300-8352":
+      template: pages/share/8300-8352
+    "/:locale/featured/preseason-update/8300-8353":
+      template: pages/share/8300-8353
+    "/:locale/featured/preseason-update/8300-8356":
+      template: pages/share/8300-8356
+    "/:locale/featured/preseason-update/8400-8436":
+      template: pages/share/8400-8436
+    "/:locale/featured/preseason-update/8400-8437":
+      template: pages/share/8400-8437
+    "/:locale/featured/preseason-update/8400-8439":
+      template: pages/share/8400-8439
