@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<TaskData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status>
+    <Status>Idea</Status>
+    <Name>Idea</Name>
+  </Status>
+  <Status>
+    <Status>Open</Status>
+    <Name>To Do</Name>
+  </Status>
+  <Status>
+    <Status>Started</Status>
+    <Name>Doing</Name>
+  </Status>
+  <Status>
+    <Status>Paused</Status>
+    <Name>Paused</Name>
+  </Status>
+  <Status>
+    <Status>Done</Status>
+    <Name>Done</Name>
+  </Status>
+  <Status>
+    <Status>Closed</Status>
+    <Name>Closed</Name>
+  </Status>
+  <Files>
+    <Path>C:\Winginx\home\garena.lol\public_html\css\global.css.orig</Path>
+    <Type>file</Type>
+  </Files>
+  <Files>
+    <Path>C:\Winginx\home\garena.lol\public_html\css\global.css</Path>
+    <Type>file</Type>
+  </Files>
+  <Files>
+    <Path>C:\Winginx\home\garena.lol\public_html\js\modernizr-custom.js</Path>
+    <Type>file</Type>
+  </Files>
+  <Files>
+    <Path>C:\Winginx\home\garena.lol\public_html\js\main.js</Path>
+    <Type>file</Type>
+  </Files>
+  <Files>
+    <Path>C:\Winginx\home\garena.lol\public_html\kaisa\index.html</Path>
+    <Type>file</Type>
+  </Files>
+</TaskData>

@@ -1,0 +1,795 @@
+div#breadcrumbs {
+    display:none;
+}
+
+div.section-wrapper .section-wrapper-top {
+    height:0px;
+    margin-top:-30px;
+}
+
+div.section-wrapper {
+    margin-top:0px;
+}
+
+div.pane-content a#header-riotbar, div.pane-content#breadcrumbs {
+    display:none;
+}
+
+div.pane-lolbar-navigation {
+    position:relative;
+    z-index:4;
+}
+
+div.section-wrapper .section-wrapper-top, div.section-wrapper .section-wrapper-top:before, div.section-wrapper .section-wrapper-content, div.section-wrapper .section-wrapper-bottom {
+    background-image:none;
+}
+
+div.section-wrapper .section-wrapper-content .section-wrapper-content-wrapper {
+    width:inherit;
+    padding:0px 0px;
+}
+
+/* TOP VIDEO OR HEADER BEGIN */
+
+.header-container {
+    margin: 111px auto 0px auto;
+    z-index: -1;
+    position: relative;
+    overflow: hidden;
+    width:100%;
+}
+
+.main-video-overlay {
+    position: absolute;
+    height: 600px;
+    background: transparent url("../img/hextech-bg-gradient.png") no-repeat top center;
+    z-index: 2;
+    pointer-events: none;
+    width:100%;
+}
+
+.main-header {
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    max-width:1280px;
+    z-index:-2;
+}
+
+.video-divider {
+    height: 60px;
+    background: transparent url("../img/hextech-video-banner-divider.png") no-repeat top center;
+    z-index: 6;
+    width: 100%;
+    margin: -21px auto 0px auto;
+    position:relative;
+}
+
+/* TOP VIDEO OR HEADER END */
+
+/* TEXT TREATMENT BEGIN */
+
+.skin-available-now h2 {
+    font-family:"Beaufort for LOL";
+    font-weight: 700;
+    font-style: normal; 
+    font-size:32px;
+}
+
+.skin-available-now h3 {
+    font-family:"Beaufort for LOL";
+    font-weight: 700;
+    font-style: normal;
+}
+
+.skin-available-now h4 {
+    font-family:"Beaufort for LOL";
+    font-weight: 700;
+    font-style: normal;  
+}
+
+.skin-available-now h3 {
+    font-size:30px;
+}
+
+.skin-available-now h4 {
+    font-size:22px;
+    letter-spacing:2px;
+}
+
+.skin-available-now h5 {
+    font-family:"Beaufort for LOL";
+    font-weight: 700;
+    font-style: normal;
+    font-size:16px;
+    margin-top:15px;
+}
+
+.skin-available-now p, .skin-available-now li {
+    font-family:"Spiegel";
+    font-weight: 400;
+    font-style: normal; 
+    font-size:16px;
+    line-height:20px;
+}
+
+.skin-available-now li {
+    margin-left:-20px;
+}
+
+.skin-available-now span.letter-spacing-3 {
+    letter-spacing:3px;
+}
+
+div.skin-available-now p.price {
+    font-weight:600;
+}
+
+div.skin-available-now p.smaller-font-size {
+    font-size:14px;
+}
+
+/* TEXT TREATMENT END */
+
+/* DIVIDERS BEGIN */
+
+.skin-available-now .divider-1 {
+    width: 372px;
+    height: 131px;
+    background: transparent url("../img/hextech-divider-1.png") no-repeat top center;
+    margin:70px auto 70px auto;
+}
+
+.skin-available-now .divider-2 {
+    width: 184px;
+    height: 39px;
+    background: transparent url("../img/hextech-divider-2.jpg") no-repeat top center;
+    margin:5px auto 45px auto;
+}
+
+.skin-available-now .divider-3 {
+    width: 241px;
+    height: 36px;
+    background: transparent url("../img/hextech-divider-3.jpg") no-repeat top center;
+    margin: 85px auto 85px auto;
+}
+
+.skin-available-now .divider-4 {
+    width: 997px;
+    height: 42px;
+    background: transparent url("../img/hextech-divider-4.jpg") no-repeat top center;
+    margin: 70px auto 55px auto;
+}
+
+.skin-available-now .divider-5 {
+    width: 241px;
+    height: 37px;
+    background: transparent url("../img/hextech-divider-5.jpg") no-repeat top center;
+    margin: 40px auto 30px auto;    
+}
+
+.skin-available-now .divider-6 {
+    width: 50px;
+    height: 35px;
+    background: transparent url("../img/hextech-divider-6.jpg") no-repeat top center;
+}
+
+/* DIVIDERS END */
+
+/* SECTIONS BEGIN */
+
+.skin-available-now {
+    position: relative;
+    width: 1000px;
+    margin: 0px auto 0px auto;
+    min-height: 350px;  
+    padding-top: 100px;
+}
+
+div.no-intro {
+    padding-top:40px;
+}
+
+.hextech-magic {
+    width: 1410px;
+    height: 646px;
+    margin: -377px 0px 0px -68px;
+    background: transparent url("../img/hextech-magic.png") no-repeat top center; 
+    position:absolute;
+    z-index:-5;
+}
+
+.skin-available-now .skins-section .magic-no-carousel {
+    margin-top:-589px;
+}
+
+.skin-available-now a.button-standard {
+    display: inline-block;
+    padding: 15px 23px 15px 23px;
+    text-decoration: none;
+    margin: 0px 0px 0px 0px;   
+}
+
+.skin-available-now .no-border {
+    border:0px !important;
+}
+
+.skin-available-now .text-container-left {
+    text-align:left;
+    width:870px;
+    margin:0 auto 0 auto;
+}
+
+.skin-available-now .text-container-center {
+    text-align:center;
+    width:700px;
+    margin:25px auto 0 auto;
+}
+
+.skin-available-now .text-container-center-2 {
+    text-align: center;
+    width: 400px;
+    margin: 25px auto 25px auto;    
+}
+
+.skin-available-now .default-2-col .vertical-align-content {
+    padding: 8% 50px;
+    height:300px;
+}
+
+div.skin-available-now div.icons-wards-container div.gs-container div.one-col-center {
+    margin-left:379px;
+}
+
+.skin-available-now a.button-standard h4 {
+    font-size:16px;
+    letter-spacing:0px;
+}
+
+.skin-available-now .introduction-section {
+    z-index: 1;
+    position: relative;
+    width: 998px;
+    margin-bottom: -190px;
+    padding-top:30px;
+}
+
+.skin-available-now .introduction-section h2 {
+    margin:55px 0px -80px -72px;
+    text-align: left;
+}
+
+.skin-available-now .introduction-section p {
+    width: 700px;
+    text-align: left;
+    margin: 90px 0px 0px -72px;   
+}
+
+.skin-available-now .flex-section, .skin-available-now .gameplay-section, .skin-available-now .skins-section, .skin-available-now .blockquote-section, .skin-available-now .chromas-section, .skin-available-now .icons-wards-section, .bundle-section, .skin-available-now .teaser-section {
+    z-index: 1;
+    position: relative;
+    width: 998px;
+    text-align: center;
+    margin-top:110px;
+}
+
+.skin-available-now .gameplay-section h4 {
+    margin-bottom:35px;
+}
+
+.skin-available-now .gameplay-section .gameplay-intro-text {
+    width: 500px;
+    margin: 15px auto 60px auto;
+}
+
+.skin-available-now .gameplay-section .gameplay-text-container {
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 378px;    
+}
+
+.skin-available-now .gameplay-section .gameplay-text-right {
+    text-align:left;
+    margin:110px auto 110px auto;
+}
+
+.skin-available-now .gameplay-section .gameplay-text-left {
+    text-align:right;
+    margin:60px auto 110px auto;
+}
+
+.skin-available-now .gameplay-section .gameplay-text-right .default-2-5 {
+    height: 350px;
+    padding-top: 70px;
+    padding-left: 65px;
+}
+
+.skin-available-now .gameplay-section .gameplay-text-left .default-2-5 {
+    height: 350px;
+    padding:70px 72px 0px 0px;
+}
+
+.skin-available-now .gameplay-section .gameplay-text-left .default-3-5 img {
+    margin-right:95px;
+}
+
+.skin-available-now .bundle-section .bundle-splash-section div.default-3-col {
+    padding-left:23px;
+    padding-right:5px;
+    height:78px;
+}
+
+.skin-available-now .bundle-section .bundle-splash-section div.default-1-col div {
+    margin-top: 20px;
+    margin-left: 22px;
+    width: 882px;
+}
+
+.skin-available-now .bundle-section .bundle-splash-section div.default-3-col h5 {
+    margin-top:-8px;
+    margin-bottom:-13px;
+}
+
+.skin-available-now .skins-gallery-container {
+    margin-top:-121px;
+}
+
+.skin-available-now .skins-gallery-container .cycle-pager>div {
+    display: inline-block;
+    position: relative;
+    margin: 0 6px;
+}
+
+.skin-available-now .skins-gallery-container .cycle-pager {
+    position: absolute;
+    z-index: 101;
+    margin-top:680px;
+}
+
+.skin-available-now .skins-gallery-container .carousel-6-button {
+    margin-left:-10px;
+}
+
+.skin-available-now .skins-gallery-container .carousel-5-button {
+    margin-left:95px;
+}
+
+.skin-available-now .skins-gallery-container .carousel-4-button {
+    margin-left:180px;
+}
+
+.skin-available-now .skins-gallery-container .carousel-3-button {
+    margin-left:250px;
+}
+
+
+div.skin-available-now .skins-section .skins-no-buttons {
+    margin-top: 65px;
+    min-height: 310px;
+}
+
+div.skin-available-now .skins-section .skins-no-video {
+    margin-top: 65px;
+    min-height: 200px;
+}
+
+div.skin-available-now .skins-section .skins-no-video .skins-text-container {
+    width:425px;
+}
+
+div.skin-available-now .skins-section .skins-no-carousel {
+    margin-top:65px;
+}
+
+.skin-available-now .skins-section {
+    text-align:left;
+    width:1141px;
+    margin-left:-70px;
+}
+
+.skin-available-now .skins-section img:hover, .skin-available-now .gameplay-section img:hover {
+    opacity:.8;
+}
+
+.skin-available-now .skins-section h2 {
+    font-size:32px;
+    font-weight: 700;
+}
+
+.skin-available-now .skins-section .skins-section-container {
+    min-height:440px;
+    width:935px;
+    margin:140px auto 0 auto;
+    overflow:hidden;
+    position:relative;
+}
+
+.skin-available-now .skins-section .skins-text-container {
+    width:382px;
+    float:left;
+}
+
+div.skin-available-now .skins-section .skins-text-container .gs-container {
+    margin-left:0px;
+}
+
+.skin-available-now .skins-section .skins-icon-container {
+    height:300px;
+    width:230px;
+    float:right;
+    text-align: center;
+}
+
+.skin-available-now .skins-section .skins-icon-container img {
+    width: 130px;
+    margin: 49px 49px 0px 49px
+}
+
+.skin-available-now .skins-section .skins-icon-container h5 {
+    margin-top: 35px;;
+}
+
+.skin-available-now .skins-section .skins-icon-container .price {
+    margin-top: -25px;
+}
+
+.skin-available-now .skins-section .skins-video-container {
+    height:298px;
+    width:528px;
+    float:right;
+}
+
+.skin-available-now .skins-section .skin-rp {
+    padding-left:0px; 
+    padding-top:0px;
+}
+
+.skin-available-now .skins-section .skin-rp p.no-icon {
+    padding-left:0px;
+}
+
+.skin-available-now .skins-section .rp-icon {
+    background: transparent url("../img/rp-icon.png") no-repeat top center;
+    width:35px;
+    height:23px;
+    position:absolute;
+    left:-5px;
+}
+
+.skin-available-now .skins-section .rp-icon-2 {
+    background: transparent url("../img/rp-icon-2.png") no-repeat top center;
+    width:29px;
+    height:27px;
+    position:absolute;
+    left: -1px;
+    margin-top: -3px;
+}
+
+.skin-available-now .skins-section .gem {
+    background: transparent url("../img/gem.png") no-repeat top center;
+    width:29px;
+    height:27px;
+    float:left;
+    margin-top:10px;
+}
+
+.skin-available-now .skins-section .loot-exclusive {
+    background: transparent url("../img/loot-exclusive.png") no-repeat top center;
+    width:30px;
+    height:30px;
+    float:left;
+    margin-top:10px;
+}
+
+.skin-available-now .skins-section .skin-rp p {
+    font-weight:700;
+    letter-spacing:1px;
+    padding-left:35px;
+}
+
+.skin-available-now .skins-section .skin-rp p.loot-text {
+    font-weight:600;
+}
+
+.skin-available-now .blockquote-section h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.skin-available-now .blockquote-section .inline-left {
+    margin-top:15px;
+}
+
+.skin-available-now .chromas-section img{
+    margin-top:30px;
+}
+
+.skin-available-now .icons-wards-container p {
+    font-size:14px;
+    margin-bottom:-15px;
+    margin-top:-22px;
+}
+
+.skin-available-now .icons-wards-container {
+    margin-top:60px;
+}
+
+.skin-available-now .icons-wards-container .gs-container {
+    margin-left:4px;
+}
+
+.skin-available-now .icons-wards-container .default-4-col div {
+    width: 236px;
+    height: 300px;
+    padding: 57px 34px 15px 34px;
+    margin-left: 10px;  
+    margin-top:10px;
+}
+
+.skin-available-now .icons-wards-container .default-3-col div {
+    height: 300px;
+    padding: 57px 34px 15px 34px;
+    margin-left: 10px;
+    width: 318px;
+    margin-top: 10px;
+}
+
+.skin-available-now .icons-wards-container .default-2-col div {
+    width: 482px;
+    height: 300px;
+    padding: 60px 35px 15px 35px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.skin-available-now .icons-wards-container .default-1-col div {
+    width: 974px;
+    height: 300px;
+    padding: 40px 35px 20px 35px;
+    margin-left: 10px;
+    margin-top: 10px;    
+}
+
+.skin-available-now .icons-wards-container .default-4-col div.half-container-box {
+    width:481px;
+}
+
+div.skin-available-now .icons-wards-container p.redeem-date {
+    width: 500px;
+    font-size: 16px;
+    margin-top: 25px;    
+}
+
+.skin-available-now .bundle-section p {
+    letter-spacing:2px;
+}
+
+.skin-available-now .bundle-section .bundle-splash-section {
+    width: 885px;
+    margin: 30px auto 0 auto;
+}
+
+.skin-available-now .bundle-section .bundle-splash-section .icon-2-col {
+    height: 241px;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+.skin-available-now .bundle-section .bundle-splash-section .default-2-col div {
+    width: 428px;
+    margin-left: 10px;
+    padding-left: 0px;
+}
+
+
+.skin-available-now .bundle-section .bundle-splash-section .default-2-col {
+    margin-left:-3px;
+}
+
+.skin-available-now .bundle-section .bundle-splash-section img:hover {
+    opacity:.7;
+}
+
+.skin-available-now .bundle-section .bundle-splash-section img.no-hover:hover {
+    opacity:1;
+}
+
+.skin-available-now .bundle-section .bundle-splash-section .bundle-splash-border {
+    background: transparent url("../img/hextech-bundle-splash-border.png") no-repeat top center;
+    width:440px;
+    height:253px;
+    position:absolute;
+    margin-left: 1px;
+    margin-top: -4px;
+    pointer-events:none;
+}
+
+.skin-available-now .bundle-section .bundle-splash-section h5 {
+    margin-bottom:20px
+}
+
+.skin-available-now .bundle-section {
+    width:974px;
+    margin-left:15px;
+    padding-bottom:50px;
+    margin-top:125px;
+}
+
+.skin-available-now .bundle-section h3 {
+    width: 700px;
+    margin: 0 auto 0 auto;
+    line-height: 35px;
+}
+
+.skin-available-now .bundle-section .top-border {
+    background: transparent url("../img/hextech-bundle-top-border.jpg") no-repeat top center;
+    width:986px;
+    height:21px;
+    z-index: -1;
+    position: absolute;
+    margin-left: -8px;  
+}
+
+.skin-available-now .standalone-icon-ward-box {
+    width: 428px;
+    height: 246px;
+    padding: 40px 35px 15px 35px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.skin-available-now .bundle-section .bundle-icons-wards p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    letter-spacing: 0px;    
+}
+
+.skin-available-now .bundle-section .bundle-icons-wards .default-4-col div {
+    width: 210px;
+    height: 270px;
+    padding: 52px 36px 15px 36px;
+    margin-left: 10px;
+}
+
+.skin-available-now .bundle-section .bundle-icons-wards .default-1-col div {
+    padding:40px 0px 20px 0px;
+    width: 866px;
+    margin-left: 22px;
+}
+
+.skin-available-now .bundle-section .bundle-icons-wards .default-2-col div {
+    width: 428px;
+    height: 268px;
+    padding: 60px 25px 15px 25px;
+    margin-left: 10px;
+    margin-top: 10px;   
+}
+
+.skin-available-now .bundle-section .bundle-icons-wards .default-3-col div {
+    width: 284px;
+    height: 270px;
+    padding: 52px 25px 15px 25px;
+    margin-left: 10px;
+    margin-top:10px;
+}
+
+.skin-available-now .bundle-section .bundle-icons-wards .default-4-col div {
+    width: 209px;
+    height: 268px;
+    padding: 60px 25px 15px 25px;
+    margin-left: 10px;
+    margin-top:10px;    
+}
+
+.skin-available-now .bundle-section .bundle-icons-wards {
+    width:875px;
+    margin: 40px auto 0 auto;
+}
+
+.skin-available-now .bundle-section .bundle-icons-wards .default-2-col, .skin-available-now .bundle-section .bundle-icons-wards .default-3-col, .skin-available-now .bundle-section .bundle-icons-wards .default-4-col  {
+    margin-left:-8px;
+}
+
+.skin-available-now .bundle-section .bundle-icons-wards .gs-container img {
+    width:114px;
+}
+
+.skin-available-now .bundle-section .bundle-icons-wards .gs-container h5 {
+    font-size:14px;
+    margin-top:23px;
+    line-height:18px;
+}
+
+.skin-available-now .teaser-section .video-border {
+    background: transparent url("../img/hextech-video-border.jpg") no-repeat top center;
+    width:991px;
+    height:578px;   
+    position:absolute;
+}
+
+.skin-available-now .teaser-section .fluid-width-video-wrapper iframe {
+    width: 969px;
+    height: 545px;
+    left: 11px;
+    top:17px;
+    border: 0px;    
+}
+
+.skin-available-now .teaser-section {
+    margin-bottom:100px;
+    min-height:575px;
+    margin-top:0px;
+}
+
+/* SECTIONS END */
+
+
+div.pane-node-field-riot-comments {
+    position: relative;
+    width: 887px;
+    margin: 130px auto -243px auto;
+    min-height: 350px;  
+}
+
+div.riot-apollo .riot-discussion {
+    background-color:inherit;
+}
+
+div.riot-apollo .riot-discussion .riot-comment {
+    background:none;
+}
+
+div..riot-apollo .riot-discussion .riot-more {
+    background:none;
+}
+
+div.riot-more {
+    background:none;
+}
+
+div.section-wrapper .section-wrapper-bottom {
+    padding-bottom:100px;
+}
+
+div.riot-apollo .riot-discussion .riot-comment .riot-collection > .riot-comment > .riot-collection > .riot-comment > .riot-collection > .riot-comment > .riot-collection > .riot-comment {
+    background:none;
+}
+
+div.riot-apollo .riot-list-item .riot-body-container {
+    padding-left:50px;
+}
+
+div.panel-1col {
+    overflow:hidden;
+}
+
+html body.riotbar-present {
+    overflow-x:visible;
+}
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+@media only screen and (max-width: 1160px) {
+    .skin-available-now .introduction-section h2 {
+        margin-left:20px;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .skin-available-now .introduction-section p {
+        margin-left:20px;
+    }
+}
+
+.skin-available-now .skins-gallery-container .cycle-slide .skins-video-container {
+    display:none;
+}
+
+.skin-available-now .skins-gallery-container div.cycle-slide-active .skins-video-container {
+    display:block;
+}

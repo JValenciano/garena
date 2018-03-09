@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<winginx>
+  <project>
+    <name>garena.lol</name>
+    <url>http://garena.lol/</url>
+    <root>home/garena.lol</root>
+    <archive>true</archive>
+  </project>
+</winginx>
