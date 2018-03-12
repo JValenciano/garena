@@ -31,17 +31,22 @@
 
 <body class="i18n-en_US">
   <script>
-    var targetDate = new Date("2018-03-09 17:33:00 GMT+08:00");
-    console.log(targetDate);
+    if(window.location.hash == "#secret") {
 
-    var today = new Date();
-    console.log(today);
+    } else {
+      var targetDate = new Date("2018-03-25 17:33:00 GMT+08:00");
+      console.log(targetDate);
 
-    if(today < targetDate){
-      var timer = setTimeout(function() {
-          window.location.href='/kaisa'
-      }, 0.001);
+      var today = new Date();
+      console.log(today);
+
+      if(today < targetDate){
+        var timer = setTimeout(function() {
+            window.location.href='/kaisa'
+        }, 0.001);
+      }
     }
+
 
   </script>
 
