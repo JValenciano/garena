@@ -1,0 +1,27 @@
+body {
+  background-color: #e9ebee;
+}
+
+.timeline {
+  max-width: 1080px;
+  height: auto;
+  margin-top: 12px;
+  margin-left: 160px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.disable {
+  display: none;
+  visibility: collapse;
+}
+
+.invisible {
+  visibility: collapse;
+}
+
+.no-margin {
+  margin-top: 0px;
+}
