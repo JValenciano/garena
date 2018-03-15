@@ -3,7 +3,9 @@
     background-color: #4267b2;
     border-bottom: 1px solid #29487d;
     overflow: hidden;
-    position: sticky;
+    position: fixed;
+    z-index: 1;
+    display: inline;
 }
 
 /* Style the links inside the navigation bar */
@@ -70,6 +72,7 @@
 .fbgroup {
   text-align: right;
   margin-top: 6px;
+  display: inline;
 }
 
 .fbgroup .btn-xs {
@@ -90,9 +93,12 @@
 
 .topleft-navbar {
   display: inline;
+  position: fixed;
+
 }
 
 .user {
+  display: inline;
   text-align: right;
 }
 
@@ -102,6 +108,7 @@
 
 .actions {
   display: inline;
+  position: relative;
 }
 
 .last {

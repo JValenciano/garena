@@ -1,5 +1,9 @@
 .sidenav {
-  height: auto;
+  height: 100%;
+  display: block;
+  position: fixed;
+  z-index: 1;
+  width: inherit;
 }
 
 .sidenav ul {
@@ -18,7 +22,7 @@
   list-style-type: none;
   border: 1px solid #E6E8EA;
   background-color: #F6F7F9;
-  cursor: pointER;
+  cursor: pointer;
 }
 
 .imgcontainer {
@@ -42,8 +46,6 @@
 }
 
 .profile-sidenav {
-  max-height: 30px;
-  width: 100px;
   color: #1d2129;
   margin-left: 10px;
 }

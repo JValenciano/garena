@@ -2,11 +2,21 @@ body {
   background-color: #e9ebee;
 }
 
+.container {
+  max-width: 1280px;
+  width: 100%;
+  position: absolute;
+  margin:0 auto;
+  line-height: 1.4em;
+}
+
 .timeline {
   max-width: 1080px;
   height: auto;
-  margin-top: 12px;
   margin-left: 160px;
+  padding-top: 60px;
+  padding-left: 0px;
+  left: 0;
 }
 
 .no-padding {
@@ -24,4 +34,11 @@ body {
 
 .no-margin {
   margin-top: 0px;
+}
+
+.1 {
+  position: fixed;
+  display: inline-block;
+  z-index: 1;
+  float: left;
 }
