@@ -1,0 +1,45 @@
+.right {
+  right: 45px;
+  top: 0;
+  width: 1vw;
+  margin-top: 10px;
+  margin-left:10px;
+  position: relative;
+  min-width: 288px;
+  float: right;
+  display: inline;
+}
+
+.stories, .sponsored {
+  width: auto;
+  border: 1px solid #BFC3CA;
+  background-color: #F6F7F9;
+  padding: 12px 12px;
+  margin-bottom: 20px;
+  min-width: 260px;
+  position: relative;
+  display: inline-block;
+
+  .imgcontainer img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 12px;
+  }
+
+  .a {
+    font-weight: 700;
+    margin-left: 50px;
+    color: #4267b2;
+  }
+  a:not(:first-child) {
+   margin-top: 30px;
+  }
+  a:hover {
+    margin-left: 50px;
+  }
+
+}
+
+.storyspace {
+  margin-bottom: 10px;
+}

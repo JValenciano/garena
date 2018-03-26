@@ -1,9 +1,9 @@
 .posts {
   position: relative;
   left: 220px;
-  top: -45px;
+  top: 10px;
   width: 40vw;
-  min-width: 400px;
+  float: left;
 }
 
 .pubpost {
@@ -12,7 +12,7 @@
     border: 1px solid #BFC3CA;
     background-color: #F6F7F9;
     padding: 0px 12px;
-    min-width: 400px;
+    min-width: 331px;
 }
 
 .postactivities {
@@ -22,29 +22,30 @@
 }
 
 .textpost {
-  height: 120px;
+  height: 15vh;
   padding: 12px 0px;
-}
 
-.textpost .imgcontainer {
-  margin-left: 10px;
-}
+  .imgcontainer {
+    margin-left: 10px;
 
-.textpost .imgcontainer img {
-  max-width: 40px;
-  max-height: 40px;
-  margin-left: 5px;
+    img {
+      max-width: 40px;
+      max-height: 40px;
+      margin-left: 5px;
+    }
+  }
 }
 
 .userPosted {
   margin-left: 50px;
   color: #4267b2;
   font-weight: bold;
+
+  &:hover {
+    color: #4267b2;
+  }
 }
 
-.userPosted:hover {
-  color: #4267b2;
-}
 
 .timePosted {
   margin-left: 50px;
@@ -67,27 +68,29 @@
 
 .postactions {
   border-top: 1px solid #BFC3CA;
-  min-height: 30px;
+  min-height: 20px;
   background-color: #F6F7F9;
   padding: 6px 8px;
   margin-top: 8px;
-}
 
-.postactions a {
-  margin-left: 90px;
-  color: #1d2129;
-  font-size: 12px;
-  padding: 5px 5px;
-}
 
-.postactions a:hover {
-  color: #1d2129;
-  text-decoration: none;
-  background-color: #E9EBEE;
-}
+  a {
+    margin-left: 90px;
+    color: #1d2129;
+    font-size: 14px;
+    padding: 0px 20px;
+    vertical-align: middle;
+    text-decoration: none;
 
-.postactions i {
-  margin-right: 6px;
+    &:hover {
+      color: #1d2129;
+      background-color: #E9EBEE;
+    }
+  }
+
+  i {
+    margin-right: 6px;
+  }
 }
 
 .photopost {
@@ -95,11 +98,15 @@
   min-height: 200px;
   display: inline-block;
   position: relative;
+
+  img {
+    min-width: 400px;
+    min-height: 200px;
+    display: inline-block;
+    position: relative;
+  }
 }
 
-.photopost img {
-  min-width: 400px;
-  min-height: 200px;
-  display: inline-block;
-  position: relative;
+.txt {
+  min-height: 300px;
 }

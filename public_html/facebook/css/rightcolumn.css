@@ -1,3 +1,11 @@
+.right {
+  right: 0;
+  top: 0;
+  float: right;
+  display: block;
+  position: relative;
+}
+
 .righttab {
   width: auto;
   border: 1px solid #BFC3CA;

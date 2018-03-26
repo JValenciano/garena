@@ -1,0 +1,51 @@
+.sidenav {
+  height: 100%;
+  position: relative;
+  top: 55px;
+  width: 12vw; }
+  .sidenav ul {
+    min-width: 200px;
+    width: 200px;
+    padding: 0;
+    vertical-align: middle;
+    max-height: 30px; }
+
+.sideNavObj {
+  list-style-type: none;
+  padding: 6px 14px;
+  border: 1px solid transparent; }
+  .sideNavObj:hover {
+    list-style-type: none;
+    border: 1px solid #E6E8EA;
+    background-color: #F6F7F9;
+    cursor: pointer; }
+
+.imgcontainer {
+  max-height: 30px;
+  max-width: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  margin-bottom: 2px; }
+  .imgcontainer img {
+    max-height: 30px;
+    max-width: 20px;
+    position: absolute;
+    left: 0;
+    margin: auto;
+    margin-left: 8px;
+    border-radius: 50%; }
+
+.profile-sidenav {
+  color: #1d2129;
+  margin-left: 10px; }
+  .profile-sidenav:hover {
+    text-decoration: none;
+    color: #1d2129; }
+
+.sideNavObj-label {
+  margin-left: 8px;
+  margin-bottom: 8px; }
+
+/*# sourceMappingURL=sidenav.css.map */

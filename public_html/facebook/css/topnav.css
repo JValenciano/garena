@@ -1,116 +1,71 @@
-/* Add a black background color to the top navigation */
 .topnav {
-    background-color: #4267b2;
-    border-bottom: 1px solid #29487d;
-    overflow: hidden;
-    position: fixed;
-    z-index: 1;
-    display: inline;
+  left: 0;
+  top: 0;
+  background-color: #4267b2;
+  border-bottom: 1px solid #29487d;
+  z-index: 1;
+  position: sticky;
+  width: 110%;
+  height: 40px;
+  margin: 0 auto;
+  padding: 6px;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 6px 6px;
-    margin-top: 8px;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: bold;
+.navbar-left {
+  left: 0;
+  top: 5px;
+  float: left;
+  position: relative;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #365899;
-    color: #fff;
+.navbar-right  {
+  min-width: 30px;
+  right: 0;
+  top: 12px;
+  float: right;
+  position: relative;
+  display: inline;
+  overflow: visible;
+  /*font-size: 1vw;*/
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
+.navbar-left .items {
+  display: inline;
+  position: relative;
+  overflow:hidden;
 }
 
-.user a:not(:first-child) {
-  border-left: 1px solid #365899;
+.navbar-right .items {
+  display: inline;
+  position: relative;
+  overflow:hidden;
 }
 
-.actions a {
-  font-size: 16px;
+.fbbutton {
   vertical-align: middle;
-  margin-top: 12px;
-  color: #365899;
-  padding: 0px 6px;
-}
-
-.actions .fa-caret-down {
-  font-size: 18px;
-  vertical-align: middle;
-  color: #365899;
-  margin-top: 7px;
-}
-
-.actions a:hover {
-  background-color: transparent;
-  color: #fff;
-}
-
-.actions .fa-caret-down:hover {
-  background-color: transparent;
-  color: #fff;
 }
 
 .fbicon {
-  color: white;
-  font-size: 28px;
-  position: relative;
-  display: inline;
+  font-size: 30px;
+}
+
+.search {
   vertical-align: middle;
-}
-
-.fbgroup {
-  text-align: right;
-  margin-top: 6px;
   display: inline;
-}
-
-.fbgroup .btn-xs {
-  margin-bottom: 5px;
 }
 
 .searchbar {
-  width: 70%;
-  display: inline-table;
-  vertical-align: middle;
-  height: 20px;
-  margin-bottom: 5px;
+  border: none;
 }
 
-.searchbar-btn {
-  background-color: transparent;
-}
-
-.topleft-navbar {
+.btn-searchbar {
+  border: none;
+  background: white;
   display: inline;
-  position: fixed;
-
+  padding: 2px 6px;
 }
 
-.user {
-  display: inline;
-  text-align: right;
-}
-
-.find {
-  margin-right: 22px;
-}
-
-.actions {
-  display: inline;
-  position: relative;
-}
-
-.last {
-  border-right: 1px solid #365899;
+.navbar-right a {
+  color: #ffffff;
+  font-weight: 700;
 }

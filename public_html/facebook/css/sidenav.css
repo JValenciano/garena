@@ -1,12 +1,11 @@
 .sidenav {
   height: 100%;
-  display: block;
-  position: fixed;
-  z-index: 1;
-  width: inherit;
+  position: sticky;
 }
 
 .sidenav ul {
+  min-width: 200px;
+  width: 200px;
   padding: 0;
   vertical-align: middle;
   max-height: 30px;
