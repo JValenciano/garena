@@ -1,0 +1,24 @@
+@import "_reset"
+@import "_base"
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+html
+	background: transparent
+	font-family: 'LoL Body', sans-serif
+	body
+		@extend .clearfix
+		background: transparent
+		height: calc(100vh + 1px)
+		width: 100vw
+		nav
+			background: rgba(0,0,0,0.5)
+			box-shadow: 3px 3px 3px rgba(0,0,0,0.75)
+			float: left
+			height: 100%
+			width: 244px
+		main
+			@extend .clearfix
+			float: left
+			.box
+				float: left
+				height: 5rem
+				width: 5rem

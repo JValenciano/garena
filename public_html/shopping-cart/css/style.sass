@@ -1,0 +1,216 @@
+@import "_reset"
+@import "_base"
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+html
+	font-family: 'LoL Body', sans-serif
+	body
+		color: #6E6955
+		height: 100vh
+		width: 100vw
+		.wrapper
+			@extend .clearfix
+			margin: 0 auto
+			width: 1200px
+		nav
+			background: #0C0C0E
+			border-bottom: 2px solid #282619
+			width: 100%
+			padding: 1.5rem 0 0.5rem
+			#nav_left
+				@extend .clearfix
+				float: left
+				height: 6rem
+				width: calc(100% - 321px)
+				#logo
+					background: transparent url('../img/logo.png') center center no-repeat
+					background-size: cover
+					float: left
+					margin-right: 2rem
+					height: 100%
+					position: relative
+					width: 244px
+					a
+						display: block
+						height: 100%
+						position: absolute
+						width: 100%
+				#search_section
+					float: left
+					padding: 1rem 0 0
+					width: calc(100% - 244px - 3rem)
+					#search
+						margin-bottom: 0.5rem
+						position: relative
+						width: 100%
+						input
+							background: #121212
+							border: 2px solid #624621
+							color: #6E6955
+							font: inherit
+							font-family: 'LoL Display', serif
+							font-weight: bolder
+							line-height: 1.5rem
+							outline: none
+							padding: 0.5rem 1rem
+							width: 100%
+						.fa-search
+							background: #624621
+							color: #121212
+							height: calc(2.5rem + 4px)
+							padding: 0.5rem
+							position: absolute
+							top: 0
+							right: 0
+							width: calc(2.5rem + 4px)
+					#section
+						width: 100%
+						ul
+							@extend .clearfix
+							display: flex
+							flex-flow: row wrap
+							width: 100%
+							li
+								color: #624621
+								cursor: pointer
+								flex: 2
+								font-family: 'LoL Display', serif
+								font-size: 0.75rem
+								font-weight: bolder
+								line-height: 1rem
+								margin: auto
+								padding: 0 0.25rem 0.125rem
+								position: relative
+								text-align: center
+								text-transform: uppercase
+								&:before
+									background: -webkit-radial-gradient(center, ellipse, rgba(206, 191, 146, 1) 0%, rgba(124, 123, 121, 0) 65%)
+									content: ""
+									display: block
+									height: 1px
+									position: absolute
+									bottom: -1px
+									left: 50%
+									transition: all 0.125s ease-out
+									width: 0px
+							li.large
+								flex: 3
+							li.small
+								flex: 1
+							li.active, li:hover
+								color: white
+								&:before
+									border-color: #f6f3ea
+									left: 12.5%
+									width: 75%
+			#nav_right
+				@extend .clearfix
+				float: right
+				height: 6rem
+				#cart, #wishlist
+					float: left
+					height: 100%
+					position: relative
+					text-align: center
+					width: 5.5rem
+					a
+						color: #A28A64
+						display: block
+						position: absolute
+						height: 100%
+						width: 100%
+					.fas, .fa-w-18
+						display: block
+						height: 4rem
+						margin: 0 auto
+						width: 50%
+						path
+							fill: #A28A64
+							transition: all 0.125s ease-out
+					.count
+						color: white
+						font-family: 'LoL Display', serif
+						font-size: 0.85rem
+						line-height: 1.5rem
+						text-transform: uppercase
+						span
+							color: #A28A64
+							transition: all 0.125s ease-out
+					&:hover
+						a
+							color: #624621
+						.fas, .fa-w-18
+							path
+								fill: #624621
+						.count
+							span
+								color: #624621
+				#account
+					float: left
+					height: 100%
+					margin-left: 1rem
+					width: 129px
+					#account_name
+						color: white
+						display: block
+						font-family: 'LoL Display', serif
+						font-size: 0.85rem
+						line-height: 1.15rem
+						margin-left: 1px
+						text-transform: uppercase
+					button
+						background: transparent center center no-repeat
+						background-image: url('../img/account-buttons.png')
+						background-size: 300%
+						border: none
+						color: transparent
+						height: 41px
+						margin: 0
+						outline: none
+						padding: 0
+						position: relative
+						width: 129px
+						a
+							color: transparent
+							display: block
+							height: 100%
+							width: 100%
+					#login
+						background-position: 0 0
+					#login:hover
+						background-position: 0 -45px
+					#login.logout
+						background-position: -130px 0
+					#login.logout:hover
+						background-position: -130px -45px
+					#buy
+						background-position: -260px 0
+					#buy:hover
+						background-position: -260px -45px
+		main
+			background: transparent url('../img/background.jpg') center center no-repeat
+			background-size: cover
+			height: calc(100vh - 275px)
+			width: 100%
+			iframe
+				background: transparent
+				border: none
+				height: 100%
+				width: 100%
+		#footer
+			border-top: 2px solid #282619
+			margin-top: 0 !important
+			#footer-wrap
+				margin-top: 0 !important
+				#footer-wrapper-inner
+					height: inherit !important
+@media (min-width: 1200px)
+	//desktop
+
+@media (min-width: 900px)
+	//tablet, landscape
+
+@media (min-width: 600px)
+	//tablet, portrait
+
+@media (max-width: 599px)
+	//phones
