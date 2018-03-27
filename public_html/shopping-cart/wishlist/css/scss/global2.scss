@@ -3,7 +3,7 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .wrapper {
      min-width: 200px;
-     margin: 0 15%;
+     margin: 0 17%;
    }
 }
 
@@ -11,7 +11,7 @@
 @media only screen and (min-width : 321px) {
   .wrapper {
      min-width: 200px;
-     margin: 0 15%;
+     margin: 0 17%;
    }
 }
 
@@ -19,14 +19,14 @@
 @media only screen and (max-width : 320px) {
   .wrapper {
      min-width: 200px;
-     margin: 0 25%;
+     margin: 0 17%;
    }
 }
 
 @media only screen  and (min-width : 720px) {
   .wrapper {
      min-width: 300px;
-     margin: 0 25%;
+     margin: 0 17%;
    }
 }
 
@@ -34,7 +34,7 @@
 @media only screen  and (min-width : 1224px) {
   .wrapper {
      min-width: 300px;
-     margin: 0 25%;
+     margin: 0 24%;
    }
 
    .table-bordered {
@@ -54,24 +54,25 @@
    }
 }
 
-
-body {
-  height: 100vh;
+html {
+  background: unset;
 }
 
+body {
+  overflow: hidden;
+  height: 100vh;
+  background-color: transparent;
+}
 .container {
   position: relative;
   left: 0;
   padding: 0px;
-  background: transparent;
+  background-color: transparent;
 }
 
 .wrapper {
-  overflow: visible;
   clear: both;
-  margin: 0px 25%;
   content: " ";
-  width: 50%;
   float: left;
   min-width: 470px;
 }
@@ -115,7 +116,6 @@ body {
 
 .table-bordered {
   background-color: #17181C;
-  margin: 0 8.5%;
   padding: 0 10px;
   border: 1px solid #383C37;
   border-spacing: 0 5px;
