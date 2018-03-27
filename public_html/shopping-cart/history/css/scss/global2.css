@@ -99,7 +99,10 @@ body {
 .header1 h1 {
   margin: 0.5em 0;
   font-size: 2em;
-  text-align: center; }
+  text-align: center;
+  background: -webkit-linear-gradient(#B99B58, #614923);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .table-bordered {
   background-color: #17181C;

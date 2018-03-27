@@ -78,8 +78,10 @@ body {
   content: " ";
   float: left;
   min-width: 470px;
+}
 
-  margin: 0 13%;
+.table-shopping-cart {
+  width: 1240px;
 }
 
 .topnav-lol {
@@ -112,6 +114,9 @@ body {
     margin: 0.5em 0;
     font-size: 2em;
     text-align: center;
+    background: -webkit-linear-gradient(#B99B58, #614923);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -120,7 +125,7 @@ body {
   padding: 0 10px;
   border: 1px solid #FABE0A;
   border-spacing: 0 5px;
-  min-width: 1240px;
+  min-width: 1200px;
 
   th {
     display: inline-block;
@@ -209,9 +214,9 @@ body {
   float: right;
   right: 0;
   top: 0;
-  width: 450px;
+  width: 400px;
   padding-top: 140px;
-  padding-right: 20px;
+  margin-right: 54px;
 }
 
 .order-label {
@@ -279,7 +284,7 @@ body {
   color: #BAB18F;
   font-size: 16px;
   font-weight: 700;
-  margin-right: 215px;
+  margin-right: 220px;
 
   label {
     font-weight: 700;
