@@ -136,9 +136,9 @@ body {
 
   tbody {
     display: block;
-    height: 320px;
+    max-height: 520px;
     width: 760px;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   tbody tr {

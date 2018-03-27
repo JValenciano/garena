@@ -94,9 +94,9 @@ body {
       margin-left: 20px; }
   .table-bordered tbody {
     display: block;
-    height: 320px;
+    max-height: 520px;
     width: 760px;
-    overflow-y: scroll; }
+    overflow-y: auto; }
   .table-bordered tbody tr {
     vertical-align: top;
     background-color: #202529; }
