@@ -1,38 +1,59 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+/*
+/* Smartphones (portrait and landscape) ----------- /
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .wrapper {
-    min-width: 200px;
-    margin: 0 17%; } }
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  .wrapper {
-    min-width: 200px;
-    margin: 0 17%; } }
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  .wrapper {
-    min-width: 200px;
-    margin: 0 17%; } }
-@media only screen and (min-width: 720px) {
-  .wrapper {
-    min-width: 300px;
-    margin: 0 17%; } }
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  .wrapper {
-    min-width: 300px;
-    margin: 0 24%; }
+     min-width: 200px;
+     margin: 0 17%;
+   }
+}
 
-  .table-bordered {
-    min-width: 450px; } }
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
+/* Smartphones (landscape) ----------- /
+@media only screen and (min-width : 321px) {
   .wrapper {
-    min-width: 300px;
-    margin: 0 25%; }
+     min-width: 200px;
+     margin: 0 17%;
+   }
+}
 
-  .table-bordered {
-    min-width: 675px; } }
+/* Smartphones (portrait) ----------- /
+@media only screen and (max-width : 320px) {
+  .wrapper {
+     min-width: 200px;
+     margin: 0 17%;
+   }
+}
+
+@media only screen  and (min-width : 720px) {
+  .wrapper {
+     min-width: 300px;
+     margin: 0 17%;
+   }
+}
+
+/* Desktops and laptops ----------- /
+@media only screen  and (min-width : 1224px) {
+  .wrapper {
+     min-width: 300px;
+     margin: 0 24%;
+   }
+
+   .table-bordered {
+     min-width: 450px;
+   }
+}
+
+/* Large screens ----------- /
+@media only screen  and (min-width : 1824px) {
+  .wrapper {
+     min-width: 300px;
+     margin: 0 25%;
+   }
+
+   .table-bordered {
+     min-width: 675px;
+   }
+}
+*/
 html {
   background: unset; }
 
@@ -48,10 +69,12 @@ body {
   background-color: transparent; }
 
 .wrapper {
+  position: relative;
   clear: both;
   content: " ";
   float: left;
-  min-width: 470px; }
+  min-width: 470px;
+  margin: 0 17%; }
 
 .topnav-lol {
   height: 100px; }

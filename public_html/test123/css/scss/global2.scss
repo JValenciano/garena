@@ -1,3 +1,4 @@
+
 /*
 /* Smartphones (portrait and landscape) ----------- /
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -78,7 +79,7 @@ body {
   float: left;
   min-width: 470px;
 
-  margin: 0 17%;
+  margin: 0 13%;
 }
 
 .topnav-lol {
@@ -141,7 +142,7 @@ body {
   tbody {
     display: block;
     max-height: 520px;
-    width: 760px;
+    width: 875px;
     overflow-y: auto;
   }
 
@@ -154,6 +155,7 @@ body {
     color: #FFFFFF;
     padding: 12px 20px;
     font-size: 15px;
+
 
     .skin-description {
       color: #BAB18F;
@@ -177,7 +179,7 @@ body {
 
 .img-frame {
   border: 1px solid #383C37;
-  height: 90px;
+  height: 60px;
 }
 
 tbody::-webkit-scrollbar {

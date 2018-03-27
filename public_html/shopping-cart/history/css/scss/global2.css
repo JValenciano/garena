@@ -54,22 +54,19 @@
    }
 }
 */
-
 html {
-  background: unset;
-}
+  background: unset; }
 
 body {
   overflow: hidden;
   height: 100vh;
-  background-color: transparent;
-}
+  background-color: transparent; }
+
 .container {
   position: relative;
   left: 0;
   padding: 0px;
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 .wrapper {
   position: relative;
@@ -77,118 +74,82 @@ body {
   content: " ";
   float: left;
   min-width: 470px;
-
-  margin: 0 17%;
-}
+  margin: 0 13%; }
 
 .topnav-lol {
-  height: 100px;
-}
+  height: 100px; }
 
 .wishlist-lol {
-  min-height: 500px;
-}
+  min-height: 500px; }
 
 .left {
   position: relative;
   width: 70%;
   height: 100px;
   display: inline-block;
-  float: left;
-}
+  float: left; }
 
 .right {
   position: relative;
   width: 30%;
   height: 100px;
   display: inline-block;
-  float: right;
-}
+  float: right; }
 
-.header1 {
-
-  h1 {
-    margin: 0.5em 0;
-    font-size: 2em;
-    text-align: center;
-  }
-}
-
-.table-wishlist {
-
-}
+.header1 h1 {
+  margin: 0.5em 0;
+  font-size: 2em;
+  text-align: center; }
 
 .table-bordered {
   background-color: #17181C;
   padding: 0 10px;
   border: 1px solid #383C37;
-  border-spacing: 0 5px;
-
-
-  th {
+  border-spacing: 0 5px; }
+  .table-bordered th {
     display: inline-block;
     text-align: left;
     font-family: "Beaufort for LOL", serif;
     font-size: 18px;
     font-weight: 400;
-    color: #FFFFFF;
-
-    &:first-child {
-      margin-left: 20px;
-    }
-  }
-
-  tbody {
+    color: #FFFFFF; }
+    .table-bordered th:first-child {
+      margin-left: 20px; }
+  .table-bordered tbody {
     display: block;
     max-height: 520px;
-    width: 760px;
-    overflow-y: auto;
-  }
-
-  tbody tr {
+    width: 875px;
+    overflow-y: auto; }
+  .table-bordered tbody tr {
     vertical-align: top;
-    background-color: #202529;
-  }
-
-  tbody td {
+    background-color: #202529; }
+  .table-bordered tbody td {
     color: #FFFFFF;
     padding: 12px 20px;
-    font-size: 15px;
-
-    .skin-description {
+    font-size: 15px; }
+    .table-bordered tbody td .skin-description {
       color: #BAB18F;
-      font-weight: 700;
-    }
-
-    .atc-btn {
+      font-weight: 700; }
+    .table-bordered tbody td .atc-btn {
       color: white;
       padding: 0 25px;
       font-family: "Spiegel", sans-serif;
       font-size: 10px;
-      width: max-content;
-    }
-
-  }
-}
+      width: max-content; }
 
 .td-atc-btn {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 .img-frame {
   border: 1px solid #383C37;
-  height: 90px;
-}
+  height: 60px; }
 
 tbody::-webkit-scrollbar {
-    width: 3px;
-}
+  width: 3px; }
 
 tbody::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
 
 tbody::-webkit-scrollbar-thumb {
   background-color: #C7A96D;
-  outline: 1px solid slategrey;
-}
+  outline: 1px solid slategrey; }
