@@ -114,14 +114,10 @@ body {
   }
 }
 
-.table-wishlist {
-
-}
-
 .table-bordered {
   background-color: #17181C;
   padding: 0 10px;
-  border: 1px solid #383C37;
+  border: 1px solid #FABE0A;
   border-spacing: 0 5px;
 
 
@@ -155,7 +151,7 @@ body {
     padding: 12px 20px;
     font-size: 15px;
 
-    .skin-description {
+    .item-description {
       color: #BAB18F;
       font-weight: 700;
     }

@@ -79,7 +79,7 @@ body {
 .topnav-lol {
   height: 100px; }
 
-.wishlist-lol {
+.history-lol {
   min-height: 500px; }
 
 .left {
@@ -104,7 +104,7 @@ body {
 .table-bordered {
   background-color: #17181C;
   padding: 0 10px;
-  border: 1px solid #383C37;
+  border: 1px solid #FABE0A;
   border-spacing: 0 5px; }
   .table-bordered th {
     display: inline-block;
@@ -127,7 +127,7 @@ body {
     color: #FFFFFF;
     padding: 12px 20px;
     font-size: 15px; }
-    .table-bordered tbody td .skin-description {
+    .table-bordered tbody td .item-description {
       color: #BAB18F;
       font-weight: 700; }
     .table-bordered tbody td .atc-btn {
