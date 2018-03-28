@@ -60,27 +60,11 @@ html {
 body {
   overflow: hidden;
   height: 100vh;
-  background-color: transparent; }
-
-.container {
-  position: relative;
-  left: 0;
-  padding: 0px;
-  background-color: transparent; }
-
-.wrapper {
-  position: relative;
-  clear: both;
-  content: " ";
-  float: left;
-  min-width: 470px;
-  margin: 0 13%; }
+  background-color: transparent;
+  width: 1200px; }
 
 .topnav-lol {
   height: 100px; }
-
-.shopping-cart-lol {
-  min-height: 500px; }
 
 .left {
   position: relative;
@@ -101,67 +85,269 @@ body {
   font-size: 2em;
   text-align: center; }
 
-.table-bordered {
+nav {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.75);
+  float: left;
+  height: 100%;
+  width: 250px;
+  display: inline-block;
+  padding: 14px 5px; }
+
+.container {
+  height: 100%;
+  width: 950px;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  padding: 0.5%;
+  background-color: transparent; }
+
+.wrapper {
+  position: relative;
+  clear: both;
+  content: " ";
+  float: left;
+  min-width: 470px;
+  margin: 0 13%; }
+
+.featured-promos-panel {
+  background-color: #111217;
+  height: 270px;
+  padding: 18px 8px; }
+  .featured-promos-panel .featured-promos {
+    height: 205px;
+    position: relative;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    border-left: 1px solid #614923;
+    border-right: 1px solid #614923;
+    background-size: 100% 1px;
+    background-image: linear-gradient(to right, #614923 0%, #B99B58, #614923 100%), linear-gradient(to right, #614923 0%, #B99B58, #614923 100%); }
+  .featured-promos-panel .featured-promos-label {
+    color: #FFFFFF;
+    font-family: "Beaufort for LOL", serif;
+    font-weight: 500;
+    margin: 0 16%; }
+
+.radio-panel {
+  margin: 10px 20px 0 20px;
+  box-sizing: border-box;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-image: linear-gradient(to right, #614923 0%, #B99B58, #614923 100%);
+  padding: 2% 4%; }
+  .radio-panel .objects {
+    height: 23px;
+    width: 215px;
+    left: -20px;
+    position: relative;
+    margin: 2%;
+    padding: 0% 8%; }
+    .radio-panel .objects:hover {
+      background-color: red; }
+  .radio-panel #RadioChampions, .radio-panel #RadioBundles {
+    display: none; }
+  .radio-panel #RadioChampions + label, .radio-panel #RadioBundles + label {
+    color: #FFFFFF;
+    font-family: "Spiegel-Regular", sans-serif;
+    font-size: 12px; }
+  .radio-panel #RadioChampions + label span, .radio-panel #RadioBundles + label span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  .radio-panel #RadioChampions + label span, .radio-panel #RadioBundles + label span {
+    background-color: black; }
+  .radio-panel #RadioChampions:checked + label span, .radio-panel #RadioBundles:checked + label span {
+    background-color: #B99B58; }
+  .radio-panel #RadioChampions + label span,
+  .radio-panel #RadioChampions:checked + label span, .radio-panel #RadioBundles + label span,
+  .radio-panel #RadioBundles:checked + label span {
+    -webkit-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear; }
+
+.search-panel {
+  margin: 0 20px;
+  box-sizing: border-box;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-image: linear-gradient(to right, #000000 0%, #FFFFFF, #000000 100%);
+  padding: 2% 4%; }
+  .search-panel .objects {
+    height: 25px;
+    margin: 5% 0; }
+
+.sort-panel {
+  margin: 0 20px;
+  box-sizing: border-box;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-image: linear-gradient(to right, #000000 0%, #FFFFFF, #000000 100%);
+  padding: 2% 4%; }
+  .sort-panel .objects {
+    height: 25px;
+    margin: 5% 0; }
+    .sort-panel .objects li {
+      list-style-type: none; }
+
+.nav-checkbox {
+  display: none; }
+
+.nav-checkbox + label {
+  color: #FFFFFF;
+  font-family: "Spiegel-Regular", sans-serif;
+  font-size: 12px; }
+
+.nav-checkbox + label span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: -2px 10px 0 -2px;
+  vertical-align: middle;
+  cursor: pointer; }
+
+.nav-checkbox + label span {
+  background-color: black; }
+
+.nav-checkbox:checked + label span {
+  background-color: #B99B58; }
+
+.nav-checkbox + label span,
+.nav-checkbox:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear; }
+
+.nav-inputbox {
+  background-color: transparent;
+  color: #FFFFFF;
+  width: 180px;
+  height: 30px;
+  border: 1px solid #614923;
+  padding: 5px;
+  font-family: "Spiegel-Regularl", sans-serif;
+  font-size: 14px; }
+  .nav-inputbox:focus, .nav-inputbox:visited {
+    border-color: #B99B58; }
+  .nav-inputbox::-webkit-input-placeholder {
+    color: #FFFFFF;
+    font-family: "Spiegel-Regularl", sans-serif;
+    font-size: 12px; }
+
+.champions-grid {
+  border-spacing: 6px;
+  min-width: 940px; }
+  .champions-grid tbody {
+    display: block;
+    overflow-y: scroll;
+    max-height: 950px; }
+  .champions-grid .champions-frame {
+    width: 180px;
+    height: 205px;
+    border: 1px solid #614923; }
+
+/*.table-bordered {
   background-color: #17181C;
   padding: 0 10px;
   border: 1px solid #FABE0A;
   border-spacing: 0 5px;
-  min-width: 1240px; }
-  .table-bordered th {
+  min-width: 1240px;
+
+  th {
     display: inline-block;
     text-align: left;
     font-family: "Beaufort for LOL", serif;
     font-size: 18px;
     font-weight: 400;
-    color: #FFFFFF; }
-    .table-bordered th:first-child {
-      margin-left: 20px; }
-  .table-bordered tbody {
+    color: #FFFFFF;
+
+    &:first-child {
+      margin-left: 20px;
+    }
+  }
+
+  tbody {
     display: block;
     max-height: 520px;
     width: 760px;
-    overflow-y: auto; }
-  .table-bordered tbody tr {
+    overflow-y: auto;
+  }
+
+  tbody tr {
     vertical-align: top;
-    background-color: #202529; }
-  .table-bordered tbody td {
+    background-color: #202529;
+  }
+
+  tbody td {
     color: #FFFFFF;
     padding: 12px 20px;
-    font-size: 15px; }
-    .table-bordered tbody td .item-description {
+    font-size: 15px;
+
+
+    .item-description {
       color: #BAB18F;
-      font-weight: 700; }
-    .table-bordered tbody td .atc-btn {
+      font-weight: 700;
+    }
+
+    .atc-btn {
       color: white;
       padding: 0 25px;
       font-family: "Spiegel", sans-serif;
       font-size: 10px;
-      width: max-content; }
+      width: max-content;
+    }
+
+  }
+}
 
 .td-atc-btn {
   vertical-align: middle;
-  text-align: center; }
+  text-align: center;
+}
 
 .table-btn-link {
   font-size: 10px;
-  color: #737371; }
-  .table-btn-link:hover, .table-btn-link:focus, .table-btn-link:visited {
+  color: #737371;
+
+  &:hover, &:focus, &:visited {
     text-decoration: none;
-    cursor: pointer; }
-  .table-btn-link .svg-inline--fa {
+    cursor: pointer;
+  }
+
+  .svg-inline--fa {
     font-size: 25px;
     margin-bottom: 0;
-    color: #CDBE91; }
+    color: #CDBE91;
+  }
+}
 
 .img-frame {
   border: 1px solid #383C37;
-  height: 90px; }
+  height: 90px;
+}
 
 .order-summary-header {
   font-weight: 700 !important;
-  border-bottom: 1px solid #FABE0A; }
-  .order-summary-header .no-of-items {
-    color: #BAB18F; }
+  border-bottom: 1px solid #FABE0A;
+
+  .no-of-items {
+    color: #BAB18F;
+  }
+}
 
 .order-summary-panel {
   position: absolute;
@@ -170,27 +356,38 @@ body {
   top: 0;
   width: 450px;
   padding-top: 140px;
-  padding-right: 20px; }
+  padding-right: 20px;
+}
 
 .order-label {
   float: left;
-  height: 110px; }
-  .order-label .items {
+  height: 110px;
+
+  .items {
     position: relative;
-    height: 40px; }
-  .order-label label {
+    height: 40px;
+  }
+
+  label {
     font-size: 15px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+  }
+}
 
 .total-order-label {
   float: left;
-  position: relative; }
-  .total-order-label .items {
-    position: relative; }
-  .total-order-label label {
+  position: relative;
+
+  .items {
+    position: relative;
+  }
+
+  label {
     font-weight: 700;
     font-size: 20px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+  }
+}
 
 .order-pricing {
   float: right;
@@ -198,51 +395,68 @@ body {
   font-size: 16px;
   font-weight: 700;
   margin-right: 75px;
-  height: 110px; }
-  .order-pricing .items {
-    height: 40px; }
-    .order-pricing .items .input-promocode {
+  height: 110px;
+
+  .items {
+    height: 40px;
+
+    .input-promocode {
       background-color: #182A36;
       border: 1px solid #59B5F4;
       margin-bottom: 20px;
       padding: 4px;
       color: #FFFFFF;
       vertical-align: middle;
-      font-family: "Spiegel", serif; }
-    .order-pricing .items .svg-inline--fa {
+      font-family: "Spiegel", serif;
+    }
+
+    .svg-inline--fa {
       font-size: 25px;
       margin-left: 10px;
       margin-bottom: 5px;
-      color: #59B5F4; }
+      color: #59B5F4;
+    }
+  }
+}
 
 .total-order-pricing {
   float: right;
   color: #BAB18F;
   font-size: 16px;
   font-weight: 700;
-  margin-right: 215px; }
-  .total-order-pricing label {
+  margin-right: 215px;
+
+  label {
     font-weight: 700;
     font-size: 20px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+  }
+}
 
 .order-summary-btn {
-  text-align: center; }
-  .order-summary-btn .c-btn {
+  text-align: center;
+
+  .c-btn {
     width: 300px;
-    height: 40px; }
-  .order-summary-btn .ptc-btn {
+    height: 40px;
+  }
+  .ptc-btn {
     font-family: "Spiegel", serif;
-    color: #FFFFFF; }
-  .order-summary-btn .cs-btn {
+    color: #FFFFFF;
+  }
+  .cs-btn {
     font-family: "Spiegel", serif;
-    color: #FFFFFF; }
-  .order-summary-btn .order-summary-error-text {
+    color: #FFFFFF;
+  }
+
+  .order-summary-error-text {
     font-family: "Spiegel", serif;
     font-size: 14px;
     font-weight: 700;
-    color: #FD0000; }
-
+    color: #FD0000;
+  }
+}
+*/
 tbody::-webkit-scrollbar {
   width: 3px; }
 
