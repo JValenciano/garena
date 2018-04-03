@@ -63,6 +63,12 @@ body {
   background-color: transparent;
   width: 1200px; }
 
+.no-padding {
+  padding: 0 !important; }
+
+.no-margin {
+  margin: 0 !important; }
+
 .topnav-lol {
   height: 100px; }
 
@@ -131,7 +137,8 @@ nav {
     color: #FFFFFF;
     font-family: "Beaufort for LOL", serif;
     font-weight: 500;
-    margin: 0 16%; }
+    margin-left: 18%;
+    line-height: 20px; }
 
 .radio-panel {
   margin: 10px 20px 0 20px;
@@ -139,7 +146,7 @@ nav {
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat;
   background-size: 100% 2px;
-  background-image: linear-gradient(to right, #614923 0%, #B99B58, #614923 100%);
+  background-image: linear-gradient(to right, #000000 0%, #614923, #B99B58, #614923, #000000 100%);
   padding: 2% 4%; }
   .radio-panel .objects {
     height: 25px;
@@ -157,19 +164,17 @@ nav {
     font-family: "Spiegel-Regular", sans-serif;
     font-size: 12px; }
   .radio-panel #RadioChampions + label span, .radio-panel #RadioBundles + label span {
+    background-image: url(../../img/diamondticker.png);
+    background-position: left;
+    background-repeat: no-repeat;
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin: -2px 10px 0 0;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px 0 0;
     vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid #614923;
-    -moz-border-radius: 50%;
-    border-radius: 50%; }
-  .radio-panel #RadioChampions + label span, .radio-panel #RadioBundles + label span {
-    background-color: black; }
+    cursor: pointer; }
   .radio-panel #RadioChampions:checked + label span, .radio-panel #RadioBundles:checked + label span {
-    background-color: #B99B58; }
+    background-image: url(../../img/diamondticker_active.png); }
   .radio-panel #RadioChampions + label span,
   .radio-panel #RadioChampions:checked + label span, .radio-panel #RadioBundles + label span,
   .radio-panel #RadioBundles:checked + label span {
@@ -181,26 +186,42 @@ nav {
 .search-panel {
   margin: 0 20px;
   box-sizing: border-box;
-  background-position: 0 0, 0 100%;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: 100% 2px;
+  background-size: 60% 1px;
   background-image: linear-gradient(to right, #000000 0%, #FFFFFF, #000000 100%);
   padding: 2% 4%; }
   .search-panel .objects {
     height: 25px;
-    margin: 5% 0; }
+    width: 215px;
+    left: -20px;
+    position: relative;
+    margin: 0;
+    padding: 0% 12%; }
+    .search-panel .objects:hover {
+      background-color: #474B4C; }
+  .search-panel #SearchItems {
+    background-image: url(../../img/search..png);
+    background-repeat: no-repeat;
+    background-size: 16%; }
 
 .sort-panel {
   margin: 0 20px;
   box-sizing: border-box;
-  background-position: 0 0, 0 100%;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: 100% 2px;
+  background-size: 60% 1px;
   background-image: linear-gradient(to right, #000000 0%, #FFFFFF, #000000 100%);
   padding: 2% 4%; }
   .sort-panel .objects {
     height: 25px;
-    margin: 5% 0; }
+    width: 215px;
+    left: -20px;
+    position: relative;
+    margin: 0;
+    padding: 0% 12%; }
+    .sort-panel .objects:hover {
+      background-color: #474B4C; }
     .sort-panel .objects li {
       list-style-type: none; }
 
@@ -240,27 +261,157 @@ nav {
   width: 180px;
   height: 30px;
   border: 1px solid #614923;
-  padding: 5px;
-  font-family: "Spiegel-Regularl", sans-serif;
+  margin: 5% 0;
+  padding: 5px 30px;
+  font-family: "Spiegel-Regular", sans-serif;
   font-size: 14px; }
   .nav-inputbox:focus, .nav-inputbox:visited {
     border-color: #B99B58; }
   .nav-inputbox::-webkit-input-placeholder {
     color: #FFFFFF;
-    font-family: "Spiegel-Regularl", sans-serif;
-    font-size: 12px; }
+    vertical-align: middle; }
+  .nav-inputbox option {
+    background-color: #000607; }
+    .nav-inputbox option:hover {
+      box-shadow: 0 0 10px 10px #e1358f inset; }
 
 .champions-grid {
-  border-spacing: 6px;
+  border-spacing: 8px;
   min-width: 940px; }
   .champions-grid tbody {
-    display: block;
+    display: inline-block;
     overflow-y: scroll;
     max-height: 680px; }
   .champions-grid .champions-frame {
-    width: 180px;
-    height: 205px;
+    display: inline-block;
+    margin: 0 5px;
+    width: 170px;
+    height: 190px;
     border: 1px solid #614923; }
+    .champions-grid .champions-frame .frame {
+      height: 150px;
+      width: auto; }
+    .champions-grid .champions-frame .frame-sm {
+      height: 135px;
+      width: auto; }
+    .champions-grid .champions-frame .atw {
+      float: right;
+      font-style: italic;
+      position: relative;
+      right: 5px;
+      margin-top: 125px; }
+      .champions-grid .champions-frame .atw a {
+        color: #FFFFFF;
+        font-size: 9px;
+        font-weight: 600;
+        text-align: center; }
+        .champions-grid .champions-frame .atw a:hover {
+          cursor: pointer; }
+    .champions-grid .champions-frame .atw-sm {
+      float: right;
+      font-style: italic;
+      position: relative;
+      right: 5px;
+      margin-top: 110px; }
+      .champions-grid .champions-frame .atw-sm a {
+        color: #FFFFFF;
+        font-size: 9px;
+        font-weight: 600;
+        text-align: center; }
+        .champions-grid .champions-frame .atw-sm a:hover {
+          cursor: pointer; }
+    .champions-grid .champions-frame .atc-details {
+      background: -webkit-gradient(linear, left top, left bottom, from(#16181d), to(#16181d));
+      height: 38px;
+      width: auto;
+      line-height: 1.25;
+      border-top: 1px solid #614923; }
+      .champions-grid .champions-frame .atc-details p {
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0 20%;
+        text-align: center;
+        width: 60%; }
+      .champions-grid .champions-frame .atc-details img {
+        margin: 0 0 0 33%; }
+      .champions-grid .champions-frame .atc-details label {
+        color: #C7AA6D;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 0 0 3%; }
+    .champions-grid .champions-frame .atc-btn {
+      font-family: "Spiegel", sans-serif;
+      height: 37px;
+      width: 168px;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important; }
+      .champions-grid .champions-frame .atc-btn::before {
+        background: none !important;
+        margin: 0 !important; }
+      .champions-grid .champions-frame .atc-btn::after {
+        margin: 0 !important; }
+    .champions-grid .champions-frame .atsc-btn {
+      font-family: "Spiegel", sans-serif;
+      height: 25px;
+      width: 168px;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important; }
+      .champions-grid .champions-frame .atsc-btn::before {
+        background: none !important;
+        margin: 0 !important; }
+      .champions-grid .champions-frame .atsc-btn::after {
+        margin: 0 !important; }
+    .champions-grid .champions-frame .error {
+      color: #F20505 !important;
+      font-size: 9px !important;
+      font-style: italic; }
+  .champions-grid .atc-details-lg {
+    background: -webkit-gradient(linear, left top, left bottom, from(#16181d), to(#16181d));
+    height: 53px;
+    width: auto;
+    line-height: 1.25;
+    border-top: 1px solid #614923; }
+    .champions-grid .atc-details-lg p {
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0 20%;
+      text-align: center;
+      width: 60%; }
+    .champions-grid .atc-details-lg img {
+      margin: 0 0 0 33%; }
+    .champions-grid .atc-details-lg label {
+      color: #C7AA6D;
+      font-weight: 600;
+      text-align: center;
+      margin: 0 0 0 3%; }
+  .champions-grid .atc-btn-lg {
+    font-family: "Spiegel", sans-serif;
+    height: 52px;
+    width: 168px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+    .champions-grid .atc-btn-lg::before {
+      background: none !important;
+      margin: 0 !important; }
+    .champions-grid .atc-btn-lg::after {
+      margin: 0 !important; }
+  .champions-grid .atsc-btn-lg {
+    font-family: "Spiegel", sans-serif;
+    height: 40px;
+    width: 168px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+    .champions-grid .atsc-btn-lg::before {
+      background: none !important;
+      margin: 0 !important; }
+    .champions-grid .atsc-btn-lg::after {
+      margin: 0 !important; }
+  .champions-grid .active {
+    border-color: #C7A96D !important; }
+  .champions-grid .locked {
+    border-color: #F2F2F2 !important; }
 
 /*.table-bordered {
   background-color: #17181C;

@@ -1,0 +1,751 @@
+/*
+/* Smartphones (portrait and landscape) ----------- /
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .wrapper {
+     min-width: 200px;
+     margin: 0 17%;
+   }
+}
+
+/* Smartphones (landscape) ----------- /
+@media only screen and (min-width : 321px) {
+  .wrapper {
+     min-width: 200px;
+     margin: 0 17%;
+   }
+}
+
+/* Smartphones (portrait) ----------- /
+@media only screen and (max-width : 320px) {
+  .wrapper {
+     min-width: 200px;
+     margin: 0 17%;
+   }
+}
+
+@media only screen  and (min-width : 720px) {
+  .wrapper {
+     min-width: 300px;
+     margin: 0 17%;
+   }
+}
+
+/* Desktops and laptops ----------- /
+@media only screen  and (min-width : 1224px) {
+  .wrapper {
+     min-width: 300px;
+     margin: 0 24%;
+   }
+
+   .table-bordered {
+     min-width: 450px;
+   }
+}
+
+/* Large screens ----------- /
+@media only screen  and (min-width : 1824px) {
+  .wrapper {
+     min-width: 300px;
+     margin: 0 25%;
+   }
+
+   .table-bordered {
+     min-width: 675px;
+   }
+}
+*/
+
+html {
+  background: unset;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  background-color: transparent;
+  width: 1200px;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.topnav-lol {
+  height: 100px;
+}
+
+.left {
+  position: relative;
+  width: 70%;
+  height: 100px;
+  display: inline-block;
+  float: left;
+}
+
+.right {
+  position: relative;
+  width: 30%;
+  height: 100px;
+  display: inline-block;
+  float: right;
+}
+
+.header1 {
+
+  h1 {
+    margin: 0.5em 0;
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+nav {
+  background:rgba(0,0,0,0.5);
+  box-shadow:3px 3px 3px rgba(0,0,0,0.75);
+  float:left;
+  height:100%;
+  width:250px;
+  display: inline-block;
+  padding: 14px 5px;
+}
+
+.container {
+  height: 100%;
+  width: 950px;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  padding: 0.5%;
+  background-color: transparent;
+}
+
+.wrapper {
+  position: relative;
+  clear: both;
+  content: " ";
+  float: left;
+  min-width: 470px;
+
+  margin: 0 13%;
+}
+
+.featured-promos-panel {
+  background-color: #111217;
+  height: 270px;
+  padding: 18px 8px;
+
+  .featured-promos {
+    height: 205px;
+    position: relative;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    border-left: 1px solid #614923;
+    border-right: 1px solid #614923;
+    background-size: 100% 1px;
+    background-image: linear-gradient(to right, #614923 0%, #B99B58, #614923 100%), linear-gradient(to right, #614923 0%, #B99B58, #614923 100%);
+  }
+
+  .featured-promos-label {
+    color: #FFFFFF;
+    font-family: "Beaufort for LOL", serif;
+    font-weight: 500;
+    margin-left: 18%;
+    line-height: 20px;
+  }
+}
+
+.radio-panel {
+  margin: 10px 20px 0 20px;
+  box-sizing: border-box;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-image: linear-gradient(to right, #000000 0%, #614923, #B99B58, #614923, #000000 100%);
+  padding: 2% 4%;
+
+  .objects {
+    height: 25px;
+    width: 215px;
+    left: -20px;
+    position: relative;
+    margin: 2%;
+    padding: 0% 8%;
+
+    &:hover {
+      background-color: #474B4C;
+    }
+  }
+
+  #RadioChampions, #RadioBundles {
+      display:none;
+  }
+  #RadioChampions + label, #RadioBundles + label {
+      color: #FFFFFF;
+      font-family: "Spiegel-Regular", sans-serif;
+      font-size: 12px;
+  }
+  #RadioChampions + label span, #RadioBundles + label span {
+    background-image: url(../../img/diamondticker.png);
+    background-position: left;
+    background-repeat: no-repeat;
+      display:inline-block;
+      width:18px;
+      height:18px;
+      margin: 0 10px 0 0;
+      vertical-align:middle;
+      cursor:pointer;
+  }
+  #RadioChampions:checked + label span, #RadioBundles:checked + label span {
+      background-image: url(../../img/diamondticker_active.png);
+  }
+  #RadioChampions + label span,
+  #RadioChampions:checked + label span, #RadioBundles + label span,
+  #RadioBundles:checked + label span, {
+    -webkit-transition:background-color 0.4s linear;
+    -o-transition:background-color 0.4s linear;
+    -moz-transition:background-color 0.4s linear;
+    transition:background-color 0.4s linear;
+  }
+
+}
+
+.search-panel {
+  margin: 0 20px;
+  box-sizing: border-box;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 60% 1px;
+  background-image: linear-gradient(to right, #000000 0%, #FFFFFF, #000000 100%);
+  padding: 2% 4%;
+
+  .objects {
+    height: 25px;
+    width: 215px;
+    left: -20px;
+    position: relative;
+    margin: 0;
+    padding: 0% 12%;
+
+    &:hover {
+      background-color: #474B4C;
+    }
+  }
+
+  #SearchItems {
+    background-image: url(../../img/search..png);
+    background-repeat: no-repeat;
+    background-size: 16%;
+  }
+}
+
+.sort-panel {
+  margin: 0 20px;
+  box-sizing: border-box;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 60% 1px;
+  background-image: linear-gradient(to right, #000000 0%, #FFFFFF, #000000 100%);
+  padding: 2% 4%;
+
+  .objects {
+    height: 25px;
+    width: 215px;
+    left: -20px;
+    position: relative;
+    margin: 0;
+    padding: 0% 12%;
+
+    &:hover {
+      background-color: #474B4C;
+    }
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+.nav-checkbox {
+  display: none;
+}
+
+.nav-checkbox + label {
+    color: #FFFFFF;
+    font-family: "Spiegel-Regular", sans-serif;
+    font-size: 12px;
+}
+.nav-checkbox + label span {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:-2px 10px 0 -2px;
+    border: 1px solid #614923;
+    vertical-align:middle;
+    cursor:pointer;
+}
+.nav-checkbox + label span {
+     background-color:black;
+}
+.nav-checkbox:checked + label span {
+     background-color: #B99B58;
+}
+.nav-checkbox + label span,
+.nav-checkbox:checked + label span, {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+
+.nav-inputbox {
+  background-color: transparent;
+  color: #FFFFFF;
+  width: 180px;
+  height: 30px;
+  border: 1px solid #614923;
+  margin: 5% 0;
+  padding: 5px 30px;
+  font-family: "Spiegel-Regular", sans-serif;
+  font-size: 14px;
+
+  &:focus, &:visited {
+    border-color: #B99B58;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #FFFFFF;
+    vertical-align: middle;
+  }
+
+  option {
+    background-color: #000607;
+
+    &:hover {
+      box-shadow: 0 0 10px 10px #e1358f inset;
+    }
+  }
+}
+
+.champions-grid {
+  border-spacing: 8px;
+  min-width: 940px;
+
+  tbody {
+    display: inline-block;
+    overflow-y: scroll;
+    max-height: 680px;
+  }
+
+  .champions-frame {
+    display: inline-block;
+    margin: 0 5px;
+    width: 170px;
+    height: 190px;
+    border: 1px solid #614923;
+
+    .frame {
+      height: 150px;
+      width: auto;
+    }
+
+    .frame-sm {
+      height: 135px;
+      width: auto;
+    }
+
+    .atw {
+      float: right;
+      font-style: italic;
+      position: relative;
+      right: 5px;
+      margin-top: 125px;
+
+      a {
+        color: #FFFFFF;
+        font-size: 9px;
+        font-weight: 600;
+        text-align: center;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .atw-sm{
+      float: right;
+      font-style: italic;
+      position: relative;
+      right: 5px;
+      margin-top: 110px;
+
+      a {
+        color: #FFFFFF;
+        font-size: 9px;
+        font-weight: 600;
+        text-align: center;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .atc-details {
+      background: -webkit-gradient(linear, left top, left bottom, from(#16181d), to(#16181d));
+      height: 38px;
+      width: auto;
+      line-height: 1.25;
+      border-top: 1px solid #614923;
+
+      p {
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0 20%;
+        text-align: center;
+        width: 60%;
+      }
+
+      img {
+        margin: 0 0 0 33%;
+      }
+
+      label {
+        color: #C7AA6D;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 0 0 3%;
+      }
+    }
+
+    .atc-btn {
+      font-family: "Spiegel", sans-serif;
+      height: 37px;
+      width: 168px;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+
+      &::before {
+        background: none !important;
+        margin: 0 !important;
+      }
+
+      &::after {
+        margin: 0 !important;
+      }
+    }
+
+    .atsc-btn {
+      font-family: "Spiegel", sans-serif;
+      height: 25px;
+      width: 168px;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+
+      &::before {
+        background: none !important;
+        margin: 0 !important;
+      }
+
+      &::after {
+        margin: 0 !important;
+      }
+    }
+
+    .error {
+      color: #F20505 !important;
+      font-size: 9px !important;
+      font-style: italic;
+    }
+  }
+
+  .atc-details-lg {
+    background: -webkit-gradient(linear, left top, left bottom, from(#16181d), to(#16181d));
+    height: 53px;
+    width: auto;
+    line-height: 1.25;
+    border-top: 1px solid #614923;
+
+    p {
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0 20%;
+      text-align: center;
+      width: 60%;
+    }
+
+    img {
+      margin: 0 0 0 33%;
+    }
+
+    label {
+      color: #C7AA6D;
+      font-weight: 600;
+      text-align: center;
+      margin: 0 0 0 3%;
+    }
+  }
+
+  .atc-btn-lg {
+    font-family: "Spiegel", sans-serif;
+    height: 52px;
+    width: 168px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+
+    &::before {
+      background: none !important;
+      margin: 0 !important;
+    }
+
+    &::after {
+      margin: 0 !important;
+    }
+  }
+
+  .atsc-btn-lg {
+    font-family: "Spiegel", sans-serif;
+    height: 40px;
+    width: 168px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+
+    &::before {
+      background: none !important;
+      margin: 0 !important;
+    }
+
+    &::after {
+      margin: 0 !important;
+    }
+  }
+
+  .active {
+    border-color: #C7A96D !important;
+  }
+
+  .locked {
+    border-color: #F2F2F2 !important;
+  }
+}
+
+
+/*.table-bordered {
+  background-color: #17181C;
+  padding: 0 10px;
+  border: 1px solid #FABE0A;
+  border-spacing: 0 5px;
+  min-width: 1240px;
+
+  th {
+    display: inline-block;
+    text-align: left;
+    font-family: "Beaufort for LOL", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+
+    &:first-child {
+      margin-left: 20px;
+    }
+  }
+
+  tbody {
+    display: block;
+    max-height: 520px;
+    width: 760px;
+    overflow-y: auto;
+  }
+
+  tbody tr {
+    vertical-align: top;
+    background-color: #202529;
+  }
+
+  tbody td {
+    color: #FFFFFF;
+    padding: 12px 20px;
+    font-size: 15px;
+
+
+    .item-description {
+      color: #BAB18F;
+      font-weight: 700;
+    }
+
+    .atc-btn {
+      color: white;
+      padding: 0 25px;
+      font-family: "Spiegel", sans-serif;
+      font-size: 10px;
+      width: max-content;
+    }
+
+  }
+}
+
+.td-atc-btn {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table-btn-link {
+  font-size: 10px;
+  color: #737371;
+
+  &:hover, &:focus, &:visited {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .svg-inline--fa {
+    font-size: 25px;
+    margin-bottom: 0;
+    color: #CDBE91;
+  }
+}
+
+.img-frame {
+  border: 1px solid #383C37;
+  height: 90px;
+}
+
+.order-summary-header {
+  font-weight: 700 !important;
+  border-bottom: 1px solid #FABE0A;
+
+  .no-of-items {
+    color: #BAB18F;
+  }
+}
+
+.order-summary-panel {
+  position: absolute;
+  float: right;
+  right: 0;
+  top: 0;
+  width: 450px;
+  padding-top: 140px;
+  padding-right: 20px;
+}
+
+.order-label {
+  float: left;
+  height: 110px;
+
+  .items {
+    position: relative;
+    height: 40px;
+  }
+
+  label {
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+}
+
+.total-order-label {
+  float: left;
+  position: relative;
+
+  .items {
+    position: relative;
+  }
+
+  label {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+}
+
+.order-pricing {
+  float: right;
+  color: #BAB18F;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 75px;
+  height: 110px;
+
+  .items {
+    height: 40px;
+
+    .input-promocode {
+      background-color: #182A36;
+      border: 1px solid #59B5F4;
+      margin-bottom: 20px;
+      padding: 4px;
+      color: #FFFFFF;
+      vertical-align: middle;
+      font-family: "Spiegel", serif;
+    }
+
+    .svg-inline--fa {
+      font-size: 25px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+      color: #59B5F4;
+    }
+  }
+}
+
+.total-order-pricing {
+  float: right;
+  color: #BAB18F;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 215px;
+
+  label {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+}
+
+.order-summary-btn {
+  text-align: center;
+
+  .c-btn {
+    width: 300px;
+    height: 40px;
+  }
+  .ptc-btn {
+    font-family: "Spiegel", serif;
+    color: #FFFFFF;
+  }
+  .cs-btn {
+    font-family: "Spiegel", serif;
+    color: #FFFFFF;
+  }
+
+  .order-summary-error-text {
+    font-family: "Spiegel", serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FD0000;
+  }
+}
+*/
+
+tbody::-webkit-scrollbar {
+    width: 3px;
+}
+
+tbody::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+tbody::-webkit-scrollbar-thumb {
+  background-color: #C7A96D;
+  outline: 1px solid slategrey;
+}
