@@ -1,0 +1,144 @@
+div.backdrop, html body {
+    background:#071022;
+}
+
+.skin-available-now .button-standard a {
+    border: 1px #785a28 solid;
+    background-color: rgba(7, 16, 34, 0.5);   
+}
+
+.skin-available-now .button-standard a:hover {
+    background-color: rgba(7, 16, 34, 1);
+}
+
+.skin-available-now .introduction-section h2 {
+    background: -webkit-repeating-linear-gradient(#CDBE91 0, #cdbe91, #b39a64, #b39a64, #785A27);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#785A28; 
+    background-position-y: -1px;
+    bottom: -1px;
+}
+
+.skin-available-now h3 {
+    background: -webkit-repeating-linear-gradient(#bfae80, #887040, #785A27);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #785A28;
+    background-position-y: -1px;
+    bottom: -1px;
+}
+
+.skin-available-now h4, .skin-available-now h5 {
+    color:#785a28;
+}
+
+.skin-available-now p, .skin-available-now li {
+    color:#A09B8C;
+}
+
+.skin-available-now .skins-section .square-1 {
+    border: 1px #785a28 solid;
+    background: #071022;    
+}
+
+.skin-available-now .skins-section .skin-rp p {
+    color:#A09B8C;
+}
+
+.skin-available-now .skins-section a img {
+    border: 1px solid #765c2c;
+}
+
+.skin-available-now .skins-section .skins-video-container, .skin-available-now .introduction-section .skins-video-container {
+    border: 1px solid #505153;
+}
+
+.skin-available-now .icons-wards-section .icons-wards-container .default-4-col div, .skin-available-now .mission-container .default-2-5, .skin-available-now .skins-section .skins-icon-container, .skin-available-now .bundle-section .bundle-icons-wards .default-4-col div, .skin-available-now .icons-wards-section .icons-wards-container .default-2-col div, .skin-available-now .bundle-section .bundle-icons-wards .default-2-col div, .skin-available-now .icons-wards-section .icons-wards-container .default-1-col div, .skin-available-now .bundle-section .bundle-icons-wards .default-1-col div, .skin-available-now .icons-wards-section .icons-wards-container .default-3-col div, .skin-available-now .bundle-section .bundle-icons-wards .default-3-col div, div.skin-available-now div.icons-wards-container .one-col-center div {
+    border: 1px #3c3732 solid;
+    background: #071022;
+}
+
+.skin-available-now .standalone-icon-ward-box {
+    border: 1px #3c3732 solid;
+    background: #071022;
+}
+
+.skin-available-now .bundle-section {
+    border-left: 1px #785a28 solid;
+    border-right: 1px #785a28 solid;
+    border-bottom: 1px #785a28 solid;
+    background: #071022;
+}
+
+.skin-available-now .bundle-section .bundle-border {
+    border: 1px #3c3732 solid;
+    background: #071022;   
+}
+
+.skin-available-now .icons-wards-section .bundle-border {
+    border: 1px #3c3732 solid;
+    background: #071022;   
+}
+
+.skin-available-now .hextech-border {
+    border: 1px solid #3c3732;
+}
+
+.skin-available-now .table-section table tr td {
+    color: #A09B8C;
+}
+
+.skin-available-now .table-section table thead, .skin-available-now .table-section table thead th, .skin-available-now .table-section table tbody td {
+    border-bottom: 1px solid #3c3732;
+    border-top: 1px solid #3c3732;
+}
+
+.skin-available-now .table-section table thead, .skin-available-now .table-section table .table-left {
+    border-left: 1px solid #3c3732;
+}
+
+.skin-available-now .table-section table thead, .skin-available-now .table-section table .table-right {
+    border-right: 1px solid #3c3732;
+}
+
+div.riot-apollo .riot-discussion .riot-discussion-masthead h1 {
+    color: #785a28;
+}
+
+div.riot-apollo .riot-discussion a, div.riot-apollo .riot-discussion a:visited {
+    color:#8a8a8a;
+}
+
+div.riot-apollo .riot-discussion .riot-discussion-masthead h2 {
+    color:#8a8a8a;
+}
+
+div.riot-apollo .riot-discussion {
+    color:#8a8a8a;
+}
+
+div.riot-apollo .riot-discussion .riot-comment .riot-footer > ul li a, div.riot-apollo .riot-discussion .riot-more a {
+    color:#8a8a8a;
+}
+
+div.riot-apollo .riot-discussion .riot-comment .riot-collection > .riot-comment, div.riot-apollo .riot-discussion .riot-comment .riot-collection > .riot-comment > .riot-collection > .riot-comment, div.riot-apollo .riot-discussion .riot-comment .riot-collection > .riot-comment > .riot-collection > .riot-comment > .riot-collection > .riot-comment  {    
+    background:#071022;
+}
+
+
+div.riot-apollo .riot-discussion .riot-more {
+    background:none;
+}
+
+div.riot-apollo .riot-discussion>.riot-collection {
+    border-left: 1px #785a28 solid;
+    border-right: 1px #785a28 solid;
+    border-bottom: 1px #785a28 solid;
+    margin-bottom: 250px;   
+}
+
+div.riot-apollo .riot-discussion .riot-comment .riot-body blockquote {
+    background:none;
+    border-left:3px solid grey;
+}
