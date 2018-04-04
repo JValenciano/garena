@@ -1,3 +1,4 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 /*
 /* Smartphones (portrait and landscape) ----------- /
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -157,27 +158,27 @@ nav {
     padding: 0% 8%; }
     .radio-panel .objects:hover {
       background-color: #474B4C; }
-  .radio-panel #RadioChampions, .radio-panel #RadioBundles {
+  .radio-panel .navradio {
     display: none; }
-  .radio-panel #RadioChampions + label, .radio-panel #RadioBundles + label {
+  .radio-panel .navradio + label {
     color: #FFFFFF;
     font-family: "Spiegel-Regular", sans-serif;
     font-size: 12px; }
-  .radio-panel #RadioChampions + label span, .radio-panel #RadioBundles + label span {
+  .radio-panel .navradio + label span {
     background-image: url(../../img/diamondticker.png);
     background-position: left;
     background-repeat: no-repeat;
+    background-size: 100%;
     display: inline-block;
     width: 18px;
     height: 18px;
     margin: 0 10px 0 0;
     vertical-align: middle;
     cursor: pointer; }
-  .radio-panel #RadioChampions:checked + label span, .radio-panel #RadioBundles:checked + label span {
+  .radio-panel .navradio:checked + label span {
     background-image: url(../../img/diamondticker_active.png); }
-  .radio-panel #RadioChampions + label span,
-  .radio-panel #RadioChampions:checked + label span, .radio-panel #RadioBundles + label span,
-  .radio-panel #RadioBundles:checked + label span {
+  .radio-panel .navradio + label span,
+  .radio-panel .navradio:checked + label span {
     -webkit-transition: background-color 0.4s linear;
     -o-transition: background-color 0.4s linear;
     -moz-transition: background-color 0.4s linear;
@@ -233,6 +234,10 @@ nav {
   font-family: "Spiegel-Regular", sans-serif;
   font-size: 12px; }
 
+.nav-checkbox + label:before {
+  font-family: FontAwesome;
+  display: inline-block; }
+
 .nav-checkbox + label span {
   display: inline-block;
   width: 15px;
@@ -243,10 +248,20 @@ nav {
   cursor: pointer; }
 
 .nav-checkbox + label span {
-  background-color: black; }
+  background-color: #000000;
+  top: -50px; }
 
 .nav-checkbox:checked + label span {
-  background-color: #B99B58; }
+  color: #B99B58;
+  text-align: center; }
+
+.nav-checkbox:checked + label:before {
+  position: absolute;
+  color: #88692D;
+  content: "\f00c";
+  font-size: 15px;
+  left: 20px;
+  top: 2px; }
 
 .nav-checkbox + label span,
 .nav-checkbox:checked + label span {
@@ -288,6 +303,11 @@ nav {
     width: 170px;
     height: 190px;
     border: 1px solid #614923; }
+    .champions-grid .champions-frame .c-icon {
+      position: relative;
+      z-index: -100;
+      width: inherit;
+      height: inherit; }
     .champions-grid .champions-frame .frame {
       height: 150px;
       width: auto; }
@@ -299,7 +319,7 @@ nav {
       font-style: italic;
       position: relative;
       right: 5px;
-      margin-top: 125px; }
+      bottom: 25px; }
       .champions-grid .champions-frame .atw a {
         color: #FFFFFF;
         font-size: 9px;
@@ -312,7 +332,7 @@ nav {
       font-style: italic;
       position: relative;
       right: 5px;
-      margin-top: 110px; }
+      bottom: 25px; }
       .champions-grid .champions-frame .atw-sm a {
         color: #FFFFFF;
         font-size: 9px;
@@ -345,7 +365,8 @@ nav {
       height: 37px;
       width: 168px;
       -webkit-box-shadow: none !important;
-      box-shadow: none !important; }
+      box-shadow: none !important;
+      bottom: 22px; }
       .champions-grid .champions-frame .atc-btn::before {
         background: none !important;
         margin: 0 !important; }
@@ -356,7 +377,8 @@ nav {
       height: 25px;
       width: 168px;
       -webkit-box-shadow: none !important;
-      box-shadow: none !important; }
+      box-shadow: none !important;
+      bottom: 31px; }
       .champions-grid .champions-frame .atsc-btn::before {
         background: none !important;
         margin: 0 !important; }
@@ -365,18 +387,24 @@ nav {
     .champions-grid .champions-frame .error {
       color: #F20505 !important;
       font-size: 9px !important;
-      font-style: italic; }
+      font-style: italic;
+      width: 75% !important;
+      margin: 0px 12% !important;
+      display: inline-block;
+      position: relative;
+      bottom: 28px; }
   .champions-grid .atc-details-lg {
     background: -webkit-gradient(linear, left top, left bottom, from(#16181d), to(#16181d));
     height: 53px;
     width: auto;
     line-height: 1.25;
-    border-top: 1px solid #614923; }
+    border-top: 1px solid #614923;
+    bottom: 31px; }
     .champions-grid .atc-details-lg p {
       color: #FFFFFF;
       font-size: 12px;
       font-weight: 600;
-      margin: 0 20%;
+      margin: 0 22%;
       text-align: center;
       width: 60%; }
     .champions-grid .atc-details-lg img {
@@ -391,7 +419,8 @@ nav {
     height: 52px;
     width: 168px;
     -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    box-shadow: none !important;
+    bottom: 22px; }
     .champions-grid .atc-btn-lg::before {
       background: none !important;
       margin: 0 !important; }
@@ -402,7 +431,9 @@ nav {
     height: 40px;
     width: 168px;
     -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    box-shadow: none !important;
+    position: relative;
+    bottom: 31px; }
     .champions-grid .atsc-btn-lg::before {
       background: none !important;
       margin: 0 !important; }
@@ -412,6 +443,16 @@ nav {
     border-color: #C7A96D !important; }
   .champions-grid .locked {
     border-color: #F2F2F2 !important; }
+  .champions-grid tr > .locked {
+    background-image: url(../../img/lockno-champion.png);
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    z-index: 1; }
+  .champions-grid tr > .active {
+    background-image: url(../../img/padlock.png);
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    z-index: 1; }
 
 /*.table-bordered {
   background-color: #17181C;
