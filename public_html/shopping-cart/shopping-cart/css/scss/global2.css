@@ -108,7 +108,7 @@ body {
 
 .table-bordered {
   background-color: #17181C;
-  padding: 0 10px;
+  padding: 0 10px 8px 10px;
   border: 1px solid #614923;
   border-spacing: 0 5px;
   min-width: 1200px; }

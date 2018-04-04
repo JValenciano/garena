@@ -73,6 +73,7 @@ body {
   clear: both;
   content: " ";
   float: left;
+  margin: 0 13%;
   min-width: 470px; }
 
 .table-shopping-cart {
@@ -82,7 +83,7 @@ body {
   height: 100px; }
 
 .shopping-cart-lol {
-  min-height: 500px; }
+  min-height: 700px; }
 
 .left {
   position: relative;
@@ -109,9 +110,10 @@ body {
 .table-bordered {
   background-color: #17181C;
   padding: 0 10px;
-  border: 1px solid #614923;
+  max-height: 520px;
+  border: 1px solid #383C37;
   border-spacing: 0 5px;
-  min-width: 1200px; }
+  overflow-y: auto; }
   .table-bordered th {
     display: inline-block;
     text-align: left;
@@ -124,14 +126,14 @@ body {
   .table-bordered tbody {
     display: block;
     max-height: 520px;
-    width: 760px;
+    width: 895px;
     overflow-y: auto; }
   .table-bordered tbody tr {
     vertical-align: top;
     background-color: #202529; }
   .table-bordered tbody td {
     color: #FFFFFF;
-    padding: 12px 20px;
+    padding: 12px;
     font-size: 15px; }
     .table-bordered tbody td .item-description {
       color: #BAB18F;
@@ -175,7 +177,7 @@ body {
   top: 0;
   width: 380px;
   padding-top: 120px;
-  margin-right: 65px; }
+  margin-right: 20px; }
 
 .order-label {
   float: left;

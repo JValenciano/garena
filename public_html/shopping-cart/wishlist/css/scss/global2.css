@@ -73,6 +73,7 @@ body {
   clear: both;
   content: " ";
   float: left;
+  margin: 0 18%;
   min-width: 470px; }
 
 .table-shopping-cart {
@@ -109,9 +110,10 @@ body {
 .table-bordered {
   background-color: #17181C;
   padding: 0 10px;
-  border: 1px solid #614923;
+  max-height: 520px;
+  border: 1px solid #383C37;
   border-spacing: 0 5px;
-  min-width: 1200px; }
+  overflow-y: auto; }
   .table-bordered th {
     display: inline-block;
     text-align: left;
