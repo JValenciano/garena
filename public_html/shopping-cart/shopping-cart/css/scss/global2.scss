@@ -114,7 +114,7 @@ body {
     margin: 0.5em 0;
     font-size: 2em;
     text-align: center;
-    background: -webkit-linear-gradient(#B99B58, #614923);
+    background: -webkit-linear-gradient(#bfae80, #887040, #785A27);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -123,7 +123,7 @@ body {
 .table-bordered {
   background-color: #17181C;
   padding: 0 10px;
-  border: 1px solid #FABE0A;
+  border: 1px solid #614923;
   border-spacing: 0 5px;
   min-width: 1200px;
 
@@ -202,7 +202,7 @@ body {
 
 .order-summary-header {
   font-weight: 700 !important;
-  border-bottom: 1px solid #FABE0A;
+  border-bottom: 1px solid #614923;
 
   .no-of-items {
     color: #BAB18F;
