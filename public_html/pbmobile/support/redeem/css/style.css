@@ -1,0 +1,1367 @@
+@font-face
+{
+    font-family: 'Agency';
+    src: url('fonts/agencyb.TTF');
+}
+html
+{
+    font-family: 'Verdana',Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+
+    width: 100%;
+    height: auto;
+}
+html *
+{
+    box-sizing: border-box;
+}
+html .clearfix:after,
+html div#home-content div.wrapper:after,
+html div#home-content div.wrapper div.news div.news-filter ul:after,
+html div#home-content div.wrapper div.ranking div.ranking-filter-container ul:after,
+html div#news-content div.wrapper:after,
+html div#news-content div.wrapper div.content div.article-container div.article:after,
+html div#news-content div.wrapper div.content div.article-container div.article div.article-details:after,
+html div#article div.wrapper:after,
+html div#support-article div.wrapper:after,
+html div#guide-article div.wrapper:after
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    width: 100%;
+    height: 0;
+
+    content: '';
+}
+html body
+{
+    font: inherit;
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    background: #000 url('images/background.jpg') top center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;;
+}
+
+html body header {
+    background: transparent url(images/nav-frame.png) top center no-repeat;
+    background-size: 100% 110%;
+    height: 13vh;
+}
+html body header .center{
+    margin: 0 35%;
+}
+html body header .center img{
+    width: 100%;
+    height: 10vh;
+}
+
+html body div#mid-nav
+{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    margin: -25px auto;
+    background: transparent url('images/mid-frame.png') center center no-repeat;
+    background-size: 100% 100%;
+}
+html body div#mid-nav:before
+{
+    display: block;
+    width: 100%;
+    padding-top: 185px;
+    content: '';
+}
+html body div#mid-nav div.wrapper
+{
+    position: absolute;
+    top: 0;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 240px 240px 240px 240px;
+}
+html body div#mid-nav div.wrapper a
+{
+    align-self: center;
+    justify-self: center;
+}
+html body div#mid-nav div.wrapper a img
+{
+    width: 240px;
+    height: 180px;
+}
+
+html body div#mid-nav-lower
+{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    margin: -25px auto;
+    background: transparent url('images/mid-frame.png') center center no-repeat;
+    background-size: 100% 100%;
+}
+html body div#mid-nav-lower:before
+{
+    display: block;
+    width: 100%;
+    padding-top: 185px;
+    content: '';
+}
+html body div#mid-nav-lower div.wrapper
+{
+    position: absolute;
+    top: 38px;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 240px 240px 240px 240px;
+}
+html body div#mid-nav-lower div.wrapper a
+{
+    align-self: center;
+    justify-self: center;
+}
+html body div#mid-nav-lower div.wrapper a img
+{
+    width: 235px;
+    height: 115px;
+}
+
+html nav
+{
+    width: 100%;
+    max-width: 1299px;
+    height: 100vh;
+    margin: 0 auto -20px;
+    /*background: transparent url('images/nav-frame.png') top center no-repeat;*/
+    background-size: 100% 100%;
+}
+html nav div.wrapper
+{
+    /*display: grid;*/
+    justify-content: center;
+    margin: 20% 15%;
+    padding: 3px 0;
+    grid-column-gap: 10px;
+    grid-template-columns: 165px 180px 140px 180px 165px;
+    height: 100%;
+}
+
+html nav div.wrapper .center {
+  text-align: center;
+}
+
+html nav div.wrapper .center:first-of-type {
+  margin: 20% 0;
+}
+
+html nav div.wrapper a
+{
+    align-self: center;
+    justify-self: center;
+}
+html nav div.wrapper a img
+{
+    width: 55%;
+    height: 230px;
+}
+html nav div.wrapper a.logo img
+{
+    width: 75%;
+    height: auto;
+}
+html div#carousel
+{
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    margin: -40px auto;
+    padding: 23px 0 23px;
+    background: transparent url('images/carousel-background.png') center center no-repeat;
+    background-size: contain;
+    height: 40vh;
+}
+html div#carousel div.item
+{
+    position: relative;
+    width: 100%;
+    padding-top: 27.89%;
+}
+html div#carousel div.item a.item-remove
+{
+    position: absolute;
+    z-index: 1;
+    top: .5em;
+    right: .5em;
+    padding: .5em 1em;
+    color: black;
+    border: 1px solid black;
+    background: white;
+}
+html div#carousel div.item a.item-link
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+html div#carousel div.item a.item-link img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+html div#carousel button.flickity-prev-next-button
+{
+    background: transparent;
+    height: 100px;
+    width: 130px;
+}
+html div#carousel button.flickity-prev-next-button svg path.arrow
+{
+    transition: all .13s ease-out;
+    fill: rgba(255,255,255,.5);
+}
+html div#carousel button.flickity-prev-next-button:hover svg path.arrow
+{
+    fill: #fff;
+}
+html div#carousel ol.flickity-page-dots
+{
+    bottom: 40px;
+}
+html div#item button.flickity-prev-next-button,
+html div#mode button.flickity-prev-next-button
+{
+    width: 24px;
+    height: 36px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+}
+html div#item button.flickity-prev-next-button svg,
+html div#mode button.flickity-prev-next-button svg
+{
+    left: 10%;
+    width: 80%;
+}
+html div#item button.flickity-prev-next-button svg path.arrow,
+html div#mode button.flickity-prev-next-button svg path.arrow
+{
+    fill: white;
+}
+html div#item button.flickity-prev-next-button.next,
+html div#mode button.flickity-prev-next-button.next
+{
+    right: 3px;
+}
+html div#item button.flickity-prev-next-button.previous,
+html div#mode button.flickity-prev-next-button.previous
+{
+    left: 3px;
+}
+html div#home-content
+{
+    width: 100%;
+    min-width: 320px;
+    height: 80vh;
+    margin: 10px auto;
+    background: transparent url('images/body-frame.png') center center no-repeat;
+    background-size: 100% 100%;
+}
+html div#home-content div.wrapper
+{
+    width: 100%;
+    max-width: 1126px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px 60px 60px;
+}
+html div#home-content div.wrapper div.news
+{
+    height: 55%;
+    margin: 8% 0 5%;
+}
+
+/* TEST */
+.news-filter_toggle_wrapper
+{
+    background: transparent url('images/news-filter-background.png') center center no-repeat;
+    background-size: cover;
+    height: 4vh;
+}
+
+.news-filter
+{
+    /*background: transparent url('images/news-filter-background.png') center center no-repeat;
+    background-size: cover;*/
+    background-color: rgba(76, 09, 04, 0.5);
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: auto;
+    height: 26vh;
+}
+
+
+
+.news-filter_wrap_toggle
+{
+    background: transparent url('images/news-filter-background.png') center center no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 4vh;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 2%;
+}
+
+html div#home-content div.wrapper div.news div.news-filter ul
+{
+    font-size: 3.5vmin;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+html div#home-content div.wrapper div.news div.news-filter ul li
+{
+    background-image: url('images/news-filter-divider.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 5%;
+    position: relative;
+    display: block;
+    float: left;
+    cursor: pointer;
+    width: 100%;
+    height: 68px;
+    padding: 20px 0;
+}
+html div#home-content div.wrapper div.news div.news-filter ul li a
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+/*html div#home-content div.wrapper div.news div.news-filter ul li a:hover:before
+{
+    position: absolute;
+    z-index: 1;
+    top: -25%;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    content: '';
+    background: radial-gradient(rgba(255,32,32,.5) 0%, rgba(255,32,32,0) 60%);
+}
+*/
+html div#home-content div.wrapper div.news div.news-filter ul li:last-of-type
+{
+    background: none;
+}
+html div#home-content div.wrapper div.news div.news-list
+{
+    overflow: auto;
+    height: 95%;
+    width: 100%;
+    padding: 0 20px;
+    color: #fff;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #323031;
+    background: #000;
+    float: right;
+    display: inline-block;
+
+}
+
+html div#home-content div.wrapper div.news div.news-list::-webkit-scrollbar {
+  width: 8px;margin: 13px;
+}
+
+html div#home-content div.wrapper div.news div.news-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+html div#home-content div.wrapper div.news div.news-list::-webkit-scrollbar-thumb {
+  background-color: #C7A96D;
+  outline: 1px solid slategrey;
+  border-radius: 5px;
+}
+html div#home-content div.wrapper div.news div.news-list ul
+{
+    padding: 0;
+}
+html div#home-content div.wrapper div.news div.news-list ul li
+{
+    list-style-type: none;
+    position: relative;
+    margin: 10px 0;
+}
+
+html div#home-content div.wrapper div.news div.news-list ul li:not(:last-of-type)
+{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+/*html div#home-content div.wrapper div.news div.news-list ul li.announcement
+{
+    color: #014f99;
+}
+html div#home-content div.wrapper div.news div.news-list ul li.event
+{
+    color: #9014b4;
+}
+html div#home-content div.wrapper div.news div.news-list ul li.item
+{
+    color: #0d6b2f;
+}
+html div#home-content div.wrapper div.news div.news-list ul li.patch
+{
+    color: #807a7a;
+}
+html div#home-content div.wrapper div.news div.news-list ul li.tournament
+{
+    color: #954103;
+}
+*/
+html div#home-content div.wrapper div.news div.news-list ul li a
+{
+    display: inline-block;
+    align-items: center;
+    margin: .25em 0;
+    padding: 1em 0;
+    text-decoration: none;
+    color: inherit;
+    height: 250px;
+    width: 60%;
+}
+html div#home-content div.wrapper div.news div.news-list ul li a:first-of-type
+{
+    width: 40%;
+    border: 2px solid rgba(255,255,255,.25);
+}
+
+html div#home-content div.wrapper div.news div.news-list ul li a:last-of-type
+{
+    float: right;
+}
+html div#home-content div.wrapper div.news div.news-list ul li a span.date
+{
+    font-size: 22px;
+    text-align: center;
+    color: #f00;
+    float: left;
+    position: relative;
+    left: 3%;
+    top: 20px;
+}
+html div#home-content div.wrapper div.news div.news-list ul li a span.description
+{
+    font-size: 25px;
+    position: relative;
+    /* margin: 0 10px;
+    padding: 0 10px;
+    text-transform: uppercase; */
+    color: inherit;
+    border-radius: 3px;
+    float: left;
+    left: 2.5%;
+    top: 25%;
+    line-height: 35px;
+}
+html div#home-content div.wrapper div.news div.news-list ul li a span.title
+{
+    font-size: 32px;
+    font-weight: bolder;
+    width: 100%;
+    height: 21px;
+    line-height: 36px;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    /* margin-left: 20px; */
+    float: left;
+    left: 3%;
+    top: 0;
+    position: relative;
+}
+
+html div#home-content div.wrapper div.ranking
+{
+    display: inline-block;
+    margin: 5% 0 5%;
+    border: 3px solid #b6761c;
+    background: #000;
+    height: 25%;
+}
+html div#home-content div.wrapper div.ranking div.ranking-header
+{
+    font-family: 'Agency',sans-serif;
+    font-size: 3rem;
+    line-height: 65px;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    color: #000;
+    background: transparent url('images/ranking-title-background.png') center center no-repeat;
+    background-size: cover;
+}
+html div#home-content div.wrapper div.ranking div.ranking-header h1
+{
+    margin: 0;
+    font-family: 'Agency';
+}
+html div#home-content div.wrapper div.ranking div.ranking-filter-container
+{
+    font-size: 12px;
+}
+html div#home-content div.wrapper div.ranking div.ranking-filter-container ul
+{
+    padding: 10px;
+}
+html div#home-content div.wrapper div.ranking div.ranking-filter-container ul li
+{
+    line-height: 2.5rem;
+    float: left;
+    width: calc((100% - 20px) / 3);
+    margin-right: 10px;
+    padding-left: 1rem;
+    text-align: left;
+    color: #c09954;
+    border: 2px solid #b6761c;
+    background: #222;
+}
+html div#home-content div.wrapper div.ranking div.ranking-filter-container ul li i
+{
+    margin-right: .5rem;
+}
+html div#home-content div.wrapper div.ranking div.ranking-filter-container ul li:last-of-type
+{
+    margin: 0;
+}
+html div#home-content div.wrapper div.ranking h6
+{
+    font-size: 54px;
+    font-weight: bolder;
+    line-height: 5em;
+    text-align: center;
+    letter-spacing: -3px;
+    color: #c09954;
+}
+html div#home-content div.wrapper div.ranking ol.ranking-list
+{
+    font-size: 14px;
+    padding: 0 1rem;
+}
+html div#home-content div.wrapper div.ranking ol.ranking-list li
+{
+    line-height: 2.75rem;
+    position: relative;
+    margin-left: 2.25rem;
+    list-style-type: decimal;
+    color: #c09954;
+}
+html div#home-content div.wrapper div.ranking ol.ranking-list li:after
+{
+    position: absolute;
+    bottom: -1px;
+    left: -2.25rem;
+    width: calc(100% + 2.25rem);
+    height: 1px;
+    content: '';
+    background: rgba(255,255,255,.13);
+}
+html div#home-content div.wrapper div.ranking ol.ranking-list li:last-of-type
+{
+    border: none;
+}
+html div#home-content div.wrapper div.ranking ol.ranking-list li:last-of-type:after
+{
+    display: none;
+}
+html div#home-content div.wrapper div.float-left
+{
+    margin: 20px 0 0 0;
+}
+html div#home-content div.wrapper div.float-left div#item
+{
+    position: relative;
+    float: right;
+    width: 48%;
+    height: 250px;
+    border: 3px solid #323031;
+}
+html div#home-content div.wrapper div.float-left div#mode
+{
+    position: relative;
+    float: left;
+    width: 48%;
+    height: 250px;
+    border: 3px solid #323031;
+}
+html div#home-content div.wrapper div.float-left div#item img,
+html div#home-content div.wrapper div.float-left div#mode img {
+    flex-shrink: 0
+    object-fit: fill;
+}
+
+
+
+html div#home-content div.wrapper div.float-left div#item a.item-remove,
+html div#home-content div.wrapper div.float-left div#mode a.item-remove
+{
+    position: absolute;
+    z-index: 2;
+    top: .5em;
+    right: .5em;
+    padding: .5em 1em;
+    color: #000;
+    border: 1px solid #000;
+    background: #fff;;
+}
+html div#home-content div.wrapper div.float-left div#item div.title,
+html div#home-content div.wrapper div.float-left div#mode div.title
+{
+    line-height: 3em;
+    position: absolute;
+    z-index: 1;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    padding: 0 1em;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+}
+html div#home-content div.wrapper div.float-left div#item div.title span:first-of-type,
+html div#home-content div.wrapper div.float-left div#mode div.title span:first-of-type
+{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+html div#home-content div.wrapper div.youtube
+{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    border: 3px solid #323031;
+    margin: 4% 0 4%;
+}
+html div#home-content div.wrapper div.youtube iframe
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+html div#home-content div.wrapper div.youtube:before
+{
+    display: block;width: 100%;
+    padding-top: 56.25%;
+    content: '';
+}
+html div#news-content
+{
+    width: 100%;
+    min-width: 1358px;
+    height: 1028px;
+    margin: 0 auto 100px;
+    background: transparent url('images/news-frame.png') center center no-repeat;
+    background-size: contain;
+}
+html div#news-content div.wrapper
+{
+    width: 100%;
+    max-width: 1358px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 100px 95px;
+}
+html div#news-content div.wrapper div.sidebar
+{
+    float: left;
+    width: 134px;
+    margin-right: 10px;
+}
+html div#news-content div.wrapper div.sidebar a img
+{
+    margin: -7px auto -2px;
+}
+html div#news-content div.wrapper div.sidebar ul.button-container
+{
+    font-size: 12px;
+    width: 134px;
+    height: 162px;
+    padding: 14px 3.25px;
+    background: transparent url('images/news-buttons-container.png') center center no-repeat;
+}
+html div#news-content div.wrapper div.sidebar ul.button-container li
+{
+    line-height: 25px;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    background: transparent url('images/news-buttons-background.png') center center no-repeat;
+}
+html div#news-content div.wrapper div.sidebar ul.button-container li a
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+html div#news-content div.wrapper div.sidebar ul.button-container li:hover
+{
+    background: transparent url('images/news-buttons-background-red.png') center center no-repeat;
+}
+html div#news-content div.wrapper div.sidebar ul.button-container li.active
+{
+    background: transparent url('images/news-buttons-background-red.png') center center no-repeat;
+}
+html div#news-content div.wrapper div.content
+{
+    float: left;
+    width: calc(100% - 144px);
+}
+html div#news-content div.wrapper div.content h1
+{
+    font-size: 1.25rem;
+    line-height: 3em;
+    padding: 0 4rem;
+    text-transform: uppercase;
+    color: red;
+    border: 1px solid #333;
+    background: rgba(27,27,27,.62);
+}
+html div#news-content div.wrapper div.content div.article-container
+{
+    padding: 2rem 4rem;
+    color: white;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #333;
+    background: rgba(27,27,27,.62);
+}
+html div#news-content div.wrapper div.content div.article-container div.article
+{
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+    background: #1f1f1f;;
+}
+html div#news-content div.wrapper div.content div.article-container div.article a
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+html div#news-content div.wrapper div.content div.article-container div.article img
+{
+    float: left;
+    width: 170px;
+    height: 100px;
+    margin-right: 10px;
+    background: transparent url('') center center no-repeat;
+    background-size: cover;
+}
+html div#news-content div.wrapper div.content div.article-container div.article div.article-details
+{
+    float: left;
+    width: calc(100% - 180px);
+}
+html div#news-content div.wrapper div.content div.article-container div.article div.article-details h2
+{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 1.5em;
+    float: left;
+    transition: border .5s ease-in-out;
+    border-bottom: 2px solid white;
+}
+html div#news-content div.wrapper div.content div.article-container div.article div.article-details span.date
+{
+    font-size: 11px;
+    float: left;
+    clear: both;
+    color: red;
+}
+html div#news-content div.wrapper div.content div.article-container div.article div.article-details p
+{
+    font-size: 16px;
+    display: block;
+    display: -webkit-box;
+    float: left;
+    clear: both;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    height: 2.25em;
+    margin-top: .75em;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+html div#news-content div.wrapper div.content div.article-container div.article:hover
+{
+    background: #2d2d2d;
+}
+html div#news-content div.wrapper div.content div.article-container div.article:last-of-type
+{
+    margin: 0;
+}
+html div#news-content div.wrapper div.content ul
+{
+    font-size: 14px;display: flex;
+    align-items: center;justify-content: center;color: gray;;
+}
+html div#news-content div.wrapper div.content ul li
+{
+    font-size: inherit;line-height: 4em;
+
+    align-self: center;width: 1.5em;cursor: pointer;text-align: center;;
+}
+html div#news-content div.wrapper div.content ul li a
+{
+    text-decoration: none;
+    color: inherit;
+}
+html div#news-content div.wrapper div.content ul li a:hover,
+html div#news-content div.wrapper div.content ul li a.active
+{
+    color: red;
+}
+html footer
+{
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    line-height: 1.5em;
+    width: 100%;
+    margin: 6% 0 0;
+    padding: 1rem 0;
+    color: white;
+    background: black;;
+}
+html footer div.wrapper
+{
+    width: 100%;
+    max-width: 860px !important;
+    margin: 0 auto;
+    grid-column-gap: 10px;
+    padding: 0 !important;
+}
+html footer div.wrapper div#footer-garena
+{
+    align-self: center;
+    width: 90px;
+    height: 90px;
+    background: transparent url('images/garena-logo.png') center center no-repeat;
+    background-size: cover;
+    justify-self: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1% 5% 0 28%;
+}
+html footer div.wrapper div#footer-zepetto
+{
+    align-self: center;
+    width: 250px;
+    height: 65px;
+    background: transparent url('images/zepetto-logo-2.png') center center no-repeat;
+    background-size: cover;
+    justify-self: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+html footer div.wrapper p
+{
+    font: inherit;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.3em;
+}
+html footer div.wrapper p a
+{
+    color: inherit;
+}
+html div#article
+{
+    width: 100%;
+    height: auto;margin: -33px auto 100px;;
+}
+html div#article div.wrapper
+{
+    width: 100%;max-width: 1358px;height: 100%;margin: 0 auto;padding: 3rem;
+
+    border: 40px solid transparent;border-image: url('images/news-frame.png') 40 40 fill repeat;;
+}
+html div#article div.wrapper div.sidebar
+{
+    float: left;width: 134px;margin-right: 10px;;
+}
+html div#article div.wrapper div.sidebar a img
+{
+    margin: -7px auto -2px;
+}
+html div#article div.wrapper div.sidebar ul.button-container
+{
+    font-size: 12px;width: 134px;height: 162px;padding: 14px 3.25px;
+
+    background: transparent url('images/news-buttons-container.png') center center no-repeat;;
+}
+html div#article div.wrapper div.sidebar ul.button-container li
+{
+    line-height: 25px;position: relative;width: 100%;height: 25px;margin-bottom: 2px;cursor: pointer;text-align: center;color: #fff;
+    background: transparent url('images/news-buttons-background.png') center center no-repeat;;
+}
+html div#article div.wrapper div.sidebar ul.button-container li a
+{
+    position: absolute;top: 0;left: 0;display: inline-block;width: 100%;height: 100%;text-decoration: none;
+
+    color: inherit;;
+}
+html div#article div.wrapper div.sidebar ul.button-container li:hover
+{
+    background: transparent url('images/news-buttons-background-red.png') center center no-repeat;
+}
+html div#article div.wrapper div.sidebar ul.button-container li.active
+{
+    background: transparent url('images/news-buttons-background-red.png') center center no-repeat;
+}
+html div#article div.wrapper div.content
+{
+    float: right;width: calc(100% - 144px);
+}
+html div#article div.wrapper div.content h1
+{
+    font-size: 1.25rem;line-height: 3em;text-transform: uppercase;color: red;border: 1px solid #333;
+    background: rgba(27,27,27,.62);;
+}
+html div#article div.wrapper div.content h1 a
+{
+    display: block;width: 100%;max-width: 920px;margin: 0 auto;text-decoration: none;
+
+    color: inherit;;
+}
+html div#article div.wrapper div.content div.article-container.tournaments p
+{
+    text-align: center;
+}
+html div#article div.wrapper div.content div.article-container
+{
+    position: relative;padding: 2rem 31px;color: #fff;border-width: 0 1px 1px 1px;border-style: solid;border-color: #333;
+    background: rgba(27,27,27,.62);;
+}
+html div#article div.wrapper div.content div.article-container a.item-remove
+{
+    font-size: 16px;position: absolute;top: -1px;right: -1px;padding: .25rem .75rem;text-decoration: none;color: #000;border: 1px solid #000;border-radius: .25rem;
+    background: #fff;;
+}
+html div#article div.wrapper div.content div.article-container a.item-remove i
+{
+    font-size: inherit;line-height: 2rem;width: 2rem;text-align: center;
+
+    color: inherit;;
+}
+html div#article div.wrapper div.content div.article-container iframe
+{
+    display: block;width: 100%;max-width: 920px;height: 250px;margin: 0 auto 2rem;;
+}
+html div#article div.wrapper div.content div.article-container figure
+{
+    width: auto;max-width: 920px;
+    margin: 0 auto 2rem;;
+}
+html div#article div.wrapper div.content div.article-container figure img
+{
+    display: block;width: 100%;margin: 0 auto;;
+}
+html div#article div.wrapper div.content div.article-container p
+{
+    font-size: 14px;line-height: 1.75em;width: 100%;max-width: 920px;margin: 0 auto 2rem;;
+}
+html div#article div.wrapper div.content div.article-container p strong
+{
+    font-weight: bolder;
+}
+html div#article div.wrapper div.content div.article-container table
+{
+    width: 100%;max-width: 640px;margin: 0 auto 2rem;
+
+    border: 2px solid #fff;;
+}
+html div#article div.wrapper div.content div.article-container table th
+{
+    font-size: 1.5em;font-weight: bolder;line-height: 2em;width: 25%;
+
+    border-bottom: 2px solid #fff;;
+}
+html div#article div.wrapper div.content div.article-container table th:first-of-type
+{
+    width: 50%;
+}
+html div#article div.wrapper div.content div.article-container table td
+{
+    line-height: 2em;width: 25%;padding: .5em 1em;text-align: center;;
+}
+html div#article div.wrapper div.content div.article-container table td:first-of-type
+{
+    width: 50%;
+
+    text-align: left;;
+}
+html div#article div.wrapper div.content div.article-container table tr
+{
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+html div#article div.wrapper div.content div.article-container table tr:last-of-type
+{
+    border-bottom: none;
+}
+html div#support-article
+{
+    width: 100%;
+    height: auto;margin: -33px auto 100px;;
+}
+html div#support-article div.wrapper
+{
+    width: 100%;max-width: 1358px;height: 100%;margin: 0 auto;padding: 3rem;
+
+    border: 40px solid transparent;border-image: url('images/news-frame.png') 40 40 fill repeat;;
+}
+html div#support-article div.wrapper div.sidebar
+{
+    float: left;width: 134px;margin-right: 10px;;
+}
+html div#support-article div.wrapper div.sidebar a img
+{
+    margin: -7px auto -2px;
+}
+html div#support-article div.wrapper div.sidebar ul.button-container
+{
+    font-size: 12px;width: 134px;height: 232px;padding: 6px 3px;
+
+    border: 3px solid transparent;border-image: url('images/news-buttons-container.png') 3 3 fill stretch;;
+}
+html div#support-article div.wrapper div.sidebar ul.button-container li
+{
+    line-height: 25px;position: relative;width: 100%;height: 25px;margin-bottom: 2px;cursor: pointer;text-align: center;color: #fff;
+    background: transparent url('images/news-buttons-background.png') center center no-repeat;;
+}
+html div#support-article div.wrapper div.sidebar ul.button-container li a
+{
+    position: absolute;top: 0;left: 0;display: inline-block;width: 100%;height: 100%;text-decoration: none;
+
+    color: inherit;;
+}
+html div#support-article div.wrapper div.sidebar ul.button-container li:hover
+{
+    background: transparent url('images/news-buttons-background-red.png') center center no-repeat;
+}
+html div#support-article div.wrapper div.sidebar ul.button-container li.active
+{
+    background: transparent url('images/news-buttons-background-red.png') center center no-repeat;
+}
+html div#support-article div.wrapper div.content
+{
+    float: right;width: calc(100% - 144px);
+}
+html div#support-article div.wrapper div.content h1
+{
+    font-size: 1.25rem;line-height: 3em;padding: 0 4rem;text-transform: uppercase;color: red;border: 1px solid #333;
+    background: rgba(27,27,27,.62);;
+}
+html div#support-article div.wrapper div.content h1 a
+{
+    display: block;width: 100%;max-width: 920px;margin: 0 auto;text-decoration: none;
+
+    color: inherit;;
+}
+html div#support-article div.wrapper div.content div.article-container
+{
+    position: relative;padding: 2rem 4rem;color: #fff;border-width: 0 1px 1px 1px;border-style: solid;border-color: #333;
+    background: rgba(27,27,27,.62);;
+}
+html div#support-article div.wrapper div.content div.article-container a.item-remove
+{
+    font-size: 16px;position: absolute;top: -1px;right: -1px;padding: .25rem .75rem;text-decoration: none;color: #000;border: 1px solid #000;border-radius: .25rem;
+    background: #fff;;
+}
+html div#support-article div.wrapper div.content div.article-container a.item-remove i
+{
+    font-size: inherit;line-height: 2rem;width: 2rem;text-align: center;
+
+    color: inherit;;
+}
+html div#support-article div.wrapper div.content div.article-container h2
+{
+    font-size: 1.25rem;line-height: 2em;width: 100%;max-width: 920px;margin: 0 auto 1rem;padding: .5rem 1rem;cursor: pointer;
+
+    background: #1f1f1f;;
+}
+html div#support-article div.wrapper div.content div.article-container h2 i
+{
+    margin-right: .675rem;transition: all .1s linear;
+}
+html div#support-article div.wrapper div.content div.article-container h2 i.rotate
+{
+    transform: rotate(-180deg);
+}
+html div#support-article div.wrapper div.content div.article-container h2.active
+{
+    background: #5a5a5a;
+}
+html div#support-article div.wrapper div.content div.article-container strong
+{
+    font-size: 1.75em;font-weight: bolder;line-height: 2em;
+
+    display: inline-block;margin-bottom: 1rem;
+}
+html div#support-article div.wrapper div.content div.article-container p
+{
+    font-size: 14px;line-height: 1.75em;
+
+    display: none;width: 100%;max-width: 840px;margin: 1rem auto 2rem;;
+}
+html div#support-article div.wrapper div.content div.article-container p + ul
+{
+    margin-top: -2rem;
+}
+html div#support-article div.wrapper div.content div.article-container ul
+{
+    font-size: 14px;line-height: 1.75em;
+
+    display: none;width: 100%;max-width: 840px;margin: 1rem auto 2rem;padding-left: 1.25rem;list-style-type: disc;;
+}
+html div#support-article div.wrapper div.content div.article-container figure
+{
+    display: none;width: 100%;max-width: 880px;margin: 0 auto 2rem;;
+}
+html div#support-article div.wrapper div.content div.article-container figure img
+{
+    display: block;width: 100%;margin: 0 auto;;
+}
+html div#support-article div.wrapper div.content div.article-container table
+{
+    display: none;width: 100%;max-width: 640px;margin: 0 auto 2rem;
+
+    border: 2px solid #fff;;
+}
+html div#support-article div.wrapper div.content div.article-container table th
+{
+    font-size: 1.5em;font-weight: bolder;line-height: 2em;width: 25%;
+
+    border-bottom: 2px solid #fff;;
+}
+html div#support-article div.wrapper div.content div.article-container table th:first-of-type
+{
+    width: 50%;
+}
+html div#support-article div.wrapper div.content div.article-container table td
+{
+    line-height: 2em;width: 25%;padding: .5em 1em;text-align: center;;
+}
+html div#support-article div.wrapper div.content div.article-container table td:first-of-type
+{
+    width: 50%;
+
+    text-align: left;;
+}
+html div#support-article div.wrapper div.content div.article-container table tr
+{
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+html div#support-article div.wrapper div.content div.article-container table tr:last-of-type
+{
+    border-bottom: none;
+}
+html div#guide-article
+{
+    width: 100%;
+    height: auto;margin: -33px auto 100px;;
+}
+html div#guide-article div.wrapper
+{
+    width: 100%;max-width: 1358px;height: 100%;margin: 0 auto;padding: 3rem;
+
+    border: 40px solid transparent;border-image: url('images/news-frame.png') 40 40 fill repeat;;
+}
+html div#guide-article div.wrapper div.sidebar
+{
+    float: left;width: 134px;margin-right: 10px;;
+}
+html div#guide-article div.wrapper div.sidebar a img
+{
+    margin: -7px auto -2px;
+}
+html div#guide-article div.wrapper div.sidebar ul.button-container
+{
+    font-size: 12px;width: 134px;height: 180px;padding: 6px 3px;
+
+    border: 3px solid transparent;border-image: url('images/news-buttons-container.png') 3 3 fill stretch;;
+}
+html div#guide-article div.wrapper div.sidebar ul.button-container li
+{
+    line-height: 25px;position: relative;width: 100%;height: 25px;margin-bottom: 2px;cursor: pointer;text-align: center;color: #fff;
+    background: transparent url('images/news-buttons-background.png') center center no-repeat;;
+}
+html div#guide-article div.wrapper div.sidebar ul.button-container li a
+{
+    position: absolute;top: 0;left: 0;display: inline-block;width: 100%;height: 100%;text-decoration: none;
+
+    color: inherit;;
+}
+html div#guide-article div.wrapper div.sidebar ul.button-container li:hover
+{
+    background: transparent url('images/news-buttons-background-red.png') center center no-repeat;
+}
+html div#guide-article div.wrapper div.sidebar ul.button-container li.active
+{
+    background: transparent url('images/news-buttons-background-red.png') center center no-repeat;
+}
+html div#guide-article div.wrapper div.content
+{
+    float: right;width: calc(100% - 144px);
+}
+html div#guide-article div.wrapper div.content h1
+{
+    font-size: 1.25rem;line-height: 3em;padding: 0 4rem;text-transform: uppercase;color: red;border: 1px solid #333;
+    background: rgba(27,27,27,.62);;
+}
+html div#guide-article div.wrapper div.content h1 a
+{
+    display: block;width: 100%;max-width: 920px;margin: 0 auto;text-decoration: none;
+
+    color: inherit;;
+}
+html div#guide-article div.wrapper div.content div.article-container
+{
+    position: relative;padding: 2rem 4rem;color: #fff;border-width: 0 1px 1px 1px;border-style: solid;border-color: #333;
+    background: rgba(27,27,27,.62);;
+}
+html div#guide-article div.wrapper div.content div.article-container a.item-remove
+{
+    font-size: 16px;position: absolute;top: -1px;right: -1px;padding: .25rem .75rem;text-decoration: none;color: #000;border: 1px solid #000;border-radius: .25rem;
+    background: #fff;;
+}
+html div#guide-article div.wrapper div.content div.article-container a.item-remove i
+{
+    font-size: inherit;line-height: 2rem;width: 2rem;text-align: center;
+
+    color: inherit;;
+}
+html div#guide-article div.wrapper div.content div.article-container h2
+{
+    font-size: 1.25rem;line-height: 2em;width: 100%;max-width: 920px;margin: 0 auto 1rem;padding: .5rem 1rem;cursor: pointer;
+
+    background: #1f1f1f;;
+}
+html div#guide-article div.wrapper div.content div.article-container h2 i
+{
+    margin-right: .675rem;transition: all .1s linear;
+}
+html div#guide-article div.wrapper div.content div.article-container h2 i.rotate
+{
+    transform: rotate(-180deg);
+}
+html div#guide-article div.wrapper div.content div.article-container h2.active
+{
+    background: #5a5a5a;
+}
+html div#guide-article div.wrapper div.content div.article-container h3
+{
+    font-size: 1.5rem;font-weight: bolder;line-height: 2em;width: 100%;max-width: 920px;margin: 0 auto 1rem;padding: .5rem 1rem;text-transform: uppercase;;
+}
+html div#guide-article div.wrapper div.content div.article-container strong
+{
+    font-size: 1.75em;font-weight: bolder;line-height: 2em;
+
+    display: inline-block;margin-bottom: 1rem;
+}
+html div#guide-article div.wrapper div.content div.article-container p
+{
+    font-size: 14px;line-height: 1.75em;
+
+    display: none;width: 100%;max-width: 840px;margin: 1rem auto 2rem;;
+}
+html div#guide-article div.wrapper div.content div.article-container p + ul
+{
+    margin-top: -2rem;
+}
+html div#guide-article div.wrapper div.content div.article-container ul
+{
+    font-size: 14px;line-height: 1.75em;
+
+    display: none;width: 100%;max-width: 840px;margin: 1rem auto 2rem;padding-left: 1.25rem;list-style-type: disc;;
+}
+html div#guide-article div.wrapper div.content div.article-container figure
+{
+    display: none;width: 100%;max-width: 880px;margin: 0 auto 2rem;;
+}
+html div#guide-article div.wrapper div.content div.article-container figure img
+{
+    display: block;width: 100%;margin: 0 auto;;
+}
+html div#guide-article div.wrapper div.content div.article-container table
+{
+    display: none;width: 100%;max-width: 640px;margin: 0 auto 2rem;
+
+    border: 2px solid #fff;;
+}
+html div#guide-article div.wrapper div.content div.article-container table th
+{
+    font-size: 1.5em;font-weight: bolder;line-height: 2em;width: 25%;
+
+    border-bottom: 2px solid #fff;;
+}
+html div#guide-article div.wrapper div.content div.article-container table th:first-of-type
+{
+    width: 50%;
+}
+html div#guide-article div.wrapper div.content div.article-container table td
+{
+    line-height: 2em;width: 25%;padding: .5em 1em;text-align: center;
+}
+html div#guide-article div.wrapper div.content div.article-container table td:first-of-type
+{
+    width: 50%;
+
+    text-align: left;;
+}
+html div#guide-article div.wrapper div.content div.article-container table tr
+{
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+html div#guide-article div.wrapper div.content div.article-container table tr:last-of-type
+{
+    border-bottom: none;
+}

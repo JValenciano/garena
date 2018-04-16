@@ -185,13 +185,19 @@ html div#carousel
 {
     position: relative;
     z-index: 5;
+    height: 100%;
     width: 100%;
-    margin: -40px auto;
     padding: 23px 0 23px;
     background: transparent url('images/carousel-background.png') center center no-repeat;
     background-size: contain;
-    height: 40vh;
 }
+
+html div#carousel .flickity-viewport
+{
+    height: 100% !important;
+    width: 100%;
+}
+
 html div#carousel div.item
 {
     position: relative;
@@ -277,8 +283,8 @@ html div#home-content
 {
     width: 100%;
     min-width: 320px;
-    height: 65vh;
-    margin: 10px auto 100px;
+    height: 70vh;
+    margin: 10px auto;
     background: transparent url('images/body-frame.png') center center no-repeat;
     background-size: 100% 100%;
 }
