@@ -1,0 +1,96 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "LoL Display";
+  src: url("https://cdngarenanow-a.akamaihd.net/community/lolph/fonts/LoL_Display.ttf"); }
+@font-face {
+  font-family: "LoL Body";
+  src: url("https://cdngarenanow-a.akamaihd.net/community/lolph/fonts/LoL_Body.otf"); }
+html {
+  background: black;
+  font-size: 16px;
+  height: auto;
+  min-height: 100vh;
+  line-height: 1.5rem;
+  width: 100%; }
+  html * {
+    box-sizing: border-box;
+    user-select: none; }
+  html body {
+    background: white;
+    height: auto;
+    margin-top: -1px;
+    padding-top: 1px;
+    position: relative; }
+    html body .clearfix::after, html body body::after, html body main::after {
+      clear: both;
+      content: "";
+      display: block;
+      height: 0px;
+      visibility: hidden;
+      width: 100%; }
+
+html {
+  background: transparent;
+  font-family: "LoL Body", sans-serif; }
+  html body {
+    background: transparent;
+    height: calc(100vh + 1px);
+    width: 100vw; }
+    html body nav {
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.75);
+      float: left;
+      height: 100%;
+      width: 244px; }
+    html body main {
+      float: left; }
+      html body main .box {
+        float: left;
+        height: 5rem;
+        width: 5rem; }

@@ -1,0 +1,30 @@
+@font-face
+	font-family: 'LoL Display'
+	src: url('https://cdngarenanow-a.akamaihd.net/community/lolph/fonts/LoL_Display.ttf')
+@font-face
+	font-family: 'LoL Body'
+	src: url('https://cdngarenanow-a.akamaihd.net/community/lolph/fonts/LoL_Body.otf')
+html
+	background: black
+	font-size: 16px
+	height: auto
+	min-height: 100vh
+	line-height: 1.5rem
+	width: 100%
+	*
+		box-sizing: border-box
+		user-select: none
+	body
+		background: white
+		height: auto
+		margin-top: -1px
+		padding-top: 1px
+		position: relative
+		.clearfix
+			&::after
+				clear: both
+				content: ""
+				display: block
+				height: 0px
+				visibility: hidden
+				width: 100%
