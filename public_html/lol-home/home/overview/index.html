@@ -9,72 +9,98 @@
   <link rel="stylesheet" href="https://s.lolstatic.com/awesomefonts/1.0.0/lol-fonts.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="https://cdngarenanow-a.akamaihd.net/webupdate/games/ph/glib/assets/js/gph-branding/v2/garena-style.css">
+  <link rel="stylesheet" href="css/flickity.min.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/scss/global2.css">
   <script src="js/modernizr-custom.js"></script>
+  <script src="js/flickity.pkgd.min.js"></script>
 </head>
 
 <body class="">
+  <script type="text/javascript">
+
+  </script>
   <div class="container">
     <div class="wishlist-lol">
       <div class="wrapper">
-        <div id="clearfix">
-          
+        <div id="">
+
         </div>
 
-        <div class="header1">
-          <h1>
-            MAIN
-            <br>
-            HEADER
-          </h1>
-          <p class="subheading">Subheading Description</p>
-          <a type="button" class="c-btn">BUTTON</a>
-        </div>
-
-        <div class="img-frame">
-
+        <div class="main-carousel" data-flickity='{ "wrapAround": true, "cellAlign": "left", "contain": true }'>
+          <div class="carousel-cell">
+            <div id="header1" class="header">
+              <h1>BADLANDS BARON RUMBLE, NOW AVAILABLE</h1>
+              <p class="subheading">Run the wastelands as Badlands Baron Rumble for 250 RP.</p>
+              <a type="button" class="c-btn">learn more</a>
+              <img src="https://cdngarenanow-a.akamaihd.net/webupdate/live/lolphweb/news/2018%20April/13/BLB%20Rumble/lcu_background.jpg" alt="">
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div id="header2" class="header">
+              <h1>A NEW BEGINNING FOR ESPORTS IN SOUTHEAST ASIA</h1>
+              <p class="subheading">The eSports structure for SEA will undergo major changes.</p>
+              <a type="button" class="c-btn">read more</a>
+              <img src="https://cdngarenanow-a.akamaihd.net/community/esports/001-LeagueofLegends/Lobby/1320x-SEA.jpg" alt="">
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div id="header3" class="header">
+              <h1>LANCER STRATUS WUKONG, NOW AVAILABLE</h1>
+              <p class="subheading">Rise and protect as Lance Stratus Wukong, now available!</p>
+              <a type="button" class="c-btn">learn more</a>
+              <img src="img/diamondticker.png" alt="">
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div id="header4" class="header">
+              <h1>IRELIA GAMEPLAY & VISUAL UPDATE</h1>
+              <p class="subheading">The Blade Dancer's performance has commended.</p>
+              <a type="button" class="c-btn">learn more</a>
+              <img src="https://cdngarenanow-a.akamaihd.net/community/esports/001-LeagueofLegends/Articles/2018/Irelia%20Now%20Available/1320X-iRELIA.jpg" alt="">
+            </div>
+          </div>
         </div>
 
         <div id="diamond-nav">
-          <ul class="diamond-ticker">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+          <ul class="diamond-ticker flickity-page-dots">
+            <li class="active" id="1"><a href="#header1"></a></li>
+            <li id="2"><a href="#header2"></a></li>
+            <li id="3"><a href="#header3"></a></li>
+            <li id="4"><a href="#header4"></a></li>
           </ul>
         </div>
 
         <div id="bottom-preview">
           <div class="wrap">
-            <div class="box">
+            <div class="box" data-flickity='{ "wrapAround": true, "cellAlign": "left", "contain": true }'>
 
             </div>
-            <h6>test</h6>
+            <h6>Champion Update: Irelia</h6>
           </div>
           <div class="wrap">
-            <div class="box">
+            <div class="box" data-flickity='{ "wrapAround": true, "cellAlign": "left", "contain": true }'>
 
             </div>
-            <h6>test</h6>
+            <h6>Parties Level Up</h6>
           </div>
           <div class="wrap">
-            <div class="box">
+            <div class="box" data-flickity='{ "wrapAround": true, "cellAlign": "left", "contain": true }'>
 
             </div>
-            <h6>test</h6>
+            <h6>Skin Sale - Apr 16 to 22</h6>
           </div>
           <div class="wrap mini">
             <div class="box">
 
             </div>
-            <h6>test</h6>
+            <h6>Badlands Barron Rumble</h6>
           </div>
           <div class="wrap mini">
             <div class="box">
 
             </div>
-            <h6>test</h6>
+            <h6>Lancer Stratus Wukong</h6>
           </div>
         </div>
       </div>
@@ -96,10 +122,35 @@
     });
   </script-->
   <script type="text/javascript">
-    $('.diamond-ticker li').click(function(){
+  $('.diamond-ticker li').click(function(){
     $('.active').removeClass('active');
     $(this).addClass('active');
   });
+
+  $(document).ready(function() {
+    $('nav div.wrapper, div#mid-nav div.wrapper').on('mouseenter', 'a', function() {
+      $(this).children('img').attr('src', ($(this).children('img').attr('src').replace('.png', '-h.png')));
+    });
+    $('nav div.wrapper, div#mid-nav div.wrapper').on('mouseleave', 'a', function() {
+      $(this).children('img').attr('src', ($(this).children('img').attr('src').replace('-h.png', '.png')));
+    });
+    $('div#carousel').flickity({
+      autoPlay: 7500,
+      cellAlign: 'left',
+      cellSelector: '.item',
+      contain: false,
+      wrapAround: true
+    });
+    $('div#item, div#mode').flickity({
+      cellAlign: 'left',
+      contain: true,
+      imagesLoaded: true,
+      pageDots: false,
+      wrapAround: true
+    });
+    $('div#item, div#mode').flickity('resize');
+  });
+
   </script>
 </body>
 

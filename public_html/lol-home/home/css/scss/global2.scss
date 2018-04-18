@@ -84,11 +84,6 @@ body {
   background-color: transparent;
 }
 
-.wishlist-lol .wrapper {
-  border: 1px solid #A28A64;
-  background: linear-gradient(to right, rgba(#000000, 0.25), rgba(#000000, 0.75), rgba(#000000, 1.0));
-}
-
 .wrapper {
   position: fixed;
   clear: both;
@@ -138,8 +133,8 @@ body {
 }
 
 #section {
-  width: 50%;
-  margin: 1%;
+  width: 40%;
+  margin: 1.5%;
   height: 20px;
   display: inline-block;
 

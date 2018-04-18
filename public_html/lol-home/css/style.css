@@ -97,6 +97,7 @@ html {
           background: transparent url("../img/logo.png") center center no-repeat;
           background-size: cover;
           float: left;
+          margin-left: 30rem;
           margin-right: 2rem;
           height: 100%;
           position: relative;
