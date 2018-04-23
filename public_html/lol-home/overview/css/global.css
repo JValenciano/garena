@@ -3526,8 +3526,8 @@ button.c-thumb.is-active {
 \* ------------------------------------ */
 
 .flickity-slider {
-    -webkit-transform: none !important;
-    transform: none !important;
+    /*-webkit-transform: none !important;
+    transform: none !important;*/
 }
 
 .flickity-prev-next-button {

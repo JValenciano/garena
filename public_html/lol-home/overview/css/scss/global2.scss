@@ -73,7 +73,7 @@ body {
 }
 
 .wishlist-lol .wrapper {
-  background: linear-gradient(to right, rgba(#000000, 0.25), rgba(#000000, 0.75), rgba(#000000, 1.0));
+  background: linear-gradient(to right, rgba(#000000, 0.25), rgba(#000000, 0.55), rgba(#000000, 0.5));
 }
 
 .wrapper {
@@ -81,7 +81,7 @@ body {
   clear: both;
   content: " ";
   float: left;
-  margin: 0.5% 0 0;
+  margin: 0.75% 0 0;
   min-width: 1200px;
   height: 98%;
 }
@@ -100,7 +100,7 @@ body {
   position: absolute;
 
   h1 {
-    margin: 8% 3% 0;
+    margin: 10% 3% 0;
     font-size: 2.25em;
     text-align: left;
     width: 50%;
@@ -118,22 +118,22 @@ body {
   }
 
   .c-btn {
-    width: 100px;
+    width: 130px;
     height: 40px;
     margin: 0.5% 3% 0;
-    font-size: 0.75em;
+    font-size: 1em;
     text-transform: uppercase;
   }
 
   img {
-    height: 200%;
+    height: 250%;
     width: 100%;
     display: inline-block;
     float: right;
     position: absolute;
-    top: -30px;
     right: 0;
     z-index: -1;
+    top: -65px;
   }
 }
 
@@ -143,14 +143,17 @@ body {
 }
 
 #section {
-  width: 50%;
-  margin: 1%;
+  width: 40%;
+  margin: 1.5%;
+  height: 20px;
+  display: inline-block;
 
   ul {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
     padding: 0 1%;
+    margin: 0;
 
     li {
        color: #A28A64;
@@ -178,7 +181,8 @@ body {
   width: 50%;
   margin: 1% 2%;
   position: absolute;
-  top: 390px;
+  top: 500px;
+  right: 5%;
 
   .diamond-ticker {
     display: inline-block;
@@ -234,46 +238,75 @@ body {
 
   .wrap {
     height: 230px;
-    width: 23.5%;
+    width: 298px;
     display: inline-block;
-    margin-left: 0.25%;
     vertical-align: top;
 
-    .box {
-      border: 1px solid #fff;
-      height: 80%;
+    .box, #box {
+      border: 1.5px solid #fff;
+      height: 73.5%;
       width: 100%;
 
       &:hover, &:visited {
-        background-position: 100%, 0 100%;
-        background-repeat: no-repeat;
-        border-left: transparent;
-        border-right: transparent;
-        border-top: 1px solid #C3A464;
-        border-bottom: 1px solid #6B5028;
-        background-size: 1px 200px;
-        background-image: linear-gradient(0deg, #6B5028 0%, #C3A464 100%), linear-gradient(0deg, #6B5028 0%, #C3A464 100%);
+        border: 1.5px solid #6B5028;
+      }
+
+      .carousel-cell, .b-cell {
+
+        h6 {
+          font-size: 1em;
+          line-height: 1.5;
+          margin: 0 1.5%;
+        }
+      }
+
+      img {
+        margin: 0 !important;
         z-index: -1;
       }
     }
 
-    h6 {
-      font-size: 1em;
-      line-height: 1.5;
-      margin: 0 1.5%;
-    }
-
-    &:first-of-type {
-        margin-left: 1.5%;
-    }
-
     .flickity-viewport {
-      height: 182px !important;
+      height: 235px !important;
+    }
+
+    .flickity-page-dots {
+      display: none;
+    }
+
+    /* no circle */
+    .flickity-button {
+      background: transparent;
+    }
+    /* big previous & next buttons */
+    .flickity-prev-next-button {
+      width: 40px;
+      height: 100px;
+    }
+    /* icon color */
+    .flickity-button-icon {
+      fill: white;
+    }
+
+    .flickity-slider {
+      left: 0px;
+      transform: translateX(0%);
     }
   }
 
   .mini {
     width: 12%;
+
+    h6 {
+      position: relative !important;
+      font-size: 1em !important;
+      line-height: 1.5 !important;
+      margin: 0 1.5% !important;
+    }
+
+    img {
+      z-index: -1;
+    }
   }
 }
 
@@ -292,23 +325,28 @@ tbody::-webkit-scrollbar-thumb {
 
 /*flickity*/
 .main-carousel {
-  top: -30px;
+  z-index: -1;
 
   .flickity-prev-next-button {
     display: none;
   }
 
   .flickity-viewport {
-    height: 685px !important;
-    top: 30px;
+    height: 810px !important;
+    z-index: -1;
+    top: -55px;
   }
+
+  /*.flickity-slider {
+    left: 0px;
+    transform: translateX(-400%) !important;
+  }*/
 
   .carousel-cell {
     width: 100%;
-    height: 415px;
-    margin-right: 10px;
+    height: 375px;
     border-radius: 5px;
-    counter-increment: gallery-cell;
+
 
     &:before {
       display: block;

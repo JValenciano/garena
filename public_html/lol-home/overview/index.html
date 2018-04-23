@@ -23,11 +23,14 @@
   <div class="container">
     <div class="wishlist-lol">
       <div class="wrapper">
-        <div id="">
-
+        <div id="section">
+          <ul>
+            <li data-iframe="overview" class="active">Overview</li>
+            <li data-iframe="patch notes">Patch Notes</li>
+            <li data-iframe="Esports">Esports</li>
+          </ul>
         </div>
-
-        <div class="main-carousel" data-flickity='{ "wrapAround": true, "cellAlign": "left", "contain": true }'>
+        <div class="main-carousel" data-flickity='{ "cellSelector": ".carousel-cell", "cellAlign": "left", "contain": true }'>
           <div class="carousel-cell">
             <div id="header1" class="header">
               <h1>BADLANDS BARON RUMBLE, NOW AVAILABLE</h1>
@@ -73,39 +76,60 @@
 
         <div id="bottom-preview">
           <div class="wrap">
-            <div class="box" data-flickity='{ "wrapAround": true, "cellAlign": "left", "contain": true }'>
-
+            <div id="box" data-flickity='{ "cellSelector": ".b-cell" }'>
+              <div class="b-cell">
+                <img src="https://cdngarenanow-a.akamaihd.net/webupdate/live/lolphweb/news/2018%20March/27/Irelia-Reveal.jpg" alt="">
+                <h6>Champion Update: Irelia</h6>
+              </div>
+              <div class="b-cell">
+                <img src="https://cdngarenanow-a.akamaihd.net/webupdate/live/lolphweb/news/2018%20April/20/Essence%20Emporium/295x165.jpg" alt="">
+                <h6>Irelia</h6>
+              </div>
+              <div class="b-cell">
+                <img src="https://cdngarenanow-a.akamaihd.net/webupdate/live/lolphweb/news/2018%20March/27/Irelia-Reveal.jpg" alt="">
+                <h6>Champion Update: </h6>
+              </div>
             </div>
-            <h6>Champion Update: Irelia</h6>
           </div>
           <div class="wrap">
-            <div class="box" data-flickity='{ "wrapAround": true, "cellAlign": "left", "contain": true }'>
-
+            <div class="box" data-flickity='{ "cellSelector": ".carousel-cell" }'>
+              <div class="carousel-cell">
+                <img src="https://cdngarenanow-a.akamaihd.net/webupdate/live/lolphweb/news/2018%20April/20/Essence%20Emporium/295x165.jpg" alt="">
+                <h6>Midseason Essence Emporium Opening Soon</h6>
+              </div>
             </div>
-            <h6>Parties Level Up</h6>
           </div>
           <div class="wrap">
-            <div class="box" data-flickity='{ "wrapAround": true, "cellAlign": "left", "contain": true }'>
-
+            <div class="box" data-flickity='{ "cellSelector": ".b-cell" }'>
+              <div class="b-cell">
+                <img src="https://cdngarenanow-a.akamaihd.net/webupdate/live/lolphweb/news/2018%20March/27/Irelia-Reveal.jpg" alt="">
+                <h6>Champion Update: Irelia</h6>
+              </div>
+              <div class="b-cell">
+                <img src="https://cdngarenanow-a.akamaihd.net/webupdate/live/lolphweb/news/2018%20April/20/Essence%20Emporium/295x165.jpg" alt="">
+                <h6>Irelia</h6>
+              </div>
+              <div class="b-cell">
+                <img src="https://cdngarenanow-a.akamaihd.net/webupdate/live/lolphweb/news/2018%20March/27/Irelia-Reveal.jpg" alt="">
+                <h6>Champion Update: </h6>
+              </div>
             </div>
-            <h6>Skin Sale - Apr 16 to 22</h6>
           </div>
           <div class="wrap mini">
             <div class="box">
-
+              <img src="https://cdngarenanow-a.akamaihd.net/webupdate/live/lolphweb/news/2018%20April/13/BLB%20Rumble/Client-Lobby-Featured-Item-Thumbnail.jpg" alt="">
+              <h6>Badlands Barron Rumble</h6>
             </div>
-            <h6>Badlands Barron Rumble</h6>
           </div>
           <div class="wrap mini">
             <div class="box">
-
+              <img src="https://cdngarenanow-a.akamaihd.net/webupdate/live/lolphweb/news/2018%20April/6/Wukong/Client-Lobby-Featured-Item-Thumbnail.jpg" alt="">
+              <h6>Lancer Stratus Wukong</h6>
             </div>
-            <h6>Lancer Stratus Wukong</h6>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 
 
@@ -122,33 +146,35 @@
     });
   </script-->
   <script type="text/javascript">
+  $("#section ul").on("click","li",function(){
+    $(this).siblings().removeClass("active"),
+    $(this).addClass("active"),
+    $("main iframe").attr("src",$(this).attr("data-iframe"))
+  })
+
   $('.diamond-ticker li').click(function(){
     $('.active').removeClass('active');
     $(this).addClass('active');
   });
 
   $(document).ready(function() {
-    $('nav div.wrapper, div#mid-nav div.wrapper').on('mouseenter', 'a', function() {
-      $(this).children('img').attr('src', ($(this).children('img').attr('src').replace('.png', '-h.png')));
-    });
-    $('nav div.wrapper, div#mid-nav div.wrapper').on('mouseleave', 'a', function() {
-      $(this).children('img').attr('src', ($(this).children('img').attr('src').replace('-h.png', '.png')));
-    });
-    $('div#carousel').flickity({
+    $('div.main-carousel').flickity({
       autoPlay: 7500,
       cellAlign: 'left',
-      cellSelector: '.item',
-      contain: false,
-      wrapAround: true
-    });
-    $('div#item, div#mode').flickity({
-      cellAlign: 'left',
+      cellSelector: 'div.carousel-cell',
       contain: true,
-      imagesLoaded: true,
-      pageDots: false,
       wrapAround: true
     });
-    $('div#item, div#mode').flickity('resize');
+
+    $('div#box').flickity({
+      cellAlign: 'left',
+      cellSelector: 'div.b-cell',
+      contain: true,
+      wrapAround: true
+    });
+
+    $('div.main-carousel, div.carousel-cell').flickity('resize');
+    $('div#box, div.b-cell').flickity('resize');
   });
 
   </script>
