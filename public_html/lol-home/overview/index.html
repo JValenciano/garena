@@ -13,7 +13,10 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/scss/global2.css">
   <script src="js/modernizr-custom.js"></script>
-  <script src="js/flickity.pkgd.min.js"></script>
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.1/flickity.pkgd.min.js"></script>
 </head>
 
 <body class="">
@@ -23,14 +26,14 @@
   <div class="container">
     <div class="wishlist-lol">
       <div class="wrapper">
-        <div id="section">
+        <!--div id="section">
           <ul>
             <li data-iframe="overview" class="active">Overview</li>
-            <li data-iframe="patch notes">Patch Notes</li>
-            <li data-iframe="Esports">Esports</li>
+            <li data-iframe="patch-notes">Patch Notes</li>
+            <li data-iframe="esports">Esports</li>
           </ul>
-        </div>
-        <div class="main-carousel" data-flickity='{ "cellSelector": ".carousel-cell", "cellAlign": "left", "contain": true }'>
+        </div-->
+        <div class="main-carousel" data-flickity='{ "cellSelector": ".carousel-cell", "cellAlign": "left", "contain": true, "draggable": false }'>
           <div class="carousel-cell">
             <div id="header1" class="header">
               <h1>BADLANDS BARON RUMBLE, NOW AVAILABLE</h1>
@@ -132,9 +135,6 @@
     </div>
   </div>
 
-
-
-  <script src="js/main.js"></script>
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!--script src="https://cdngarenanow-a.akamaihd.net/webupdate/games/ph/glib/assets/js/gph-branding/v2/garena-top-bar.js"></script>
   <script src="https://cdngarenanow-a.akamaihd.net/webupdate/games/ph/glib/assets/js/gph-branding/v2/garena-footer.js"></script>
@@ -146,6 +146,7 @@
     });
   </script-->
   <script type="text/javascript">
+
   $("#section ul").on("click","li",function(){
     $(this).siblings().removeClass("active"),
     $(this).addClass("active"),
@@ -155,27 +156,28 @@
   $('.diamond-ticker li').click(function(){
     $('.active').removeClass('active');
     $(this).addClass('active');
-  });
 
-  $(document).ready(function() {
+  })
+
+  /*$(document).ready(function() {
     $('div.main-carousel').flickity({
       autoPlay: 7500,
       cellAlign: 'left',
       cellSelector: 'div.carousel-cell',
       contain: true,
       wrapAround: true
-    });
+    })
 
     $('div#box').flickity({
       cellAlign: 'left',
       cellSelector: 'div.b-cell',
       contain: true,
       wrapAround: true
-    });
+    })
 
     $('div.main-carousel, div.carousel-cell').flickity('resize');
     $('div#box, div.b-cell').flickity('resize');
-  });
+  });*/
 
   </script>
 </body>

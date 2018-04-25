@@ -1,0 +1,372 @@
+
+/*
+/* Smartphones (portrait and landscape) ----------- /
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .wrapper {
+     min-width: 200px;
+     margin: 0 17%;
+   }
+}
+
+/* Smartphones (landscape) ----------- /
+@media only screen and (min-width : 321px) {
+  .wrapper {
+     min-width: 200px;
+     margin: 0 17%;
+   }
+}
+
+/* Smartphones (portrait) ----------- /
+@media only screen and (max-width : 320px) {
+  .wrapper {
+     min-width: 200px;
+     margin: 0 17%;
+   }
+}
+
+@media only screen  and (min-width : 720px) {
+  .wrapper {
+     min-width: 300px;
+     margin: 0 17%;
+   }
+}
+
+/* Desktops and laptops ----------- /
+@media only screen  and (min-width : 1224px) {
+  .wrapper {
+     min-width: 300px;
+     margin: 0 24%;
+   }
+
+   .table-bordered {
+     min-width: 450px;
+   }
+}
+
+/* Large screens ----------- /
+@media only screen  and (min-width : 1824px) {
+  .wrapper {
+     min-width: 300px;
+     margin: 0 25%;
+   }
+
+   .table-bordered {
+     min-width: 675px;
+   }
+}
+*/
+
+html {
+  background: unset;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  background-color: transparent;
+}
+.container {
+  position: relative;
+  left: 0;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.wishlist-lol .wrapper {
+  background: linear-gradient(to right, rgba(#000000, 0.25), rgba(#000000, 0.55), rgba(#000000, 0.5));
+}
+
+.wrapper {
+  position: fixed;
+  clear: both;
+  content: " ";
+  float: left;
+  min-width: 1320px;
+  height: 800px;
+}
+
+.img-frame {
+  height: auto;
+  width: 50%;
+  display: inline-block;
+  float: right;
+
+}
+
+.header {
+  width: 100%;
+  height: 375px;
+  position: absolute;
+
+  h1 {
+    margin: 10% 3% 0;
+    font-size: 3.25em;
+    text-align: left;
+    width: 50%;
+    height: auto;
+    background: -webkit-linear-gradient(#bfae80, #887040, #785A27);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .subheading {
+    font-size: 1em;
+    margin: 1% 3%;
+    width: 50%;
+    height: auto;
+  }
+
+  .c-btn {
+    width: 130px;
+    height: 40px;
+    margin: 0.5% 3% 0;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+
+  img {
+    height: 250%;
+    width: 100%;
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: -65px;
+  }
+}
+
+.clearfix {
+  width: 100%;
+  margin: 5%;
+}
+
+#section {
+  width: 30%;
+  margin: 1.5%;
+  height: 20px;
+  display: inline-block;
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 0 1%;
+    margin: 0;
+
+    li {
+       color: #A28A64;
+       cursor: pointer;
+       font-family: "Beaufort for LoL",serif;
+       font-size: 1em;
+       font-weight: bolder;
+       line-height: 1rem;
+       margin-right: auto;
+       padding: 0 .25rem .125rem;
+       position: relative;
+       text-align: left;
+       text-transform: uppercase;
+       list-style-type: none;
+       width: auto;
+
+       &.active, &:hover {
+          color: #fff;
+      }
+
+      &:first-of-type {
+        margin-left: 2.5%;
+      }
+    }
+  }
+}
+
+#diamond-nav {
+  width: 50%;
+  margin: 1% 2%;
+  position: absolute;
+  bottom: 29%;
+  left: 1%;
+
+  .diamond-ticker {
+    display: inline-block;
+    position: initial;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+
+    .active{
+      display: block;
+      float: left;
+      margin: 0 8px;
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+
+      a {
+        background-image: url(../../img/diamondticker_active.png);
+      }
+    }
+
+    li {
+      display: block;
+      float: left;
+      margin: 0 8px;
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+
+      a {
+        background-image: url(../../img/diamondticker.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        margin: 0 10px 0 0;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#bottom-preview {
+  width: 100%;
+  height: auto;
+  padding-bottom: 1%;
+  bottom: 50px;
+  position: absolute;
+
+  .wrap {
+    height: 168px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+
+    &:first-of-type {
+      margin-left: 3.5%;
+    }
+
+    .box, #box {
+      border: 1px solid #fff;
+      height: 100%;
+      width: 100%;
+
+      &:hover, &:visited {
+        border: 1px solid #6B5028;
+      }
+
+      .carousel-cell, .b-cell {
+
+        h6 {
+          font-size: 1em;
+          font-weight: 900;
+          line-height: 1.5;
+          margin: 0 1.5%;
+        }
+      }
+
+      img {
+        margin: 0 !important;
+        z-index: -1;
+      }
+    }
+
+    .flickity-viewport {
+      height: 235px !important;
+    }
+
+    .flickity-page-dots {
+      display: none;
+    }
+
+    /* no circle */
+    .flickity-button {
+      background: transparent;
+    }
+    /* big previous & next buttons */
+    .flickity-prev-next-button {
+      width: 40px;
+      height: 100px;
+    }
+    /* icon color */
+    .flickity-button-icon {
+      fill: white;
+    }
+
+    .flickity-slider {
+      left: 0px;
+      transform: translateX(0%);
+    }
+  }
+
+  .mini {
+    width: 11%;
+
+    h6 {
+      font-size: 1em;
+      font-weight: 900;
+      line-height: 1.5;
+      margin: 0 1.5%;
+    }
+
+    img {
+      margin: 0 !important;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+tbody::-webkit-scrollbar {
+    width: 3px;
+}
+
+tbody::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+tbody::-webkit-scrollbar-thumb {
+  background-color: #C7A96D;
+  outline: 1px solid slategrey;
+}
+
+/*flickity*/
+.main-carousel {
+  z-index: -1;
+
+  .flickity-prev-next-button {
+    display: none;
+  }
+
+  .flickity-viewport {
+    height: 800px !important;
+    z-index: -1;
+    top: -60px;
+  }
+
+  /*.flickity-slider {
+    left: 0px;
+    transform: translateX(-400%) !important;
+  }*/
+
+  .carousel-cell {
+    width: 100%;
+    height: 375px;
+    border-radius: 5px;
+
+
+    &:before {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  ol.flickity-page-dots {
+    display: none;
+  }
+}

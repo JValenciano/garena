@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#section1" class="active">LINK1</a> </li>
+        <li><a href="#section2">LINK2</a> </li>
+        <li><a href="#section3">LINK3</a> </li>
+        <li><a href="#section4">LINK4</a> </li>
+      </ul>
+    </nav>
+    <section id="section1" class="parallax-window" data-parallax="scroll" data-image-src="images/bg_content1.jpg">
+      <div class="content__wrapper">
+        <img class="content__img" src="images/gpl_2018_logo.png">
+        <p class="text--date">DATE</p>
+        <a class="btn__normal" target="_blank" href="#">LINK1</a>
+        <a class="btn__normal" target="_blank" href="#">LINK2</a>
+        <a class="btn__normal" target="_blank" href="#">LINK3</a>
+
+        <!--  -->
+
+        <p class="text--description">ANOTHER TEXT HERE</p>
+
+        <div id="arrow" class="arrow" href="#section2">
+            <img src="http://gpl.garena.com/images/v2/arrow.png">
+        </div>
+      </div>
+    </section>
+    <section id="section2" class="parallax-window" data-parallax="scroll" data-image-src="images/bg_content2.jpg">
+      <div class="content__wrapper">
+        <ul class="content__standings">
+            <li>
+                <div class="content__flex">
+                    <div>1</div>
+                    <div><img class="mw-100" src="http://gpl.garena.com/images/v2/teams/ASC_ASCENSION.png"></div>
+                    <div>ASC</div>
+                    <div>Winner</div>
+                </div>
+            </li>
+            <li>
+                <div class="content__flex">
+                    <div>2</div>
+                    <div><img class="mw-100" src="http://gpl.garena.com/images/v2/teams/KLH_Kuala_Lumpur_Hunters.png"></div>
+                    <div>KLH</div>
+                    <div></div>
+                </div>
+            </li>
+            <li>
+                <div class="content__flex">
+                    <div>3</div>
+                    <div><img class="mw-100" src="http://gpl.garena.com/images/v2/teams/MSK_Mineski.png"></div>
+                    <div>MSK</div>
+                    <div></div>
+                </div>
+            </li>
+            <li>
+                <div class="content__flex">
+                    <div>4</div>
+                    <div><img class="mw-100" src="http://gpl.garena.com/images/v2/teams/SVR_Sovereign.png"></div>
+                    <div>SVR</div>
+                    <div></div>
+                </div>
+            </li>
+            <li>
+                <div class="content__flex">
+                    <div>5</div>
+                    <div><img class="mw-100" src="http://gpl.garena.com/images/v2/teams/BTR_Bigetron.png"></div>
+                    <div>BTR</div>
+                    <div></div>
+                </div>
+            </li>
+        </ul>
+        <div id="arrow2" class="arrow" href="#section3">
+            <img src="http://gpl.garena.com/images/v2/arrow_yellow.png">
+        </div>
+      </div>
+    </section>
+    <section id="section3" class="parallax-window" data-parallax="scroll" data-image-src="images/bg_content3.jpg">
+      <div class="content__wrapper">
+        <div class="content__main content__main--height align-middle">
+            <div class="row content__center mx-0">
+                <div class="col-md-5 offset-md-1">
+                    <h2>HIGHLIGHTS GARENA PREMIER LEAGUE 2018</h2>
+                    <ul class="list">
+                      <div class="list-item">
+                        <li class="">
+                          Garena Premier League match to find SEA representative to MSI 2018 in Germany. Total prize money is over 52 Million Baht
+                        </li>
+                      </div>
+                      <div class="list-item">
+                        <li class="">Contest Cosplay Contest 40,000 Baht</li>
+                      </div>
+                      <div class="list-item">
+                        <li class="">
+                          The two-day walk-in tournament is sponsored by Hyper-X. A total of 60,000 Baht (Sunday Lady Tournament)
+                        </li>
+                      </div>
+                      <div class="list-item">
+                        <li class="">
+                          Events for new and old players within the booth. Exclusive rewards and merchandise within the game.
+                        </li>
+                      </div>
+
+
+
+
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <img src="http://gpl.garena.com/images/v2/gift.png" class="mw-100">
+                </div>
+                <div class="col-md-5 offset-md-2">
+                    <a class="btn__normal" href="https://www.playlol.in.th/news/content/16745.html" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+        <div id="arrow3" class="arrow" href="#section4">
+            <img src="http://gpl.garena.com/images/v2/arrow.png">
+        </div>
+      </div>
+    </section>
+    <section id="section4" class="parallax-window" data-parallax="scroll" data-image-src="images/bg_content4.jpg">
+
+    </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('nav ul li a').click(function(){
+        $('li a').removeClass("active");
+        $(this).addClass("active");
+
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 700, 'swing', function () {
+            window.location.hash = target;
+        });
+      });
+    });
+
+    $(document).ready(function () {
+        $(function() {
+            $('#arrow').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'swing');
+            });
+        });
+        $(function() {
+            $('#arrow2').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'swing');
+            });
+        });
+        $(function() {
+            $('#arrow3').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'swing');
+            });
+        });
+        $(function() {
+            $('#arrow4').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'swing');
+            });
+        });
+        $(function() {
+            $('#arrow5').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'swing');
+            });
+        });
+        $(function() {
+            $('#arrow6').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'swing');
+            });
+        });
+        $(function() {
+            $('#arrow7').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'swing');
+            });
+        });
+    });
+
+    var sections = Array.from(document.querySelectorAll('section'));
+    var sectionProps = sections.map(function(section){
+      return {
+        id: section.attributes[0].value,
+        yPos: section.getBoundingClientRect().top - (document.querySelector('nav').offsetHeight - 1)
+      }
+    })
+
+    var anchorLinks = Array.from(document.querySelectorAll('a'));
+
+    anchorLinks.forEach(function(link){
+      link.addEventListener('click', function(){
+
+      var linkNoHash = link.getAttribute('data-scroll-to').replace('#','');
+      for (var i = 0; i < sectionProps.length; i++){
+
+        if (linkNoHash === sectionProps[i].id){
+          var yPos = sectionProps[i].yPos
+            window.scrollTo({
+              top: yPos,
+              left: 0,
+              behavior: 'smooth'
+            });
+          }
+        }
+      })
+    })
+    </script>
+  </body>
+</html>

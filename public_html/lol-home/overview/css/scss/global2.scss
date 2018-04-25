@@ -99,7 +99,7 @@ body {
   position: absolute;
 
   h1 {
-    margin: 10% 3% 0;
+    margin: 7% 3% 0;
     font-size: 3.25em;
     text-align: left;
     width: 50%;
@@ -169,7 +169,7 @@ body {
        list-style-type: none;
        width: auto;
 
-       &.active, &:hover {
+      &.active, &:hover {
           color: #fff;
       }
 
@@ -346,7 +346,7 @@ tbody::-webkit-scrollbar-thumb {
   .flickity-viewport {
     height: 800px !important;
     z-index: -1;
-    top: -60px;
+    top: 0;
   }
 
   /*.flickity-slider {

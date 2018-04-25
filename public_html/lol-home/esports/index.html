@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>League of Legends - Wishlist</title>
+  <link rel="shortcut icon" href="http://cdn.leagueoflegends.com/lolkit/1.1.5/resources/images/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="https://s.lolstatic.com/awesomefonts/1.0.0/lol-fonts.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://cdngarenanow-a.akamaihd.net/webupdate/games/ph/glib/assets/js/gph-branding/v2/garena-style.css">
+  <link rel="stylesheet" href="css/flickity.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/scss/global2.css">
+  <script src="js/modernizr-custom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.1/flickity.pkgd.min.js"></script>
+</head>
+
+<body class="">
+  <script type="text/javascript">
+
+  </script>
+  <div class="container">
+    <div class="wishlist-lol">
+      <div class="wrapper">
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <div id="header1" class="header">
+              <h1>E-SPORTS</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!--script src="https://cdngarenanow-a.akamaihd.net/webupdate/games/ph/glib/assets/js/gph-branding/v2/garena-top-bar.js"></script>
+  <script src="https://cdngarenanow-a.akamaihd.net/webupdate/games/ph/glib/assets/js/gph-branding/v2/garena-footer.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('#footer').css({'margin' : '0px auto 0px'});
+      $('#footer-wrap').css({'margin-top' : '0px'});
+    });
+  </script-->
+  <script type="text/javascript">
+    $("#section ul").on("click","li",function(){
+      $(this).siblings().removeClass("active"),
+      $(this).addClass("active"),
+      $("main iframe").attr("src",$(this).attr("data-iframe"))
+    });
+
+    $('.diamond-ticker li').click(function(){
+      $('.active').removeClass('active');
+      $(this).addClass('active');
+    });
+  </script>
+</body>
+
+</html>

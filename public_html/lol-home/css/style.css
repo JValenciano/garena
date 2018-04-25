@@ -85,6 +85,37 @@ html {
       margin: 0 auto;
       width: 1320px;
       padding: 4.5% 0; }
+      html body .wrapper #section {
+        width: 30%;
+        margin: 1.5%;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 80px; }
+        html body .wrapper #section ul {
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          padding: 0 1%;
+          margin: 0; }
+          html body .wrapper #section ul li {
+            color: #A28A64;
+            cursor: pointer;
+            font-family: "Beaufort for LoL", serif;
+            font-size: 1em;
+            font-weight: bolder;
+            line-height: 1rem;
+            margin-right: auto;
+            padding: 0 0.25rem 0.125rem;
+            position: relative;
+            text-align: left;
+            text-transform: uppercase;
+            list-style-type: none;
+            width: auto; }
+            html body .wrapper #section ul li li.active, html body .wrapper #section ul li li.hover {
+              color: #fff; }
+            html body .wrapper #section ul li li:first-of-type {
+              margin-left: 2.5%; }
     html body nav {
       background: #0C0C0E;
       border-bottom: 2px solid #282619;
